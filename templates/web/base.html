@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MyFitnessBuddy - Your Personal Health & Fitness Coach{% endblock %}</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-green: #22C55E;
+            --dark-gray: #1F2937;
+            --light-bg: #F9FAFB;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-gray);
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 1rem 1.5rem;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-green);
+        }
+
+        .sidebar {
+            background-color: white;
+            min-height: calc(100vh - 72px);
+            padding: 2rem 1.5rem;
+            position: sticky;
+            top: 72px;
+            box-shadow: 2px 0 4px rgba(0,0,0,0.02);
+        }
+
+        .nav-link {
+            color: #6B7280;
+            padding: 0.75rem 1rem;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: #F0FDF4;
+            color: var(--primary-green);
+        }
+
+        .nav-link i {
+            margin-right: 12px;
+            width: 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-green);
+            border: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #16A34A;
+        }
+
+        .stats-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .bg-green-soft { background-color: #DCFCE7; color: #166534; }
+        .bg-blue-soft { background-color: #E0F2FE; color: #075985; }
+        .bg-orange-soft { background-color: #FFEDD5; color: #9A3412; }
+        .bg-purple-soft { background-color: #F3E8FF; color: #6B21A8; }
+
+        @media (max-width: 991.98px) {
+            .sidebar {
+                display: none;
+            }
+        }
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    {% if not hide_nav %}
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <i class="fas fa-heartbeat me-2"></i> MyFitnessBuddy
+            </a>
+            <div class="ms-auto d-flex align-items-center">
+                {% if user.is_authenticated %}
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50px; padding: 5px 15px;">
+                        <img src="{% if user.profile.profile_photo %}{{ user.profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ user.username }}&background=22C55E&color=fff{% endif %}" alt="Profile" class="rounded-circle me-2" style="width: 32px; height: 32px; object-fit: cover;">
+                        <span class="d-none d-md-inline">{{ user.username }}</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" aria-labelledby="userMenu" style="border-radius: 12px; margin-top: 10px;">
+                        <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="{% url 'logout' %}">Logout</a></li>
+                    </ul>
+                </div>
+                {% else %}
+                <a href="{% url 'login' %}" class="btn btn-outline-success me-2 rounded-pill px-4">Login</a>
+                <a href="{% url 'signup' %}" class="btn btn-primary rounded-pill px-4">Signup</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+    {% endif %}
+
+    <div class="container-fluid">
+        <div class="row">
+            {% if user.is_authenticated and not hide_nav %}
+            <div class="col-lg-2 sidebar">
+                <div class="nav flex-column">
+                    <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}" href="{% url 'dashboard' %}">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'food' %}active{% endif %}" href="{% url 'food' %}">
+                        <i class="fas fa-utensils"></i> Food Diary
+                    </a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'workout' %}active{% endif %}" href="{% url 'workout' %}">
+                        <i class="fas fa-dumbbell"></i> Workouts
+                    </a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'friends' %}active{% endif %}" href="{% url 'friends' %}">
+                        <i class="fas fa-user-friends"></i> Friends & Community
+                        {% if pending_friend_requests_count > 0 %}
+                            <span class="badge bg-danger rounded-pill float-end small mt-1">{{ pending_friend_requests_count }}</span>
+                        {% endif %}
+                    </a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'ai_coach' %}active{% endif %}" href="{% url 'ai_coach' %}">
+                        <i class="fas fa-robot"></i> AI Coach
+                    </a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'notifications' %}active{% endif %}" href="{% url 'notifications' %}">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'profile' %}active{% endif %}" href="{% url 'profile' %}">
+                        <i class="fas fa-user"></i> Profile
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+            <main class="{% if user.is_authenticated and not hide_nav %}col-lg-10{% else %}col-12{% endif %} p-4">
+                {% if messages %}
+                <div class="mb-4">
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert" style="border-radius: 12px;">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,3243 @@
+
+[2026-03-09 14:38:44.220446] INFO: Calling Groq Vision API...
+[2026-03-09 14:38:46.066678] ERROR: Groq API 400 - {"error":{"message":"The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[2026-03-09 14:54:14.407082] INFO: Calling Groq Vision API...
+[2026-03-09 14:54:17.891417] RAW CONTENT: To analyze the provided image and provide the required information, let's break down the process:
+
+1. **Identify the Main Food Item**: The main food item in the image is an apple.
+
+2. **Nutritional Information for an Apple**: The nutritional content can vary slightly depending on the type of apple and its size. However, for a typical medium-sized apple (about 150 grams), here are the approximate values:
+   - **Calories**: 95
+   - **Protein**: 0.3 grams
+   - **Carbohydrates**: 25 grams
+   - **Fat**: 0.5 grams
+
+3. **Category and Meal Type**: 
+   - **Category**: Fruit
+   - **Meal Type**: Snacks (Apples are commonly consumed as snacks, but they can be part of any meal. Given the context, classifying it as a snack seems most appropriate.)
+
+Given these details, here is the JSON object with the requested information:
+
+```json
+{
+  "name": "Apple",
+  "calories": 95,
+  "protein": 0.3,
+  "carbs": 25.0,
+  "fat": 0.5,
+  "category": "Fruit",
+  "meal_type": "Snacks"
+}
+```
+[2026-03-09 14:54:17.892859] SUCCESS: {'name': 'Apple', 'calories': 95, 'protein': 0.3, 'carbs': 25.0, 'fat': 0.5, 'category': 'Fruit', 'meal_type': 'Snacks'}
+[2026-03-09 14:55:16.342819] INFO: Calling Groq Vision API...
+[2026-03-09 14:55:19.986049] RAW CONTENT: The image provided appears to be a kiwi fruit. Based on the information available, here is a JSON object with the required details:
+
+```
+{
+  "name": "Kiwi",
+  "calories": 61,
+  "protein": 1.2,
+  "carbs": 14.7,
+  "fat": 0.3,
+  "category": "Fruits",
+  "meal_type": "Snacks"
+}
+```
+
+Here's a brief explanation of the values used:
+
+*   **Name**: The main food item in the image is a kiwi fruit.
+*   **Calories**: A typical kiwi fruit has approximately 61 calories.
+*   **Protein**: Kiwi contains about 1.2 grams of protein per fruit.
+*   **Carbs**: A kiwi fruit has around 14.7 grams of carbohydrates.
+*   **Fat**: Kiwi has a low fat content of about 0.3 grams per fruit.
+*   **Category**: Kiwi falls under the category of fruits.
+*   **Meal_type**: Given that kiwi is often consumed as a snack, the meal type is classified as "Snacks".
+[2026-03-09 14:55:19.986959] SUCCESS: {'name': 'Kiwi', 'calories': 61, 'protein': 1.2, 'carbs': 14.7, 'fat': 0.3, 'category': 'Fruits', 'meal_type': 'Snacks'}
+[2026-03-09 17:57:40.057911] INFO: Calling Groq Vision API...
+[2026-03-09 17:57:44.082837] RAW CONTENT: To analyze the provided image and provide the required information, let's follow the steps:
+
+1. **Identify the main food item**: The main food item in the image is a bowl of white rice.
+
+2. **Determine nutritional information**: The nutritional information for white rice can vary slightly depending on the source, but a common serving size of cooked white rice (about 1 cup or 150g) typically contains:
+   - Calories: approximately 200
+   - Protein: about 2.7 grams
+   - Carbohydrates: roughly 44 grams
+   - Fat: less than 0.5 grams
+
+Given these values, we can approximate for a standard serving.
+
+3. **Category and Meal Type**: Rice is a staple food and can fit into various categories, but it's often classified under "Grains." It can be part of any meal (Breakfast, Lunch, Dinner, or Snacks), but commonly, it's associated with Lunch or Dinner.
+
+Based on the image and common usage, let's assume it's for a general meal type without specifying Breakfast.
+
+## JSON Object:
+
+```json
+{
+  "name": "White Rice",
+  "calories": 200,
+  "protein": 2.7,
+  "carbs": 44.0,
+  "fat": 0.5,
+  "category": "Grains",
+  "meal_type": "General"
+}
+```
+
+This analysis provides a basic overview based on typical nutritional values for white rice. For precise calculations, specific types of rice and serving sizes should be considered.
+[2026-03-09 17:57:44.084403] SUCCESS: {'name': 'White Rice', 'calories': 200, 'protein': 2.7, 'carbs': 44.0, 'fat': 0.5, 'category': 'Grains', 'meal_type': 'General'}
+[2026-03-09 18:24:31.480029] INFO: Calling Groq Vision API...
+[2026-03-09 18:24:33.101598] RAW CONTENT: The main food item in the image is a pineapple. 
+
+Here is the JSON object with the required information:
+
+```
+{
+  "name": "Pineapple",
+  "calories": 82,
+  "protein": 1.0,
+  "carbs": 21.6,
+  "fat": 0.2,
+  "category": "Fruits",
+  "meal_type": "Snacks"
+}
+```
+[2026-03-09 18:24:33.102681] SUCCESS: {'name': 'Pineapple', 'calories': 82, 'protein': 1.0, 'carbs': 21.6, 'fat': 0.2, 'category': 'Fruits', 'meal_type': 'Snacks'}
+[2026-03-10 08:45:47.837471] INFO (Barcode): Looking up 8901234567890
+[2026-03-10 08:45:49.728178] RAW CONTENT (Barcode): {
+  "name": "Unknown Product",
+   "calories": 0,
+   "protein": 0.0,
+   "carbs": 0.0,
+   "fat": 0.0,
+   "category": "",
+   "serving_size": "",
+   "servings_per_container": "",
+   "saturated_fat": 0.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.0,
+   "monounsaturated_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 0.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 0.0,
+   "iron": 0.0,
+   "potassium": 0.0,
+   "not_found": true
+}
+[2026-03-10 08:46:10.656742] INFO (Barcode): Looking up 8901234567890
+[2026-03-10 08:46:12.331324] RAW CONTENT (Barcode): {
+  "name": "Unknown Product",
+   "calories": 0,
+   "protein": 0.0,
+   "carbs": 0.0,
+   "fat": 0.0,
+   "category": "",
+   "serving_size": "",
+   "servings_per_container": "",
+   "saturated_fat": 0.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.0,
+   "monounsaturated_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 0.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 0.0,
+   "iron": 0.0,
+   "potassium": 0.0,
+   "not_found": true
+}
+[2026-03-10 08:49:26.914559] INFO (Barcode): Looking up 8901234567890
+[2026-03-10 08:49:36.573157] RAW CONTENT (Barcode): {"name":"Unknown Product","calories":0,"protein":0.0,"carbs":0.0,"fat":0.0,"category":"","serving_size":"","servings_per_container":"","saturated_fat":0.0,"trans_fat":0.0,"polyunsaturated_fat":0.0,"monounsaturated_fat":0.0,"cholesterol":0.0,"sodium":0.0,"dietary_fiber":0.0,"total_sugars":0.0,"added_sugars":0.0,"vitamin_d":0.0,"calcium":0.0,"iron":0.0,"potassium":0.0,"not_found":true}
+[2026-03-10 08:49:39.439341] INFO (Barcode): Looking up 8901234567890
+[2026-03-10 08:49:44.105878] RAW CONTENT (Barcode): {"name":"Unknown Product","calories":0,"protein":0,"carbs":0,"fat":0,"category":"","serving_size":"","servings_per_container":"","saturated_fat":0,"trans_fat":0,"polyunsaturated_fat":0,"monounsaturated_fat":0,"cholesterol":0,"sodium":0,"dietary_fiber":0,"total_sugars":0,"added_sugars":0,"vitamin_d":0,"calcium":0,"iron":0,"potassium":0,"not_found":true}
+[2026-03-10 08:53:06.309549] INFO (AiFoodSearch): Calling Groq for 'peanut butter'
+[2026-03-10 08:53:07.384689] INFO (Barcode): Looking up 8901234567890
+[2026-03-10 08:53:09.267412] RAW CONTENT (AiFoodSearch): {
+  "name": "Peanut Butter",
+   "calories": 190,
+   "protein": 8.0,
+   "carbs": 8.0,
+   "fat": 16.0,
+   "category": "Nut Butters",
+   "serving_size": "2 tbsp (30g)",
+   "servings_per_container": "16",
+   "saturated_fat": 2.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 4.0,
+   "monounsaturated_fat": 7.0,
+   "cholesterol": 0.0,
+   "sodium": 140.0,
+   "dietary_fiber": 2.0,
+   "total_sugars": 2.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 2.0,
+   "iron": 0.6,
+   "potassium": 170.0
+}
+[2026-03-10 08:53:10.166454] RAW CONTENT (Barcode): {"name":"Unknown Product","calories":0,"protein":0,"carbs":0,"fat":0,"category":"","serving_size":"","servings_per_container":"","saturated_fat":0,"trans_fat":0,"polyunsaturated_fat":0,"monounsaturated_fat":0,"cholesterol":0,"sodium":0,"dietary_fiber":0,"total_sugars":0,"added_sugars":0,"vitamin_d":0,"calcium":0,"iron":0,"potassium":0,"not_found":true}
+[2026-03-10 08:57:24.137215] INFO (AiFoodSearch): Calling Groq for 'oreo'
+[2026-03-10 08:57:26.529888] RAW CONTENT (AiFoodSearch): {
+  "name": "Oreo",
+   "calories": 160,
+   "protein": 2.5,
+   "carbs": 25.0,
+   "fat": 7.0,
+   "category": "Cookies",
+   "serving_size": "3 cookies (28g)",
+   "servings_per_container": "varies",
+   "saturated_fat": 2.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 1.5,
+   "monounsaturated_fat": 2.5,
+   "cholesterol": 0.0,
+   "sodium": 200.0,
+   "dietary_fiber": 0.5,
+   "total_sugars": 14.0,
+   "added_sugars": 14.0,
+   "vitamin_d": 0.0,
+   "calcium": 2.0,
+   "iron": 2.0,
+   "potassium": 50.0
+}
+[2026-03-10 08:57:51.557234] INFO: Calling Groq Vision API...
+[2026-03-10 08:58:00.534421] RAW CONTENT: Based on the provided image, I analyze that the main food item is oatmeal. Here is the JSON object with the required information:
+
+```
+{
+  "name": "Oatmeal",
+  "calories": 150,
+  "protein": 5.0,
+  "carbs": 27.0,
+  "fat": 2.5,
+  "category": "Grains",
+  "meal_type": "Breakfast",
+  "serving_size": "1 cup",
+  "servings_per_container": "4-6",
+  "saturated_fat": 0.5,
+  "trans_fat": 0.0,
+  "polyunsaturated_fat": 1.0,
+  "monounsaturated_fat": 0.5,
+  "cholesterol": 0.0,
+  "sodium": 10.0,
+  "dietary_fiber": 4.0,
+  "total_sugars": 1.0,
+  "added_sugars": 0.0,
+  "vitamin_d": 0.0,
+  "calcium": 20.0,
+  "iron": 10.0,
+  "potassium": 150.0
+}
+```
+
+Please note that the values provided are approximate and based on a standard serving size of oatmeal. The actual values may vary depending on the specific type and brand of oatmeal.
+[2026-03-10 08:58:00.537438] SUCCESS: {'name': 'Oatmeal', 'calories': 150, 'protein': 5.0, 'carbs': 27.0, 'fat': 2.5, 'category': 'Grains', 'meal_type': 'Breakfast', 'serving_size': '1 cup', 'servings_per_container': '4-6', 'saturated_fat': 0.5, 'trans_fat': 0.0, 'polyunsaturated_fat': 1.0, 'monounsaturated_fat': 0.5, 'cholesterol': 0.0, 'sodium': 10.0, 'dietary_fiber': 4.0, 'total_sugars': 1.0, 'added_sugars': 0.0, 'vitamin_d': 0.0, 'calcium': 20.0, 'iron': 10.0, 'potassium': 150.0}
+[2026-03-10 08:58:42.248410] INFO: Calling Groq Vision API...
+[2026-03-10 08:58:44.415521] RAW CONTENT: ```json
+{
+  "name": "Kiwi",
+  "calories": 61,
+  "protein": 1.14,
+  "carbs": 14.66,
+  "fat": 0.71,
+  "category": "Fruit",
+  "meal_type": "Snacks",
+  "serving_size": "100g",
+  "servings_per_container": "",
+  "saturated_fat": 0.13,
+  "trans_fat": 0,
+  "polyunsaturated_fat": 0.29,
+  "monounsaturated_fat": 0.23,
+  "cholesterol": 0,
+  "sodium": 1,
+  "dietary_fiber": 3.3,
+  "total_sugars": 14.66,
+  "added_sugars": 0,
+  "vitamin_d": 0,
+  "calcium": 34,
+  "iron": 0.56,
+  "potassium": 312
+}
+```
+[2026-03-10 08:58:44.416745] SUCCESS: {'name': 'Kiwi', 'calories': 61, 'protein': 1.14, 'carbs': 14.66, 'fat': 0.71, 'category': 'Fruit', 'meal_type': 'Snacks', 'serving_size': '100g', 'servings_per_container': '', 'saturated_fat': 0.13, 'trans_fat': 0, 'polyunsaturated_fat': 0.29, 'monounsaturated_fat': 0.23, 'cholesterol': 0, 'sodium': 1, 'dietary_fiber': 3.3, 'total_sugars': 14.66, 'added_sugars': 0, 'vitamin_d': 0, 'calcium': 34, 'iron': 0.56, 'potassium': 312}
+[2026-03-10 09:06:38.815579] INFO (AiFoodSearch): Calling Groq for 'oreo biscuit'
+[2026-03-10 09:06:41.678731] RAW CONTENT (AiFoodSearch): {
+  "name": "Nabisco Oreo",
+   "calories": 160,
+   "protein": 2.5,
+   "carbs": 25.0,
+   "fat": 7.0,
+   "category": "Cookies",
+   "serving_size": "3 cookies (28g)",
+   "servings_per_container": "varies",
+   "saturated_fat": 1.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 1.5,
+   "monounsaturated_fat": 2.5,
+   "cholesterol": 0.0,
+   "sodium": 200.0,
+   "dietary_fiber": 0.5,
+   "total_sugars": 14.0,
+   "added_sugars": 14.0,
+   "vitamin_d": 0.0,
+   "calcium": 2.0,
+   "iron": 2.5,
+   "potassium": 115.0
+}
+[2026-03-10 09:23:34.755135] INFO (AiFoodSearch): Calling Groq for 'coke'
+[2026-03-10 09:23:36.517792] RAW CONTENT (AiFoodSearch): {
+  "name": "Coca-Cola Classic",
+   "calories": 140,
+   "protein": 0,
+   "carbs": 39,
+   "fat": 0,
+   "category": "Beverages",
+   "serving_size": "12 fl oz",
+   "servings_per_container": "1",
+   "saturated_fat": 0,
+   "trans_fat": 0,
+   "polyunsaturated_fat": 0,
+   "monounsaturated_fat": 0,
+   "cholesterol": 0,
+   "sodium": 39,
+   "dietary_fiber": 0,
+   "total_sugars": 39,
+   "added_sugars": 39,
+   "vitamin_d": 0,
+   "calcium": 0,
+   "iron": 0,
+   "potassium": 0
+}
+[2026-03-10 09:24:00.600450] INFO (AiFoodSearch): Calling Groq for 'sugar'
+[2026-03-10 09:24:02.343930] RAW CONTENT (AiFoodSearch): {
+  "name":"C&H Granulated Sugar",
+   "calories":45,
+   "protein":0.0,
+   "carbs":11.9,
+   "fat":0.0,
+   "category":"Baking Supplies",
+   "serving_size":"1 tsp (4g)",
+   "servings_per_container":"Varies",
+   "saturated_fat":0.0,
+   "trans_fat":0.0,
+   "polyunsaturated_fat":0.0,
+   "monounsaturated_fat":0.0,
+   "cholesterol":0.0,
+   "sodium":0.5,
+   "dietary_fiber":0.0,
+   "total_sugars":11.9,
+   "added_sugars":11.9,
+   "vitamin_d":0.0,
+   "calcium":0.0,
+   "iron":0.05,
+   "potassium":0.1
+}
+[2026-03-10 09:24:14.604202] INFO (AiFoodSearch): Calling Groq for 'soa chunks'
+[2026-03-10 09:24:16.145885] RAW CONTENT (AiFoodSearch): {
+  "name": "SOA Chunks",
+   "calories": null,
+   "protein": null,
+   "carbs": null,
+   "fat": null,
+   "category": null,
+   "serving_size": null,
+   "servings_per_container": null,
+   "saturated_fat": null,
+   "trans_fat": null,
+   "polyunsaturated_fat": null,
+   "monounsaturated_fat": null,
+   "cholesterol": null,
+   "sodium": null,
+   "dietary_fiber": null,
+   "total_sugars": null,
+   "added_sugars": null,
+   "vitamin_d": null,
+   "calcium": null,
+   "iron": null,
+   "potassium": null
+}
+[2026-03-10 09:24:16.146954] EXCEPTION (AiFoodSearch): int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[2026-03-10 09:24:18.647209] INFO (AiFoodSearch): Calling Groq for 'soa chunks'
+[2026-03-10 09:24:20.053079] RAW CONTENT (AiFoodSearch): {
+  "name": "SOA Chunks",
+   "calories": 360,
+   "protein": 10.0,
+   "carbs": 48.0,
+   "fat": 20.0,
+   "category": "Snack",
+   "serving_size": "1 oz (28g)",
+   "servings_per_container": "8",
+   "saturated_fat": 3.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 8.0,
+   "monounsaturated_fat": 6.0,
+   "cholesterol": 0.0,
+   "sodium": 250.0,
+   "dietary_fiber": 2.0,
+   "total_sugars": 4.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 4.0,
+   "iron": 10.0,
+   "potassium": 450.0
+}
+[2026-03-10 10:06:38.942320] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 2}
+[2026-03-10 10:06:38.955999] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 1}
+[2026-03-10 10:06:39.009911] WATER SUCCESS: glasses=2
+[2026-03-10 10:06:39.068940] WATER EXCEPTION: Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+water.models.WaterIntake.DoesNotExist: WaterIntake matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AndroidStudioProjects\MyFitnessBuddy\backend\water\views.py", line 50, in post
+    record, created = WaterIntake.objects.update_or_create(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=request.user,
+        ^^^^^^^^^^^^^^^^^^
+        date=date_obj,
+        ^^^^^^^^^^^^^^
+        defaults={'glasses_count': glasses_count}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1029, in update_or_create
+    obj, created = self.select_for_update().get_or_create(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        create_defaults, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, insert_fields, returning_fields, raw
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1220, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1918, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 1925, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+[2026-03-10 10:06:39.077677] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 3}
+[2026-03-10 10:06:39.108675] WATER SUCCESS: glasses=3
+[2026-03-10 10:06:39.153166] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 4}
+[2026-03-10 10:06:39.163319] WATER SUCCESS: glasses=4
+[2026-03-10 10:06:39.263572] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 5}
+[2026-03-10 10:06:39.273266] WATER SUCCESS: glasses=5
+[2026-03-10 10:06:39.909030] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 6}
+[2026-03-10 10:06:39.920212] WATER SUCCESS: glasses=6
+[2026-03-10 10:06:42.610066] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 1}
+[2026-03-10 10:06:42.619788] WATER SUCCESS: glasses=1
+[2026-03-10 10:06:42.881661] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 2}
+[2026-03-10 10:06:42.892461] WATER SUCCESS: glasses=2
+[2026-03-10 10:06:43.056445] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 3}
+[2026-03-10 10:06:43.078768] WATER SUCCESS: glasses=3
+[2026-03-10 10:06:43.218140] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 5}
+[2026-03-10 10:06:43.223292] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 4}
+[2026-03-10 10:06:43.236470] WATER EXCEPTION: Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AndroidStudioProjects\MyFitnessBuddy\backend\water\views.py", line 50, in post
+    record, created = WaterIntake.objects.update_or_create(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=request.user,
+        ^^^^^^^^^^^^^^^^^^
+        date=date_obj,
+        ^^^^^^^^^^^^^^
+        defaults={'glasses_count': glasses_count}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1053, in update_or_create
+    obj.save(using=self.db, update_fields=update_fields)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1110, in _save_table
+    results = self._do_update(
+        base_qs,
+    ...<5 lines>...
+        returning_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1213, in _do_update
+    return filtered._update(values, returning_fields)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1327, in _update
+    return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2140, in execute_returning_sql
+    row_count = self.execute_sql(ROW_COUNT)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2111, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+[2026-03-10 10:06:43.240995] WATER SUCCESS: glasses=5
+[2026-03-10 10:07:08.412608] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 4}
+[2026-03-10 10:07:08.454721] WATER SUCCESS: glasses=4
+[2026-03-10 10:07:08.725326] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 5}
+[2026-03-10 10:07:08.747063] WATER SUCCESS: glasses=5
+[2026-03-10 10:18:34.748462] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 10:18:34.750193] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 10:18:34.755737] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-10 10:18:34.758849] WS CONNECTED: venky (Group: user_1)
+[2026-03-10 10:20:45.405494] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 10:20:45.408624] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 10:20:45.431355] WS AUTH SUCCESS: suresh (ID: 5)
+[2026-03-10 10:20:45.446722] WS CONNECTED: suresh (Group: user_5)
+[2026-03-10 10:34:49.505176] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 10:34:49.509499] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 10:34:49.518069] WS AUTH SUCCESS: suresh (ID: 5)
+[2026-03-10 10:34:49.522874] WS CONNECTED: suresh (Group: user_5)
+[2026-03-10 10:34:59.395980] WS DISCONNECTED: suresh (Code: 1006)
+[2026-03-10 12:47:13.810636] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 12:47:13.818293] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 12:47:13.967554] WS AUTH SUCCESS: suresh (ID: 5)
+[2026-03-10 12:47:14.002370] WS CONNECTED: suresh (Group: user_5)
+[2026-03-10 12:51:13.361384] WS DISCONNECTED: suresh (Code: 1006)
+[2026-03-10 13:53:06.004956] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 13:53:06.008969] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 13:53:06.017958] WS AUTH SUCCESS: suresh (ID: 5)
+[2026-03-10 13:53:06.021040] WS CONNECTED: suresh (Group: user_5)
+[2026-03-10 13:59:04.578509] WS DISCONNECTED: suresh (Code: 1006)
+[2026-03-10 14:21:22.809810] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 14:21:22.817197] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 14:21:22.825881] WS AUTH SUCCESS: suresh (ID: 5)
+[2026-03-10 14:21:22.829926] WS CONNECTED: suresh (Group: user_5)
+[2026-03-10 14:21:36.092247] WS DISCONNECTED: suresh (Code: 1006)
+[2026-03-10 14:40:08.306972] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 14:40:08.311452] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 14:40:08.324717] WS AUTH SUCCESS: suresh (ID: 5)
+[2026-03-10 14:40:08.334144] WS CONNECTED: suresh (Group: user_5)
+[2026-03-10 14:44:35.704126] WS DISCONNECTED: suresh (Code: 1006)
+[2026-03-10 14:47:19.213293] WATER REQUEST FROM suresh: {'date': '2026-03-10', 'glasses': 1}
+[2026-03-10 14:47:19.232080] WATER SUCCESS: glasses=1
+[2026-03-10 14:47:19.444013] WATER REQUEST FROM suresh: {'date': '2026-03-10', 'glasses': 2}
+[2026-03-10 14:47:19.470246] WATER SUCCESS: glasses=2
+[2026-03-10 14:47:19.523196] WATER REQUEST FROM suresh: {'date': '2026-03-10', 'glasses': 3}
+[2026-03-10 14:47:19.539266] WATER SUCCESS: glasses=3
+[2026-03-10 14:47:53.393203] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-10 14:47:53.400245] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-10 14:47:53.411417] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-10 14:47:53.418114] WS CONNECTED: venky (Group: user_1)
+[2026-03-10 14:48:43.761213] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 6}
+[2026-03-10 14:48:43.780464] WATER SUCCESS: glasses=6
+[2026-03-10 14:48:44.384984] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 5}
+[2026-03-10 14:48:44.405000] WATER SUCCESS: glasses=5
+[2026-03-10 14:48:44.510483] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 4}
+[2026-03-10 14:48:44.528037] WATER SUCCESS: glasses=4
+[2026-03-10 14:48:48.156854] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 3}
+[2026-03-10 14:48:48.175709] WATER SUCCESS: glasses=3
+[2026-03-10 14:48:49.849354] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 2}
+[2026-03-10 14:48:49.864726] WATER SUCCESS: glasses=2
+[2026-03-10 14:48:50.503940] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 1}
+[2026-03-10 14:48:50.506333] WATER REQUEST FROM venky: {'date': '2026-03-10', 'glasses': 0}
+[2026-03-10 14:48:50.529233] WATER SUCCESS: glasses=1
+[2026-03-10 14:48:50.565904] WATER EXCEPTION: Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AndroidStudioProjects\MyFitnessBuddy\backend\water\views.py", line 50, in post
+    record, created = WaterIntake.objects.update_or_create(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=request.user,
+        ^^^^^^^^^^^^^^^^^^
+        date=date_obj,
+        ^^^^^^^^^^^^^^
+        defaults={'glasses_count': glasses_count}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1053, in update_or_create
+    obj.save(using=self.db, update_fields=update_fields)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1110, in _save_table
+    results = self._do_update(
+        base_qs,
+    ...<5 lines>...
+        returning_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1213, in _do_update
+    return filtered._update(values, returning_fields)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1327, in _update
+    return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2140, in execute_returning_sql
+    row_count = self.execute_sql(ROW_COUNT)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2111, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+[2026-03-10 14:49:03.323952] INFO (AiFoodSearch): Calling Groq for 'buttermilk'
+[2026-03-10 14:49:07.290472] RAW CONTENT (AiFoodSearch): {
+  "name": "Buttermilk",
+   "calories": 99,
+   "protein": 8.0,
+   "carbs": 12.0,
+   "fat": 0.0,
+   "category": "Dairy",
+   "serving_size": "1 cup",
+   "servings_per_container": "1",
+   "saturated_fat": 0.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.0,
+   "monounsaturated_fat": 0.0,
+   "cholesterol": 20.0,
+   "sodium": 100.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 12.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 300.0,
+   "iron": 0.1,
+   "potassium": 450.0
+}
+[2026-03-10 14:50:10.963093] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-11 19:02:36.662413] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-11 19:02:36.672880] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-11 19:02:36.677825] WS AUTH ERROR: Token is expired
+[2026-03-11 19:02:36.687905] WS REJECTED: Anonymous User
+[2026-03-11 19:02:36.699171] WS DISCONNECTED:  (Code: 1006)
+[2026-03-11 19:03:33.669531] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-11 19:03:33.671871] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-11 19:03:33.673341] WS AUTH ERROR: Token is expired
+[2026-03-11 19:03:33.677859] WS REJECTED: Anonymous User
+[2026-03-11 19:03:33.683836] WS DISCONNECTED:  (Code: 1006)
+[2026-03-11 21:08:46.429312] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-11 21:08:46.437087] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-11 21:08:46.438343] WS AUTH ERROR: Token is expired
+[2026-03-11 21:08:46.448093] WS REJECTED: Anonymous User
+[2026-03-11 21:08:46.462522] WS DISCONNECTED:  (Code: 1006)
+[2026-03-11 21:22:13.662252] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-11 21:22:14.263227] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-11 21:22:14.280743] WS AUTH ERROR: Token is expired
+[2026-03-11 21:22:14.312117] WS REJECTED: Anonymous User
+[2026-03-11 21:22:14.336620] WS DISCONNECTED:  (Code: 1006)
+[2026-03-11 21:23:38.635653] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-11 21:23:38.638391] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-11 21:23:38.639977] WS AUTH ERROR: Token is expired
+[2026-03-11 21:23:38.642940] WS REJECTED: Anonymous User
+[2026-03-11 21:23:38.648726] WS DISCONNECTED:  (Code: 1006)
+[2026-03-11 21:24:09.676960] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-11 21:24:09.678933] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-11 21:24:09.694439] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-11 21:24:09.700440] WS CONNECTED: venky (Group: user_1)
+[2026-03-11 21:30:36.793920] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-11 21:30:44.352036] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-11 21:30:44.360254] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-11 21:30:44.400495] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-11 21:30:44.452449] WS CONNECTED: venky (Group: user_1)
+[2026-03-11 21:32:38.609382] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 08:36:09.318236] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 08:36:09.320649] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 08:36:09.327196] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 08:36:09.330784] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 08:36:29.142925] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 08:47:57.612307] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 08:47:57.620769] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 08:47:57.648261] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 08:47:57.653649] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 08:49:45.075749] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 08:56:44.842849] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 08:56:44.847376] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 08:56:44.853472] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 08:56:44.856390] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:02:11.508566] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:02:17.851119] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:02:17.852282] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:02:17.860518] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:02:17.863122] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:02:34.892205] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:02:39.968298] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:02:39.969501] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:02:39.975667] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:02:39.980078] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:10:10.507528] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:10:19.972856] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:10:19.975154] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:10:19.984857] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:10:19.987220] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:11:20.506949] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:11:26.468870] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:11:26.470203] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:11:26.477350] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:11:26.480339] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:16:25.667902] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:16:32.941632] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:16:32.950085] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:16:32.963003] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:16:32.981104] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:16:39.101400] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:16:46.077583] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:16:46.089303] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:16:46.125867] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:16:46.137696] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:17:05.404887] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:26:32.478091] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:26:32.486485] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:26:32.517396] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:26:32.550191] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:26:40.675099] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:27:07.577862] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:27:07.580521] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:27:07.588642] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:27:07.594766] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:27:48.648371] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:27:55.241596] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:27:55.242645] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:27:55.247018] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:27:55.251399] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:31:37.918981] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:45:45.369155] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:45:45.371148] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:45:45.380961] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:45:45.392070] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:46:33.486874] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 09:48:53.902176] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 09:48:53.903561] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 09:48:53.913289] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 09:48:53.918778] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 09:49:26.068001] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:04:29.471931] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:04:29.485042] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:04:29.574893] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:04:29.657537] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:07:16.930248] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:11:27.027134] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:11:27.030074] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:11:27.038787] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:11:27.042227] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:18:02.878989] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:18:20.002240] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:18:20.004193] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:18:20.020283] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:18:20.027097] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:24:35.115321] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:28:10.269423] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:28:10.271533] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:28:10.280257] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:28:10.284767] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:29:54.839700] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:32:25.669368] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:32:25.671395] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:32:25.685359] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:32:25.692717] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:33:35.098261] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:36:59.896927] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:36:59.898862] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:36:59.908738] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:36:59.912246] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:37:33.010845] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:37:39.665668] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:37:39.667412] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:37:39.677835] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:37:39.680879] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:38:23.613267] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:43:57.311458] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:43:57.314207] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:43:57.325754] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:43:57.329897] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:44:36.021499] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 10:47:08.438103] WATER REQUEST FROM venky: {'date': '2026-03-12', 'glasses': 1}
+[2026-03-12 10:47:08.465238] WATER SUCCESS: glasses=1
+[2026-03-12 10:47:08.657272] WATER REQUEST FROM venky: {'date': '2026-03-12', 'glasses': 2}
+[2026-03-12 10:47:08.674274] WATER SUCCESS: glasses=2
+[2026-03-12 10:47:08.781852] WATER REQUEST FROM venky: {'date': '2026-03-12', 'glasses': 3}
+[2026-03-12 10:47:08.797854] WATER SUCCESS: glasses=3
+[2026-03-12 10:47:09.233114] WATER REQUEST FROM venky: {'date': '2026-03-12', 'glasses': 4}
+[2026-03-12 10:47:09.249544] WATER SUCCESS: glasses=4
+[2026-03-12 10:47:09.910913] WATER REQUEST FROM venky: {'date': '2026-03-12', 'glasses': 5}
+[2026-03-12 10:47:09.926604] WATER SUCCESS: glasses=5
+[2026-03-12 10:47:10.053486] WATER REQUEST FROM venky: {'date': '2026-03-12', 'glasses': 6}
+[2026-03-12 10:47:10.069808] WATER SUCCESS: glasses=6
+[2026-03-12 10:47:10.304364] WATER REQUEST FROM venky: {'date': '2026-03-12', 'glasses': 7}
+[2026-03-12 10:47:10.323261] WATER SUCCESS: glasses=7
+[2026-03-12 10:47:42.757047] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 10:47:42.758799] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 10:47:42.768756] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 10:47:42.773397] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 10:48:18.184946] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 12:06:42.709152] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 12:06:42.754341] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 12:06:42.819347] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 12:06:42.852334] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 12:08:34.160359] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 12:14:51.172348] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 12:14:51.176560] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 12:14:51.202373] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 12:14:51.215548] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 12:15:01.024625] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 12:25:54.358179] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 12:25:54.363774] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 12:25:54.396738] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 12:25:54.409458] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 12:26:43.096900] INFO (AiFoodSearch): Calling Groq for 'curd'
+[2026-03-12 12:26:44.923223] RAW CONTENT (AiFoodSearch): {
+  "name": "Generic Curd",
+   "calories": 98,
+   "protein": 11.0,
+   "carbs": 5.0,
+   "fat": 4.0,
+   "category": "Dairy",
+   "serving_size": "1 cup",
+   "servings_per_container": "1",
+   "saturated_fat": 2.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.5,
+   "monounsaturated_fat": 1.0,
+   "cholesterol": 10.0,
+   "sodium": 50.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 5.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 200.0,
+   "iron": 0.0,
+   "potassium": 150.0
+}
+[2026-03-12 12:26:53.760384] INFO (AiFoodSearch): Calling Groq for 'chick'
+[2026-03-12 12:26:54.308982] INFO (AiFoodSearch): Calling Groq for 'chicken'
+[2026-03-12 12:26:55.591647] RAW CONTENT (AiFoodSearch): {
+  "name": "Tyson Chicken Thighs",
+   "calories": 260,
+   "protein": 26.0,
+   "carbs": 0.0,
+   "fat": 17.0,
+   "category": "Poultry",
+   "serving_size": "3 oz (85g)",
+   "servings_per_container": "4-6",
+   "saturated_fat": 4.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 2.5,
+   "monounsaturated_fat": 6.5,
+   "cholesterol": 80.0,
+   "sodium": 250.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 2.0,
+   "calcium": 10.0,
+   "iron": 1.5,
+   "potassium": 240.0
+}
+[2026-03-12 12:26:56.931017] RAW CONTENT (AiFoodSearch): {
+  "name": "Chicken, broiler or fryers, breast, meat only, cooked, roasted",
+   "calories": 165,
+   "protein": 31.0,
+   "carbs": 0.0,
+   "fat": 3.6,
+   "category": "Poultry",
+   "serving_size": "3 oz",
+   "servings_per_container": "varies",
+   "saturated_fat": 1.1,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.7,
+   "monounsaturated_fat": 1.2,
+   "cholesterol": 80.0,
+   "sodium": 63.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 10.0,
+   "iron": 1.3,
+   "potassium": 537.0
+}
+[2026-03-12 12:27:04.069299] INFO (AiFoodSearch): Calling Groq for 'chicken b'
+[2026-03-12 12:27:05.067474] INFO (AiFoodSearch): Calling Groq for 'chicken bre'
+[2026-03-12 12:27:05.598792] RAW CONTENT (AiFoodSearch): {
+  "name": "Chicken Breast",
+   "calories": 165,
+   "protein": 31.0,
+   "carbs": 0.0,
+   "fat": 3.6,
+   "category": "Poultry",
+   "serving_size": "3 oz (85g)",
+   "servings_per_container": "varies",
+   "saturated_fat": 1.1,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.7,
+   "monounsaturated_fat": 1.2,
+   "cholesterol": 80.0,
+   "sodium": 63.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 10.0,
+   "iron": 1.1,
+   "potassium": 285.0
+}
+[2026-03-12 12:27:06.945190] RAW CONTENT (AiFoodSearch): {
+  "name": "Chicken Breast",
+   "calories": 165,
+   "protein": 31.0,
+   "carbs": 0.0,
+   "fat": 3.6,
+   "category": "Meat/Poultry",
+   "serving_size": "3 oz",
+   "servings_per_container": "varies",
+   "saturated_fat": 1.1,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.7,
+   "monounsaturated_fat": 1.2,
+   "cholesterol": 80.0,
+   "sodium": 63.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 10.0,
+   "iron": 1.1,
+   "potassium": 357.0
+}
+[2026-03-12 12:30:10.219457] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 12:34:29.771444] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 12:34:29.776829] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 12:34:29.795544] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 12:34:29.802000] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 12:40:18.650903] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 12:40:18.660134] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 12:40:18.672199] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 12:40:18.684126] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 12:43:44.528528] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 12:55:53.936137] INFO: Calling Groq Vision API...
+[2026-03-12 12:55:57.179740] RAW CONTENT: There is no food item in the provided image. However, I can generate a response based on a hypothetical scenario. If you'd like, I can create a sample JSON object for a common food item.
+
+Here's a sample response:
+
+```json
+{
+  "name": "Apple",
+  "calories": 95,
+  "protein": 0.3,
+  "carbs": 25,
+  "fat": 0.5,
+  "category": "Fruit",
+  "meal_type": "Snacks",
+  "serving_size": "1 medium",
+  "servings_per_container": "1",
+  "saturated_fat": 0,
+  "trans_fat": 0,
+  "polyunsaturated_fat": 0.1,
+  "monounsaturated_fat": 0.1,
+  "cholesterol": 0,
+  "sodium": 0,
+  "dietary_fiber": 4,
+  "total_sugars": 19,
+  "added_sugars": 0,
+  "vitamin_d": 0,
+  "calcium": 6,
+  "iron": 0.3,
+  "potassium": 154
+}
+```
+[2026-03-12 12:55:57.182546] SUCCESS: {'name': 'Apple', 'calories': 95, 'protein': 0.3, 'carbs': 25, 'fat': 0.5, 'category': 'Fruit', 'meal_type': 'Snacks', 'serving_size': '1 medium', 'servings_per_container': '1', 'saturated_fat': 0, 'trans_fat': 0, 'polyunsaturated_fat': 0.1, 'monounsaturated_fat': 0.1, 'cholesterol': 0, 'sodium': 0, 'dietary_fiber': 4, 'total_sugars': 19, 'added_sugars': 0, 'vitamin_d': 0, 'calcium': 6, 'iron': 0.3, 'potassium': 154}
+[2026-03-12 12:56:53.900274] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 12:56:53.902106] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 12:56:53.910527] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 12:56:53.914758] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 12:57:44.329337] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:01:16.025069] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:01:16.029718] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:01:16.039069] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:01:16.044532] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:01:29.888769] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:01:35.619552] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:01:35.621479] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:01:35.633172] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:01:35.636976] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:02:58.253752] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:06:56.072214] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:06:56.078925] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:06:56.092976] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:06:56.099879] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:15:44.855009] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:15:51.886639] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:15:51.893507] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:15:51.915116] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:15:51.924277] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:19:03.533213] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:20:20.844855] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:20:20.855477] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:20:20.883635] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:20:20.891603] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:24:01.520899] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:25:07.007981] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:25:07.009712] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:25:07.017385] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:25:07.021436] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:29:07.881772] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:41:29.042186] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:41:29.045817] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:41:29.058865] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:41:29.064686] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:42:55.167806] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:46:23.660901] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:46:23.663246] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:46:23.675229] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:46:23.679318] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:49:38.107574] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 13:49:45.127405] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:49:45.129605] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:49:45.141955] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:49:45.148452] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 13:59:40.956016] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 13:59:40.963695] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 13:59:40.994669] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 13:59:41.026750] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 14:03:55.681166] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 14:04:02.481346] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 14:04:02.485575] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 14:04:02.530801] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 14:04:02.571424] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 14:05:52.174712] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 14:40:47.317018] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 14:40:47.325864] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 14:40:47.349105] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 14:40:47.363032] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 14:41:25.667737] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 16:32:51.301068] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 16:32:51.303709] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 16:32:51.312376] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 16:32:51.316041] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 16:36:51.446313] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 16:36:58.145534] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 16:36:58.149003] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 16:36:58.188504] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 16:36:58.294451] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 16:39:09.429831] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 16:39:09.434210] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 16:39:09.485434] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 16:39:09.512548] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 16:41:00.091591] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 16:44:26.840666] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 16:44:26.850961] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 16:44:26.864825] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 16:44:26.869351] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 16:45:58.095065] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 16:48:28.835610] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 16:48:28.838836] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 16:48:28.849712] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 16:48:28.854225] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 16:50:11.477442] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:04:34.059924] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:04:34.062275] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:04:34.068286] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:04:34.071324] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:05:01.177602] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:05:06.676943] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:05:06.678419] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:05:06.685767] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:05:06.689122] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:06:59.694978] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:07:04.977060] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:07:04.978891] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:07:04.989328] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:07:04.992699] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:12:29.095666] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:12:37.065798] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:12:37.071894] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:12:37.090134] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:12:37.099891] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:13:01.175670] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:15:18.339419] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:15:18.340987] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:15:18.346511] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:15:18.349609] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:16:30.328791] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:16:36.151848] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:16:36.156881] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:16:36.171831] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:16:36.384742] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:17:16.739538] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:23:55.255732] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:23:55.273690] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:23:55.315367] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:23:55.325349] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:24:17.617589] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:25:00.483611] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:25:00.491283] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:25:00.520992] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:25:00.942118] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:26:41.422009] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:39:01.048455] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:39:01.052852] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:39:01.072145] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:39:01.077561] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:39:32.571716] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-12 17:40:13.589990] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:40:13.591751] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:40:13.597483] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:40:13.600583] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:42:19.790284] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:46:25.501131] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:46:25.503172] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:46:25.509697] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:46:25.512965] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:46:54.795171] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 17:47:05.205168] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 17:47:05.208650] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 17:47:05.219652] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 17:47:05.230596] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 17:49:05.287975] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 18:40:24.063022] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 18:40:24.073714] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 18:40:24.085884] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 18:40:24.094601] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 18:40:36.701930] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-12 18:40:45.803253] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 18:40:45.804858] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 18:40:45.828264] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 18:40:45.841275] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 18:40:49.790740] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-12 18:41:18.481312] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 18:41:18.482948] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 18:41:18.511518] WS AUTH SUCCESS: suresh (ID: 5)
+[2026-03-12 18:41:18.515266] WS CONNECTED: suresh (Group: user_5)
+[2026-03-12 18:41:35.231082] WS DISCONNECTED: suresh (Code: 1000)
+[2026-03-12 18:41:51.959448] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 18:41:51.962776] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 18:41:51.972581] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 18:41:51.981122] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 18:42:29.914334] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-12 18:44:06.375280] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 18:44:06.377005] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 18:44:06.383634] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 18:44:06.387075] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 18:44:21.117277] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-12 18:44:29.593483] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 18:44:29.594813] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 18:44:29.602948] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 18:44:29.605901] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 18:58:11.800368] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 18:58:11.803261] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 18:58:11.816978] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 18:58:11.820740] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 18:58:34.112124] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 19:05:02.057967] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 19:05:02.062386] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 19:05:02.071680] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 19:05:02.079219] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 19:06:47.440358] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 19:21:15.132315] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 19:21:15.135906] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 19:21:15.142584] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 19:21:15.146073] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 19:22:28.903776] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 19:25:10.353921] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 19:25:10.355503] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 19:25:10.364097] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 19:25:10.369029] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 19:25:32.539429] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 19:31:09.189736] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 19:31:09.194423] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 19:31:09.201154] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 19:31:09.205378] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 19:33:43.619434] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 19:53:06.187303] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 19:53:06.193296] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 19:53:06.205626] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 19:53:06.215322] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 19:54:06.813678] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 20:27:49.047877] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 20:27:49.063604] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 20:27:49.074490] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 20:27:49.080250] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 20:29:03.799666] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 20:29:55.052927] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 20:29:55.054961] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 20:29:55.061219] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 20:29:55.064753] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 20:30:56.759659] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 20:31:42.099555] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 20:31:42.102060] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 20:31:42.108355] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 20:31:42.112791] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 20:32:12.367625] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-12 20:40:46.260968] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 20:40:46.267027] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 20:40:46.274446] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 20:40:46.280034] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 20:43:54.226711] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 20:51:35.672530] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 20:51:35.675302] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 20:51:35.681716] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 20:51:35.685310] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 20:52:09.311549] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-12 20:52:17.135485] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 20:52:17.136736] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 20:52:17.143091] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 20:52:17.146815] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 20:59:03.463145] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 20:59:08.930170] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 20:59:08.931775] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 20:59:08.938352] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 20:59:08.942207] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 21:01:50.881840] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 21:26:03.608587] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 21:26:03.613437] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 21:26:03.624864] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 21:26:03.632045] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 21:29:08.994555] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 21:29:15.885411] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 21:29:15.887545] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 21:29:15.893925] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 21:29:15.897382] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 21:30:15.875790] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-12 21:32:50.185104] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-12 21:32:50.190090] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-12 21:32:50.198730] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-12 21:32:50.203207] WS CONNECTED: venky (Group: user_1)
+[2026-03-12 21:33:30.528682] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 08:22:55.959438] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 08:22:55.963613] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 08:22:55.971558] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 08:22:55.974778] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 08:24:24.324542] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 08:24:29.539755] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 08:24:29.544595] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 08:24:29.568182] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 08:24:29.580571] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 08:26:28.320820] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 08:49:46.424410] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 08:49:46.429245] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 08:49:46.436543] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 08:49:46.440417] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 08:49:55.916542] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 08:50:06.800838] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 08:50:06.804730] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 08:50:06.814653] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 08:50:06.818685] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 08:50:33.809721] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 08:55:31.368841] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 08:55:31.370836] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 08:55:31.379189] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 08:55:31.382695] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 08:57:53.283191] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:18:56.932325] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:18:56.935892] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:18:56.945283] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:18:56.949272] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 09:19:22.730076] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:22:33.715418] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:22:33.721661] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:22:33.735293] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:22:33.746615] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 09:23:29.274264] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:34:51.718828] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:34:51.722103] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:34:51.731039] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:34:51.734373] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 09:36:15.466257] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:39:36.732083] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:39:36.736404] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:39:36.779080] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:39:36.783813] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 09:40:22.442078] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:45:58.835418] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:45:58.841474] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:45:58.852935] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:45:58.857252] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 09:49:53.032169] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:51:01.136317] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:51:01.138526] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:51:01.148280] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:51:01.152537] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 09:51:10.942295] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:57:48.799214] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:57:48.803798] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:57:48.810542] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:57:48.813794] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 09:58:15.026160] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 09:59:29.393774] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 09:59:29.403493] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 09:59:29.422753] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 09:59:29.426869] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 10:00:02.044636] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-13 10:00:14.305636] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 10:00:14.307958] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 10:00:14.315328] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 10:00:14.319120] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 10:03:09.261711] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 10:03:09.270398] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 10:03:09.279894] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 10:03:09.284122] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 10:03:26.756291] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 10:03:32.386685] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 10:03:32.390308] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 10:03:32.396545] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 10:03:32.399550] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 10:04:43.031644] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 10:07:02.111364] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 10:07:02.114673] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 10:07:02.133678] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 10:07:02.138400] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 10:07:17.089993] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-13 10:07:33.465364] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 10:07:33.468742] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 10:07:33.480513] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 10:07:33.483595] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 10:10:45.529125] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-13 10:10:50.268120] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-13 10:10:50.272159] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-13 10:10:50.298528] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-13 10:10:50.312508] WS CONNECTED: venky (Group: user_1)
+[2026-03-13 10:14:01.110974] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-16 22:27:17.104688] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 22:27:17.107193] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 22:27:17.112502] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 22:27:17.115183] WS CONNECTED: venky (Group: user_1)
+[2026-03-16 22:27:47.943259] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-16 22:42:29.781600] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 22:42:29.787234] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 22:42:29.806368] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 22:42:29.812990] WS CONNECTED: venky (Group: user_1)
+[2026-03-16 22:52:12.037493] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-16 23:16:01.146969] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:16:01.196439] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:16:01.245532] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 23:16:01.258529] WS CONNECTED: venky (Group: user_1)
+[2026-03-16 23:16:24.227985] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-16 23:16:27.529316] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:16:27.536386] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:16:27.560830] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 23:16:27.575017] WS CONNECTED: venky (Group: user_1)
+[2026-03-16 23:17:12.408281] INFO (AiFoodSearch): Calling Groq for 'idly'
+[2026-03-16 23:17:14.379707] RAW CONTENT (AiFoodSearch): {
+  "name": "Idly",
+   "calories": 96,
+   "protein": 2.12,
+   "carbs": 20.88,
+   "fat": 0.37,
+   "category": "Breakfast",
+   "serving_size": "2 pieces (80g)",
+   "servings_per_container": "Varies",
+   "saturated_fat": 0.08,
+   "trans_fat": 0,
+   "polyunsaturated_fat": 0.07,
+   "monounsaturated_fat": 0.08,
+   "cholesterol": 0,
+   "sodium": 1.5,
+   "dietary_fiber": 1.8,
+   "total_sugars": 0.38,
+   "added_sugars": 0,
+   "vitamin_d": 0,
+   "calcium": 25.6,
+   "iron": 1.25,
+   "potassium": 64.4
+}
+[2026-03-16 23:17:28.940165] INFO (AiFoodSearch): Calling Groq for 'meals'
+[2026-03-16 23:17:30.269319] RAW CONTENT (AiFoodSearch): {
+  "error": "No specific brand or product name provided for 'meals'. Please provide the exact brand name or product name to retrieve precise nutritional data."
+}
+[2026-03-16 23:17:47.483812] INFO (AiFoodSearch): Calling Groq for 'sambar'
+[2026-03-16 23:17:49.012979] RAW CONTENT (AiFoodSearch): {
+  "name": "Sambar",
+   "calories": 170,
+   "protein": 9.0,
+   "carbs": 30.0,
+   "fat": 7.0,
+   "category": "Soups and Stews",
+   "serving_size": "1 cup",
+   "servings_per_container": "4",
+   "saturated_fat": 1.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 2.0,
+   "monounsaturated_fat": 3.0,
+   "cholesterol": 10.0,
+   "sodium": 400.0,
+   "dietary_fiber": 5.0,
+   "total_sugars": 4.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 6.0,
+   "iron": 3.0,
+   "potassium": 800.0
+}
+[2026-03-16 23:18:22.195417] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 1}
+[2026-03-16 23:18:22.240743] WATER SUCCESS: glasses=1
+[2026-03-16 23:18:22.275804] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 2}
+[2026-03-16 23:18:22.290166] WATER SUCCESS: glasses=2
+[2026-03-16 23:18:22.434103] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 3}
+[2026-03-16 23:18:22.451129] WATER SUCCESS: glasses=3
+[2026-03-16 23:18:22.620361] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 4}
+[2026-03-16 23:18:22.639169] WATER SUCCESS: glasses=4
+[2026-03-16 23:18:22.786636] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 5}
+[2026-03-16 23:18:22.803316] WATER SUCCESS: glasses=5
+[2026-03-16 23:18:22.955945] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 6}
+[2026-03-16 23:18:22.974484] WATER SUCCESS: glasses=6
+[2026-03-16 23:18:23.119070] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 7}
+[2026-03-16 23:18:23.144032] WATER SUCCESS: glasses=7
+[2026-03-16 23:18:23.301022] WATER REQUEST FROM venky: {'date': '2026-03-16', 'glasses': 8}
+[2026-03-16 23:18:23.317284] WATER SUCCESS: glasses=8
+[2026-03-16 23:19:07.139231] WS DISCONNECTED: venky (Code: 1006)
+[2026-03-16 23:22:12.382505] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:22:12.384745] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:22:12.392741] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 23:22:12.396339] WS CONNECTED: venky (Group: user_1)
+[2026-03-16 23:22:30.131400] INFO (AiFoodSearch): Calling Groq for 'bon'
+[2026-03-16 23:22:31.041883] INFO (AiFoodSearch): Calling Groq for 'bonda'
+[2026-03-16 23:22:31.300548] RAW CONTENT (AiFoodSearch): {
+  "error": "Incomplete brand name"
+}
+[2026-03-16 23:22:32.716804] RAW CONTENT (AiFoodSearch): {
+  "name": "Bonda",
+   "calories": 250,
+   "protein": 3.5,
+   "carbs": 35.0,
+   "fat": 12.0,
+   "category": "Snack",
+   "serving_size": "1 piece (50g)",
+   "servings_per_container": "6-8 pieces",
+   "saturated_fat": 2.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 2.0,
+   "monounsaturated_fat": 6.0,
+   "cholesterol": 0.0,
+   "sodium": 400.0,
+   "dietary_fiber": 2.0,
+   "total_sugars": 2.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 2.0,
+   "iron": 1.0,
+   "potassium": 150.0
+}
+[2026-03-16 23:23:14.411670] WS DISCONNECTED: venky (Code: 1000)
+[2026-03-16 23:23:18.330019] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:23:18.331178] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:23:18.336493] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 23:23:18.339351] WS CONNECTED: venky (Group: user_1)
+[2026-03-16 23:38:49.816930] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:38:49.823824] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:38:49.846241] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 23:39:52.841699] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:39:52.843604] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:39:52.855179] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 23:46:42.166941] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:46:42.174685] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:46:42.340972] WS AUTH SUCCESS: MokshagnaTeja (ID: 3)
+[2026-03-16 23:48:22.380097] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:48:22.381917] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:48:22.388757] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-16 23:49:21.132214] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-16 23:49:21.134738] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-16 23:49:21.151035] WS AUTH SUCCESS: MokshagnaTeja (ID: 3)
+[2026-03-17 00:13:04.762658] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 00:13:04.769819] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 00:13:04.788320] WS AUTH SUCCESS: MokshagnaTeja (ID: 3)
+[2026-03-17 00:15:00.549019] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 00:15:00.550690] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 00:15:00.557546] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 00:28:55.614230] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 00:28:55.632769] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 00:28:55.665513] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 00:38:29.084277] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 00:38:29.090931] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 00:38:29.110968] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 00:47:30.827262] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 00:47:30.841193] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 00:47:30.884202] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 00:54:13.346160] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 00:54:13.379608] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 00:54:13.405567] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 01:20:35.984704] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 01:20:35.987623] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 01:20:35.997108] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 01:30:44.194713] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 01:30:44.197993] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 01:30:44.211025] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 01:39:17.186964] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 01:39:17.212991] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 01:39:17.270751] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 01:55:50.087518] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 01:55:50.090514] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 01:55:50.098585] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:00:22.669017] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:00:22.676844] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:00:22.695228] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:06:01.416804] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:06:01.420637] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:06:01.435296] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:10:14.855189] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:10:14.858424] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:10:14.868646] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:14:07.894134] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:14:07.896764] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:14:07.904379] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:44:33.287311] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:44:33.451215] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:44:33.674841] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:44:47.964433] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:44:47.970179] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:44:47.991370] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:51:18.444514] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:51:18.454512] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:51:18.478826] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:51:35.712212] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:51:35.716024] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:51:35.870291] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-17 02:53:02.711139] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-17 02:53:02.720179] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-17 02:53:02.742763] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 09:59:08.241665] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 09:59:08.246145] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 09:59:08.256301] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 10:13:44.445499] INFO (AiFoodSearch): Calling Groq for 'plainmilk'
+[2026-03-18 10:13:44.988341] INFO (AiFoodSearch): Calling Groq for 'plain milk'
+[2026-03-18 10:13:47.066939] RAW CONTENT (AiFoodSearch): {
+  "name": "Generic Plain Milk",
+   "calories": 170,
+   "protein": 8.0,
+   "carbs": 12.0,
+   "fat": 10.0,
+   "category": "Dairy",
+   "serving_size": "1 cup",
+   "servings_per_container": "Varies by container size",
+   "saturated_fat": 5.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.5,
+   "monounsaturated_fat": 2.5,
+   "cholesterol": 35.0,
+   "sodium": 120.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 12.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 2.5,
+   "calcium": 300.0,
+   "iron": 0.1,
+   "potassium": 366.0
+}
+[2026-03-18 10:13:47.383560] RAW CONTENT (AiFoodSearch): {
+  "name": "Generic Plain Milk",
+   "calories": 170,
+   "protein": 8.0,
+   "carbs": 12.0,
+   "fat": 10.0,
+   "category": "Dairy",
+   "serving_size": "1 cup",
+   "servings_per_container": "varies",
+   "saturated_fat": 5.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.5,
+   "monounsaturated_fat": 3.0,
+   "cholesterol": 35.0,
+   "sodium": 120.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 12.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 2.5,
+   "calcium": 300.0,
+   "iron": 0.0,
+   "potassium": 366.0
+}
+[2026-03-18 10:14:11.129842] WATER REQUEST FROM venky: {'date': '2026-03-18', 'glasses': 1}
+[2026-03-18 10:14:11.153991] WATER SUCCESS: glasses=1
+[2026-03-18 10:14:11.449825] WATER REQUEST FROM venky: {'date': '2026-03-18', 'glasses': 2}
+[2026-03-18 10:14:11.469755] WATER SUCCESS: glasses=2
+[2026-03-18 10:14:11.846395] WATER REQUEST FROM venky: {'date': '2026-03-18', 'glasses': 3}
+[2026-03-18 10:14:11.863199] WATER SUCCESS: glasses=3
+[2026-03-18 10:41:51.839806] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 10:41:51.844778] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 10:41:51.851497] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 10:48:14.632934] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 10:48:14.636801] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 10:48:14.651306] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 10:52:06.370230] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 10:52:06.372904] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 10:52:06.386433] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 10:56:10.153028] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 10:56:10.161212] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 10:56:10.176944] WS AUTH SUCCESS: MokshagnaTeja (ID: 3)
+[2026-03-18 10:57:33.944802] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 10:57:33.947728] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 10:57:33.956965] WS AUTH SUCCESS: MokshagnaTeja (ID: 3)
+[2026-03-18 13:09:39.170308] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 13:09:39.173137] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 13:09:39.182418] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 13:21:07.026157] WATER REQUEST FROM venky: {'date': '2026-03-18', 'glasses': 6}
+[2026-03-18 13:21:07.034464] WATER REQUEST FROM venky: {'date': '2026-03-18', 'glasses': 5}
+[2026-03-18 13:21:07.034969] WATER REQUEST FROM venky: {'date': '2026-03-18', 'glasses': 4}
+[2026-03-18 13:21:07.055427] WATER SUCCESS: glasses=6
+[2026-03-18 13:21:07.091519] WATER EXCEPTION: Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AndroidStudioProjects\MyFitnessBuddy\backend\water\views.py", line 50, in post
+    record, created = WaterIntake.objects.update_or_create(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=request.user,
+        ^^^^^^^^^^^^^^^^^^
+        date=date_obj,
+        ^^^^^^^^^^^^^^
+        defaults={'glasses_count': glasses_count}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1053, in update_or_create
+    obj.save(using=self.db, update_fields=update_fields)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1110, in _save_table
+    results = self._do_update(
+        base_qs,
+    ...<5 lines>...
+        returning_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1213, in _do_update
+    return filtered._update(values, returning_fields)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1327, in _update
+    return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2140, in execute_returning_sql
+    row_count = self.execute_sql(ROW_COUNT)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2111, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+[2026-03-18 13:21:07.092832] WATER EXCEPTION: Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AndroidStudioProjects\MyFitnessBuddy\backend\water\views.py", line 50, in post
+    record, created = WaterIntake.objects.update_or_create(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=request.user,
+        ^^^^^^^^^^^^^^^^^^
+        date=date_obj,
+        ^^^^^^^^^^^^^^
+        defaults={'glasses_count': glasses_count}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1053, in update_or_create
+    obj.save(using=self.db, update_fields=update_fields)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1110, in _save_table
+    results = self._do_update(
+        base_qs,
+    ...<5 lines>...
+        returning_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1213, in _do_update
+    return filtered._update(values, returning_fields)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1327, in _update
+    return query.get_compiler(self.db).execute_returning_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2140, in execute_returning_sql
+    row_count = self.execute_sql(ROW_COUNT)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 2111, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+[2026-03-18 13:39:56.450369] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 13:39:56.469150] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 13:39:56.584735] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 13:40:03.440425] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 13:40:03.442044] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 13:40:03.454786] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 14:19:50.925210] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 14:19:50.974360] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 14:19:50.985582] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 14:21:25.006098] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-18 14:21:25.051044] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-18 14:21:25.075653] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-18 14:38:30.238147] INFO (AiFoodSearch): Calling Groq for 'lemon'
+[2026-03-18 14:38:32.649968] RAW CONTENT (AiFoodSearch): {
+  "name": "Lemon",
+   "calories": 29,
+   "protein": 0.3,
+   "carbs": 9.3,
+   "fat": 0.2,
+   "category": "Fruit",
+   "serving_size": "1 medium (58g)",
+   "servings_per_container": "Varies",
+   "saturated_fat": 0.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.1,
+   "monounsaturated_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 1.0,
+   "dietary_fiber": 2.9,
+   "total_sugars": 2.3,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 26.0,
+   "iron": 0.6,
+   "potassium": 136.0
+}
+[2026-03-19 09:00:21.676176] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-19 09:00:21.684625] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-19 09:00:21.718845] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-19 09:47:24.414357] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-19 09:47:24.424824] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-19 09:47:24.430702] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-19 09:50:02.369494] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-19 09:50:02.371360] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-19 09:50:02.378050] WS AUTH SUCCESS: malli (ID: 9)
+[2026-03-19 10:19:43.646574] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-19 10:19:43.649314] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-19 10:19:43.655860] WS AUTH SUCCESS: malli (ID: 9)
+[2026-03-19 14:46:23.398788] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-19 14:46:23.403474] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-19 14:46:23.415307] WS AUTH SUCCESS: malli (ID: 9)
+[2026-03-19 14:48:09.643109] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-19 14:48:09.644813] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-19 14:48:09.650131] WS AUTH SUCCESS: malli (ID: 9)
+[2026-03-19 14:50:07.964377] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-19 14:50:07.966265] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-19 14:50:07.972574] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 15:12:26.204038] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 15:12:26.216303] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 15:12:26.231898] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 15:17:38.607450] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 15:17:38.608714] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 15:17:38.614718] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 15:19:36.312384] INFO: Calling Groq Vision API...
+[2026-03-24 15:19:37.648015] ERROR: Groq API 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 15:21:57.388005] INFO (AiFoodSearch): Calling Groq for 'coco cola'
+[2026-03-24 15:21:58.375200] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 15:22:01.540350] INFO (AiFoodSearch): Calling Groq for 'coco cola'
+[2026-03-24 15:22:02.484162] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 16:14:38.874117] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:14:38.878329] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:14:38.889747] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 16:16:32.854044] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:16:32.856783] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:16:32.866814] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 16:17:34.947099] INFO (AiFoodSearch): Calling Groq for 'chicken bi'
+[2026-03-24 16:17:35.593858] INFO (AiFoodSearch): Calling Groq for 'chicken bir'
+[2026-03-24 16:17:35.949379] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 16:17:36.678500] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 16:17:36.890658] INFO (AiFoodSearch): Calling Groq for 'chicken biryani'
+[2026-03-24 16:17:38.886856] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 16:17:52.931316] INFO (AiFoodSearch): Calling Groq for 'cocc'
+[2026-03-24 16:17:53.595361] INFO (AiFoodSearch): Calling Groq for 'coccm'
+[2026-03-24 16:17:54.779446] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 16:17:55.743524] INFO (AiFoodSearch): Calling Groq for 'coce'
+[2026-03-24 16:17:55.970417] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 16:17:57.740195] ERROR (AiFoodSearch): 401 - {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+[2026-03-24 16:18:02.468630] WATER REQUEST FROM venky: {'date': '2026-03-24', 'glasses': 1}
+[2026-03-24 16:18:02.496467] WATER SUCCESS: glasses=1
+[2026-03-24 16:18:02.659473] WATER REQUEST FROM venky: {'date': '2026-03-24', 'glasses': 2}
+[2026-03-24 16:18:02.676156] WATER SUCCESS: glasses=2
+[2026-03-24 16:18:02.829021] WATER REQUEST FROM venky: {'date': '2026-03-24', 'glasses': 3}
+[2026-03-24 16:18:02.845927] WATER SUCCESS: glasses=3
+[2026-03-24 16:18:03.000112] WATER REQUEST FROM venky: {'date': '2026-03-24', 'glasses': 4}
+[2026-03-24 16:18:03.016565] WATER SUCCESS: glasses=4
+[2026-03-24 16:22:27.589082] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:22:27.591969] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:22:27.598925] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 16:23:59.542604] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:23:59.545492] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:23:59.554711] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 16:24:30.634353] INFO: Calling Groq Vision API...
+[2026-03-24 16:24:32.459895] RAW CONTENT: ```json
+{
+    "name": "Apple",
+    "calories": 52,
+    "protein": 0.3,
+    "carbs": 13.8,
+    "fat": 0.2,
+    "category": "Fruits",
+    "meal_type": "Snacks",
+    "serving_size": "1 medium",
+    "servings_per_container": "",
+    "saturated_fat": 0.0,
+    "trans_fat": 0.0,
+    "polyunsaturated_fat": 0.1,
+    "monounsaturated_fat": 0.0,
+    "cholesterol": 0.0,
+    "sodium": 0.0,
+    "dietary_fiber": 4.5,
+    "total_sugars": 9.5,
+    "added_sugars": 0.0,
+    "vitamin_d": 0.0,
+    "calcium": 6.0,
+    "iron": 0.2,
+    "potassium": 154.0
+}
+```
+[2026-03-24 16:24:32.461392] SUCCESS: {'name': 'Apple', 'calories': 52, 'protein': 0.3, 'carbs': 13.8, 'fat': 0.2, 'category': 'Fruits', 'meal_type': 'Snacks', 'serving_size': '1 medium', 'servings_per_container': '', 'saturated_fat': 0.0, 'trans_fat': 0.0, 'polyunsaturated_fat': 0.1, 'monounsaturated_fat': 0.0, 'cholesterol': 0.0, 'sodium': 0.0, 'dietary_fiber': 4.5, 'total_sugars': 9.5, 'added_sugars': 0.0, 'vitamin_d': 0.0, 'calcium': 6.0, 'iron': 0.2, 'potassium': 154.0}
+[2026-03-24 16:31:10.500418] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:31:10.512584] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:31:10.523581] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 16:40:42.680507] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:40:42.684928] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:40:42.705585] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 16:52:10.574054] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:52:10.584814] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:52:10.603535] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 16:57:12.051368] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 16:57:12.054766] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 16:57:12.064002] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-24 17:18:31.890372] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-24 17:18:31.894213] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-24 17:18:31.913330] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 09:46:20.978395] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 09:46:20.980999] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 09:46:20.988413] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 10:04:00.083329] WATER REQUEST FROM venky: {'date': '2026-03-25', 'glasses': 1}
+[2026-03-25 10:04:00.101179] WATER SUCCESS: glasses=1
+[2026-03-25 10:04:00.533943] WATER REQUEST FROM venky: {'date': '2026-03-25', 'glasses': 2}
+[2026-03-25 10:04:00.547053] WATER SUCCESS: glasses=2
+[2026-03-25 10:04:01.356514] WATER REQUEST FROM venky: {'date': '2026-03-25', 'glasses': 3}
+[2026-03-25 10:04:01.373295] WATER SUCCESS: glasses=3
+[2026-03-25 10:07:02.944621] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 10:07:02.955862] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 10:07:02.969395] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 10:23:20.398187] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 10:23:20.408769] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 10:23:20.420670] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 12:18:12.652245] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 12:18:12.654648] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 12:18:12.660989] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 12:22:44.260517] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 12:22:44.293048] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 12:22:44.722460] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 12:27:39.122999] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 12:27:39.125737] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 12:27:39.134213] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 13:13:44.503185] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 13:13:44.506371] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 13:13:44.517408] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 13:39:49.766866] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 13:39:49.775239] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 13:39:49.784361] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 14:48:38.681083] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 14:48:38.689380] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 14:48:38.714363] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 14:59:56.981621] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 14:59:57.005798] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 14:59:57.118580] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 15:05:30.130217] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 15:05:30.138191] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 15:05:30.159098] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 16:11:38.077880] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 16:11:38.106040] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 16:11:38.135266] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 16:14:35.882987] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 16:14:35.894773] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 16:14:35.909211] WS AUTH SUCCESS: swagath (ID: 11)
+[2026-03-25 16:16:29.099094] INFO: Calling Groq Vision API...
+[2026-03-25 16:16:30.346721] ERROR: Groq API 400 - {"error":{"message":"The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[2026-03-25 16:17:15.133969] INFO: Calling Groq Vision API...
+[2026-03-25 16:17:18.494085] ERROR: Groq API 400 - {"error":{"message":"The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[2026-03-25 16:18:11.039597] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 16:18:11.043283] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 16:18:11.077130] WS AUTH SUCCESS: swagath (ID: 11)
+[2026-03-25 16:18:18.477189] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 16:18:18.478700] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 16:18:18.492019] WS AUTH SUCCESS: swagath (ID: 11)
+[2026-03-25 16:18:36.952367] INFO: Calling Groq Vision API...
+[2026-03-25 16:18:38.230146] ERROR: Groq API 400 - {"error":{"message":"The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[2026-03-25 16:20:08.750524] INFO (AiFoodSearch): Calling Groq for 'zeeea'
+[2026-03-25 16:20:10.347727] RAW CONTENT (AiFoodSearch): {
+  "error": "No nutritional data available for 'zeeea'. Please provide a valid product name or brand."
+}
+[2026-03-25 16:20:11.561941] INFO (AiFoodSearch): Calling Groq for 'zee'
+[2026-03-25 16:20:12.541164] INFO (AiFoodSearch): Calling Groq for 'zeera'
+[2026-03-25 16:20:13.741374] RAW CONTENT (AiFoodSearch): {
+  "error": "Insufficient Product Information"
+}
+[2026-03-25 16:20:19.927000] RAW CONTENT (AiFoodSearch): {
+  "name": "MDH Zeera",
+   "calories": 349,
+   "protein": 18.1,
+   "carbs": 44.8,
+   "fat": 18.3,
+   "category": "Spices",
+   "serving_size": "100g",
+   "servings_per_container": "varies",
+   "saturated_fat": 1.3,
+   "trans_fat": 0,
+   "polyunsaturated_fat": 1.2,
+   "monounsaturated_fat": 13.3,
+   "cholesterol": 0,
+   "sodium": 15,
+   "dietary_fiber": 11.8,
+   "total_sugars": 2.9,
+   "added_sugars": 0,
+   "vitamin_d": 0,
+   "calcium": 518,
+   "iron": 38.7,
+   "potassium": 1049
+}
+[2026-03-25 16:20:21.145114] INFO (AiFoodSearch): Calling Groq for 'jeera'
+[2026-03-25 16:20:23.816309] INFO (AiFoodSearch): Calling Groq for 'jee'
+[2026-03-25 16:20:32.340832] INFO (AiFoodSearch): Calling Groq for 'dal'
+[2026-03-25 16:20:32.497135] RAW CONTENT (AiFoodSearch): {
+  "name": "Jeera",
+   "calories": 334,
+   "protein": 18,
+   "carbs": 44,
+   "fat": 18,
+   "category": "Spices",
+   "serving_size": "100g",
+   "servings_per_container": "varies",
+   "saturated_fat": 1.4,
+   "trans_fat": 0,
+   "polyunsaturated_fat": 3.3,
+   "monounsaturated_fat": 11.1,
+   "cholesterol": 0,
+   "sodium": 16,
+   "dietary_fiber": 11.5,
+   "total_sugars": 2.6,
+   "added_sugars": 0,
+   "vitamin_d": 0,
+   "calcium": 464,
+   "iron": 38.8,
+   "potassium": 1055
+}
+[2026-03-25 16:20:36.640791] RAW CONTENT (AiFoodSearch): {
+  "error": "Brand name 'jee' not found in database. Please provide a complete and accurate brand name."
+}
+[2026-03-25 16:20:46.981595] RAW CONTENT (AiFoodSearch): {
+  "name": "Dal",
+   "calories": 230,
+   "protein": 18.0,
+   "carbs": 40.0,
+   "fat": 0.5,
+   "category": "Legume",
+   "serving_size": "1 cup cooked",
+   "servings_per_container": "varies",
+   "saturated_fat": 0.1,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.2,
+   "monounsaturated_fat": 0.1,
+   "cholesterol": 0.0,
+   "sodium": 2.0,
+   "dietary_fiber": 15.0,
+   "total_sugars": 1.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 40.0,
+   "iron": 5.0,
+   "potassium": 1150.0
+}
+[2026-03-25 16:21:43.529375] WATER REQUEST FROM swagath: {'date': '2026-03-25', 'glasses': 1}
+[2026-03-25 16:21:43.574989] WATER REQUEST FROM swagath: {'date': '2026-03-25', 'glasses': 3}
+[2026-03-25 16:21:43.720142] WATER REQUEST FROM swagath: {'date': '2026-03-25', 'glasses': 2}
+[2026-03-25 16:21:43.771854] WATER SUCCESS: glasses=1
+[2026-03-25 16:21:43.947392] WATER EXCEPTION: Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+water.models.WaterIntake.DoesNotExist: WaterIntake matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AndroidStudioProjects\MyFitnessBuddy\backend\water\views.py", line 50, in post
+    record, created = WaterIntake.objects.update_or_create(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=request.user,
+        ^^^^^^^^^^^^^^^^^^
+        date=date_obj,
+        ^^^^^^^^^^^^^^
+        defaults={'glasses_count': glasses_count}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1029, in update_or_create
+    obj, created = self.select_for_update().get_or_create(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        create_defaults, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, insert_fields, returning_fields, raw
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1220, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1918, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 1925, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+[2026-03-25 16:21:43.951344] WATER EXCEPTION: Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 987, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 639, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+water.models.WaterIntake.DoesNotExist: WaterIntake matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venka\AndroidStudioProjects\MyFitnessBuddy\backend\water\views.py", line 50, in post
+    record, created = WaterIntake.objects.update_or_create(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user=request.user,
+        ^^^^^^^^^^^^^^^^^^
+        date=date_obj,
+        ^^^^^^^^^^^^^^
+        defaults={'glasses_count': glasses_count}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1029, in update_or_create
+    obj, created = self.select_for_update().get_or_create(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        create_defaults, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 994, in get_or_create
+    return self.create(**params), True
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 669, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 874, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 966, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, insert_fields, returning_fields, raw
+    )
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\base.py", line 1220, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\query.py", line 1918, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\models\sql\compiler.py", line 1925, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\venka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+[2026-03-25 16:30:12.027771] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 16:30:12.037466] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 16:30:12.048756] WS AUTH SUCCESS: swagath (ID: 11)
+[2026-03-25 16:30:38.678879] INFO: Calling Groq Vision API...
+[2026-03-25 16:30:40.209714] ERROR: Groq API 400 - {"error":{"message":"The model `llama-3.2-90b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[2026-03-25 16:37:27.762913] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 16:37:27.773316] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 16:37:27.837289] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 16:40:59.842660] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 16:40:59.846526] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 16:40:59.854778] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 16:41:22.088133] INFO: Calling Groq Vision API...
+[2026-03-25 16:41:23.147603] ERROR: Groq API 400 - {"error":{"message":"The model `llama-3.2-90b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[2026-03-25 16:42:51.857498] INFO: Calling Groq Vision API...
+[2026-03-25 16:42:52.961047] ERROR: Groq API 400 - {"error":{"message":"The model `llama-3.2-90b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+[2026-03-25 17:02:02.996195] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:02:03.010453] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:02:03.026489] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:02:20.822320] INFO: Calling Groq Vision API...
+[2026-03-25 17:02:23.582031] RAW CONTENT: Based on the provided image, I can see that the main food item is a banana. Here is the JSON object with the requested information:
+
+```json
+{
+  "name": "Banana",
+  "calories": 105,
+  "protein": 1.3,
+  "carbs": 27.0,
+  "fat": 0.3,
+  "category": "Fruit",
+  "meal_type": "Snacks",
+  "serving_size": "1 medium",
+  "servings_per_container": "4-5",
+  "saturated_fat": 0.1,
+  "trans_fat": 0.0,
+  "polyunsaturated_fat": 0.1,
+  "monounsaturated_fat": 0.1,
+  "cholesterol": 0.0,
+  "sodium": 1.0,
+  "dietary_fiber": 3.1,
+  "total_sugars": 14.4,
+  "added_sugars": 0.0,
+  "vitamin_d": 0.0,
+  "calcium": 5.0,
+  "iron": 0.3,
+  "potassium": 422.0
+}
+```
+
+Please note that the exact values may vary depending on the ripeness, size, and variety of the banana. The provided values are approximate and based on data for a medium-sized banana.
+[2026-03-25 17:02:23.583510] SUCCESS: {'name': 'Banana', 'calories': 105, 'protein': 1.3, 'carbs': 27.0, 'fat': 0.3, 'category': 'Fruit', 'meal_type': 'Snacks', 'serving_size': '1 medium', 'servings_per_container': '4-5', 'saturated_fat': 0.1, 'trans_fat': 0.0, 'polyunsaturated_fat': 0.1, 'monounsaturated_fat': 0.1, 'cholesterol': 0.0, 'sodium': 1.0, 'dietary_fiber': 3.1, 'total_sugars': 14.4, 'added_sugars': 0.0, 'vitamin_d': 0.0, 'calcium': 5.0, 'iron': 0.3, 'potassium': 422.0}
+[2026-03-25 17:02:58.638450] INFO: Calling Groq Vision API...
+[2026-03-25 17:03:01.162154] RAW CONTENT: Here is the JSON object with the nutritional information for a pineapple:
+
+```
+{
+  "name": "Pineapple",
+  "calories": 82,
+  "protein": 1.0,
+  "carbs": 21.6,
+  "fat": 0.2,
+  "category": "Fruit",
+  "meal_type": "Snacks",
+  "serving_size": "1 medium",
+  "servings_per_container": "",
+  "saturated_fat": 0.0,
+  "trans_fat": 0.0,
+  "polyunsaturated_fat": 0.1,
+  "monounsaturated_fat": 0.1,
+  "cholesterol": 0.0,
+  "sodium": 1.0,
+  "dietary_fiber": 2.3,
+  "total_sugars": 16.2,
+  "added_sugars": 0.0,
+  "vitamin_d": 0.0,
+  "calcium": 20.0,
+  "iron": 0.2,
+  "potassium": 133.0
+}
+```
+[2026-03-25 17:03:01.163567] SUCCESS: {'name': 'Pineapple', 'calories': 82, 'protein': 1.0, 'carbs': 21.6, 'fat': 0.2, 'category': 'Fruit', 'meal_type': 'Snacks', 'serving_size': '1 medium', 'servings_per_container': '', 'saturated_fat': 0.0, 'trans_fat': 0.0, 'polyunsaturated_fat': 0.1, 'monounsaturated_fat': 0.1, 'cholesterol': 0.0, 'sodium': 1.0, 'dietary_fiber': 2.3, 'total_sugars': 16.2, 'added_sugars': 0.0, 'vitamin_d': 0.0, 'calcium': 20.0, 'iron': 0.2, 'potassium': 133.0}
+[2026-03-25 17:03:29.942368] INFO (AiFoodSearch): Calling Groq for 'oreo biscuit'
+[2026-03-25 17:03:31.888680] RAW CONTENT (AiFoodSearch): {
+  "name": "Nabisco Oreo Original",
+   "calories": 160,
+   "protein": 2.0,
+   "carbs": 25.0,
+   "fat": 7.0,
+   "category": "Cookies",
+   "serving_size": "3 cookies (28g)",
+   "servings_per_container": "30",
+   "saturated_fat": 2.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.5,
+   "monounsaturated_fat": 2.5,
+   "cholesterol": 0.0,
+   "sodium": 250.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 14.0,
+   "added_sugars": 14.0,
+   "vitamin_d": 0.0,
+   "calcium": 2.0,
+   "iron": 2.0,
+   "potassium": 40.0
+}
+[2026-03-25 17:04:44.693040] INFO (AiFoodSearch): Calling Groq for 'curd rice'
+[2026-03-25 17:04:55.228438] RAW CONTENT (AiFoodSearch): {
+  "name": "Curd Rice",
+   "calories": 276,
+   "protein": 8.1,
+   "carbs": 43.4,
+   "fat": 10.2,
+   "category": "Prepared meal",
+   "serving_size": "1 cup",
+   "servings_per_container": "1",
+   "saturated_fat": 5.7,
+   "trans_fat": 0,
+   "polyunsaturated_fat": 1.3,
+   "monounsaturated_fat": 2.6,
+   "cholesterol": 10.3,
+   "sodium": 351.4,
+   "dietary_fiber": 2.4,
+   "total_sugars": 3.4,
+   "added_sugars": 0,
+   "vitamin_d": 0,
+   "calcium": 176.2,
+   "iron": 2.1,
+   "potassium": 442.8
+}
+[2026-03-25 17:05:01.847751] INFO (AiFoodSearch): Calling Groq for 'manfi'
+[2026-03-25 17:05:06.195549] INFO (AiFoodSearch): Calling Groq for 'mandi'
+[2026-03-25 17:05:19.659076] EXCEPTION (AiFoodSearch): HTTPSConnectionPool(host='api.groq.com', port=443): Max retries exceeded with url: /openai/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[2026-03-25 17:05:23.310528] EXCEPTION (AiFoodSearch): HTTPSConnectionPool(host='api.groq.com', port=443): Max retries exceeded with url: /openai/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[2026-03-25 17:13:44.633950] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:13:44.644034] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:13:44.666808] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:20:02.742191] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:20:02.746030] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:20:02.776102] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:25:10.485457] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:25:10.487895] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:25:10.506939] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:28:05.613268] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:28:05.634180] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:28:05.674495] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:31:59.923024] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:31:59.928184] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:31:59.941062] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:38:16.319976] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:38:16.325858] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:38:16.334706] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:44:32.517314] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:44:32.521275] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:44:32.529364] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:45:54.847242] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:45:54.850263] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:45:54.862304] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 17:46:10.291240] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 17:46:10.323899] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 17:46:10.398226] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:00:13.820432] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:00:13.826281] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:00:13.839673] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:00:26.639016] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:00:26.640834] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:00:26.648087] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:06:00.899514] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:06:00.909907] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:06:00.926432] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:11:17.673069] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:11:17.674584] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:11:17.691951] WS AUTH SUCCESS: swagath (ID: 11)
+[2026-03-25 18:30:41.167021] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:30:41.178536] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:30:41.191604] WS AUTH SUCCESS: swagath (ID: 11)
+[2026-03-25 18:31:25.920889] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:31:25.924302] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:31:25.931338] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:42:04.788529] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:42:04.790555] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:42:04.797167] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:46:22.844504] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:46:22.846215] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:46:22.852451] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:50:29.098300] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:50:29.100397] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:50:29.106453] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:51:44.124835] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:51:44.126242] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:51:44.131790] WS AUTH SUCCESS: swagath (ID: 11)
+[2026-03-25 18:54:47.941914] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:54:47.943408] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:54:47.948985] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 18:59:47.311475] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 18:59:47.313056] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 18:59:47.321690] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 19:01:01.469347] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 19:01:01.470713] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 19:01:01.476370] WS AUTH SUCCESS: MokshagnaTeja (ID: 3)
+[2026-03-25 19:04:57.343976] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 19:04:57.346516] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 19:04:57.352878] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 22:46:38.941688] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 22:46:38.948065] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 22:46:38.957710] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 23:03:38.217531] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 23:03:38.222610] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 23:03:38.229684] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 23:29:23.142769] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 23:29:23.145438] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 23:29:23.159196] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 23:35:27.914600] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 23:35:27.925328] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 23:35:27.932451] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-25 23:50:36.905906] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-25 23:50:36.908413] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-25 23:50:36.917696] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 08:21:27.069859] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 08:21:27.073713] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 08:21:27.165536] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 08:31:39.394557] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 08:31:39.401172] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 08:31:39.413822] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 08:33:32.575050] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 08:33:32.578120] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 08:33:32.585986] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 08:36:38.297301] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 08:36:38.300537] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 08:36:38.320184] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 08:37:25.194684] WATER REQUEST FROM venky: {'date': '2026-03-26', 'glasses': 1}
+[2026-03-26 08:37:25.208530] WATER SUCCESS: glasses=1
+[2026-03-26 08:37:25.257823] WATER REQUEST FROM venky: {'date': '2026-03-26', 'glasses': 2}
+[2026-03-26 08:37:25.269935] WATER SUCCESS: glasses=2
+[2026-03-26 08:42:45.283287] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 08:42:45.286861] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 08:42:45.303541] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 08:52:03.834799] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 08:52:03.851318] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 08:52:03.883953] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 09:12:54.163862] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 09:12:54.169092] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 09:12:54.177502] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 09:59:23.272501] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 09:59:23.283326] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 09:59:23.294458] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:04:55.523810] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:04:55.532112] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:04:55.547153] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:11:50.809501] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:11:50.811938] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:11:50.818816] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:13:11.226301] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:13:11.229344] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:13:11.235850] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:18:15.634453] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:18:15.637090] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:18:15.644162] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:23:44.032111] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:23:44.036760] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:23:44.050789] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:30:48.482153] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:30:48.517675] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:30:48.672469] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:31:36.074344] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:31:36.085576] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:31:36.124448] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:42:32.810282] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 10:42:32.818372] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 10:42:32.858697] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 10:47:27.693411] INFO (AiFoodSearch): Calling Groq for 'vir'
+[2026-03-26 10:47:29.977245] RAW CONTENT (AiFoodSearch): {
+  "error": "Brand name incomplete or not found, please provide the full brand name for accurate nutritional data"
+}
+[2026-03-26 10:47:30.379616] INFO (AiFoodSearch): Calling Groq for 'viryani'
+[2026-03-26 10:47:32.165941] RAW CONTENT (AiFoodSearch): {
+  "name": "Viryani",
+   "calories": 0,
+   "protein": 0.0,
+   "carbs": 0.0,
+   "fat": 0.0,
+   "category": "Unknown",
+   "serving_size": "Unknown",
+   "servings_per_container": "Unknown",
+   "saturated_fat": 0.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.0,
+   "monounsaturated_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 0.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 0.0,
+   "iron": 0.0,
+   "potassium": 0.0
+}
+[2026-03-26 10:47:41.686649] INFO (AiFoodSearch): Calling Groq for 'chicken biryani'
+[2026-03-26 10:47:43.785645] RAW CONTENT (AiFoodSearch): {
+  "name": "Tasty Bite Chicken Biriyani",
+   "calories": 380,
+   "protein": 14.0,
+   "carbs": 49.0,
+   "fat": 16.0,
+   "category": "Prepared Meal",
+   "serving_size": "1 package (283g)",
+   "servings_per_container": "1",
+   "saturated_fat": 2.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.0,
+   "monounsaturated_fat": 0.0,
+   "cholesterol": 30.0,
+   "sodium": 620.0,
+   "dietary_fiber": 2.0,
+   "total_sugars": 2.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 2.0,
+   "iron": 2.0,
+   "potassium": 450.0
+}
+[2026-03-26 12:16:20.137406] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 12:16:20.141731] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 12:16:20.152115] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 12:25:41.201117] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 12:25:41.204139] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 12:25:41.211840] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 12:26:57.513248] INFO (AiFoodSearch): Calling Groq for 'kfc'
+[2026-03-26 12:27:00.203177] RAW CONTENT (AiFoodSearch): [
+{
+  "name": "KFC Original Recipe Chicken Breast",
+   "calories": 320,
+   "protein": 30.0,
+   "carbs": 10.0,
+   "fat": 14.0,
+   "category": "Meat",
+   "serving_size": "1 piece, 113g",
+   "servings_per_container": "Varies",
+   "saturated_fat": 3.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 4.0,
+   "monounsaturated_fat": 5.0,
+   "cholesterol": 80.0,
+   "sodium": 1040.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 20.0,
+   "iron": 2.0,
+   "potassium": 560.0
+},
+{
+   "name": "KFC Extra Crispy Chicken Breast",
+   "calories": 360,
+   "protein": 26.0,
+   "carbs": 14.0,
+   "fat": 20.0,
+   "category": "Meat",
+   "serving_size": "1 piece, 129g",
+   "servings_per_container": "Varies",
+   "saturated_fat": 4.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 6.0,
+   "monounsaturated_fat": 7.0,
+   "cholesterol": 60.0,
+   "sodium": 940.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 15.0,
+   "iron": 2.0,
+   "potassium": 440.0
+},
+{
+   "name": "KFC Potato Wedges",
+   "calories": 160,
+   "protein": 2.0,
+   "carbs": 19.0,
+   "fat": 9.0,
+   "category": "Side",
+   "serving_size": "1 serving, 80g",
+   "servings_per_container": "Varies",
+   "saturated_fat": 1.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 2.5,
+   "monounsaturated_fat": 4.0,
+   "cholesterol": 0.0,
+   "sodium": 350.0,
+   "dietary_fiber": 2.0,
+   "total_sugars": 1.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 10.0,
+   "iron": 1.0,
+   "potassium": 460.0
+}
+]
+[2026-03-26 12:27:00.204553] EXCEPTION (AiFoodSearch): 'list' object has no attribute 'get'
+[2026-03-26 12:27:08.408981] INFO (AiFoodSearch): Calling Groq for 'fried'
+[2026-03-26 12:27:10.400421] INFO (AiFoodSearch): Calling Groq for 'fried'
+[2026-03-26 12:27:11.254754] INFO (AiFoodSearch): Calling Groq for 'fried c'
+[2026-03-26 12:27:11.481063] RAW CONTENT (AiFoodSearch): {
+  "name": "Popeyes Fried Chicken",
+   "calories": 340,
+   "protein": 24.0,
+   "carbs": 12.0,
+   "fat": 24.0,
+   "category": "Meat",
+   "serving_size": "3 pieces (114g)",
+   "servings_per_container": "4",
+   "saturated_fat": 3.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 8.0,
+   "monounsaturated_fat": 9.0,
+   "cholesterol": 60.0,
+   "sodium": 1040.0,
+   "dietary_fiber": 1.0,
+   "total_sugars": 1.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 2.0,
+   "calcium": 10.0,
+   "iron": 6.0,
+   "potassium": 420.0
+}
+[2026-03-26 12:27:12.085871] RAW CONTENT (AiFoodSearch): {
+  "error": "Not a specific product"
+}
+[2026-03-26 12:27:12.926455] RAW CONTENT (AiFoodSearch): {
+  "name": "Chicken Fried Chicken",
+   "calories": 320,
+   "protein": 26.0,
+   "carbs": 11.0,
+   "fat": 20.0,
+   "category": "Meat",
+   "serving_size": "3 oz",
+   "servings_per_container": "4",
+   "saturated_fat": 3.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 4.0,
+   "monounsaturated_fat": 6.0,
+   "cholesterol": 60.0,
+   "sodium": 450.0,
+   "dietary_fiber": 0.0,
+   "total_sugars": 0.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 2.0,
+   "calcium": 2.0,
+   "iron": 2.0,
+   "potassium": 440.0
+}
+[2026-03-26 12:28:53.877391] INFO (AiFoodSearch): Calling Groq for 'sww'
+[2026-03-26 12:28:53.960051] INFO (AiFoodSearch): Calling Groq for 'swwn'
+[2026-03-26 12:28:56.000098] RAW CONTENT (AiFoodSearch): {
+  "error": "Insufficient Information"
+}
+[2026-03-26 12:28:56.104956] RAW CONTENT (AiFoodSearch): {
+  "error": "Brand name 'swwn' not found in database. Please provide the full name of the product or the correct brand name for accurate nutritional data."
+}
+[2026-03-26 12:28:56.535751] INFO (AiFoodSearch): Calling Groq for 'swwt'
+[2026-03-26 12:28:56.581297] INFO (AiFoodSearch): Calling Groq for 'sww'
+[2026-03-26 12:28:57.165231] INFO (AiFoodSearch): Calling Groq for 'sweet'
+[2026-03-26 12:28:58.220621] INFO (AiFoodSearch): Calling Groq for 'sweet'
+[2026-03-26 12:28:58.400126] RAW CONTENT (AiFoodSearch): {
+  "error": "Insufficient product information"
+}
+[2026-03-26 12:28:58.437089] RAW CONTENT (AiFoodSearch): {
+  "error": "Unable to verify the product 'swwt' as it does not match any known food product in the USDA/FDC database or official manufacturer labels."
+}
+[2026-03-26 12:28:59.104657] RAW CONTENT (AiFoodSearch): {
+  "error": "No specific brand mentioned"
+}
+[2026-03-26 12:28:59.811400] RAW CONTENT (AiFoodSearch): {
+  "error": "No specific brand mentioned for 'sweet'. Please provide the brand name."
+}
+[2026-03-26 12:29:00.965578] INFO (AiFoodSearch): Calling Groq for 'sweet potato'
+[2026-03-26 12:29:01.636111] INFO (AiFoodSearch): Calling Groq for 'sweet potato'
+[2026-03-26 12:29:02.865306] RAW CONTENT (AiFoodSearch): {
+  "name":"Sweet Potato",
+   "calories":105,
+   "protein":2.0,
+   "carbs":24.0,
+   "fat":0.0,
+   "category":"Vegetables",
+   "serving_size":"100g",
+   "servings_per_container":"Varies",
+   "saturated_fat":0.0,
+   "trans_fat":0.0,
+   "polyunsaturated_fat":0.0,
+   "monounsaturated_fat":0.0,
+   "cholesterol":0.0,
+   "sodium":55.0,
+   "dietary_fiber":3.0,
+   "total_sugars":6.5,
+   "added_sugars":0.0,
+   "vitamin_d":0.0,
+   "calcium":30.0,
+   "iron":0.6,
+   "potassium":542.0
+}
+[2026-03-26 12:29:03.662590] RAW CONTENT (AiFoodSearch): {
+  "name": "Sweet Potato",
+   "calories": 105,
+   "protein": 2.0,
+   "carbs": 24.0,
+   "fat": 0.0,
+   "category": "Vegetables",
+   "serving_size": "1 medium (100g)",
+   "servings_per_container": "1",
+   "saturated_fat": 0.0,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 0.0,
+   "monounsaturated_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 55.0,
+   "dietary_fiber": 4.0,
+   "total_sugars": 6.0,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 30.0,
+   "iron": 0.6,
+   "potassium": 542.0
+}
+[2026-03-26 12:29:26.450243] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 12:29:26.462193] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 12:29:26.476514] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 12:36:22.815296] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 12:36:22.837545] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 12:36:22.903981] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 20:45:10.836841] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 20:45:10.845525] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 20:45:10.889673] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 20:51:34.815196] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 20:51:34.833637] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 20:51:35.091939] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 20:56:15.039675] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 20:56:15.042326] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 20:56:15.055759] WS AUTH SUCCESS: deekshi (ID: 13)
+[2026-03-26 21:04:36.402357] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:04:36.413824] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:04:36.429869] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:04:57.333418] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:04:57.347015] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:04:57.363627] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:10:08.473667] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:10:08.522895] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:10:08.557688] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:18:53.687964] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:18:53.699261] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:18:53.715325] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:19:15.944327] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:19:15.950548] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:19:15.970840] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:22:20.956343] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:22:20.960105] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:22:20.974839] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:28:54.544684] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:28:54.551301] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:28:54.577929] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:32:45.706400] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:32:45.709912] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:32:45.735516] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 21:59:14.920019] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 21:59:14.924656] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 21:59:14.936328] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:05:09.796974] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:05:09.808307] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:05:09.831363] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:10:45.704373] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:10:45.709815] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:10:45.736141] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:15:37.841648] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:15:37.844228] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:15:37.861312] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:18:57.923390] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:18:57.928366] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:18:57.959073] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:19:25.896773] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:19:25.904871] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:19:25.926456] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:24:24.375525] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:24:24.379499] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:24:24.863906] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:29:02.226304] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:29:02.230044] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:29:02.245561] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:29:38.358336] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:29:38.363424] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:29:38.450190] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:34:13.734555] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:34:13.740569] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:34:13.759397] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:39:32.513702] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:39:32.515375] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:39:32.536422] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:43:32.616290] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:43:32.622179] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:43:32.637549] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:44:01.448942] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:44:01.455580] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:44:01.477851] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:46:10.009897] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:46:10.015614] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:46:10.041579] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:46:31.647515] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:46:31.657151] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:46:31.674356] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 22:48:51.226834] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 22:48:51.232685] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 22:48:51.241272] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 23:15:51.522578] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 23:15:51.551463] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 23:15:51.579014] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 23:19:44.130919] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 23:19:44.149629] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 23:19:44.198282] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 23:22:38.835752] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 23:22:38.839560] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 23:22:38.860575] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-26 23:29:48.651887] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-26 23:29:48.672715] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-26 23:29:48.698109] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 08:32:05.328527] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 08:32:05.342193] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 08:32:05.368135] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 08:41:32.431842] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 08:41:32.441633] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 08:41:32.475523] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 08:46:36.509547] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 08:46:36.512716] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 08:46:36.520966] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 08:53:55.150437] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 08:53:55.152688] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 08:53:55.160416] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:00:49.581901] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:00:49.589142] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:00:49.620034] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:05:40.208899] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:05:40.215211] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:05:40.332989] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:06:05.792164] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:06:05.796536] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:06:05.813327] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:11:10.073710] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:11:10.080313] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:11:10.097081] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:14:36.985646] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:14:36.988418] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:14:37.000384] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:21:33.700876] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:21:33.725602] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:21:33.887889] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:24:10.746394] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:24:10.753667] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:24:10.768143] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:28:18.336440] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:28:18.345541] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:28:18.363860] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:32:46.411217] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:32:46.413152] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:32:46.419525] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:33:34.000076] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:33:34.006720] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:33:34.022872] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:38:59.118607] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:38:59.124272] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:38:59.136354] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 09:41:22.207235] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 09:41:22.209820] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 09:41:22.218944] WS AUTH SUCCESS: vengal (ID: 20)
+[2026-03-27 10:01:40.394790] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:01:40.397137] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:01:40.404971] WS AUTH SUCCESS: venu (ID: 21)
+[2026-03-27 10:07:23.243919] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:07:23.246082] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:07:23.252720] WS AUTH SUCCESS: venu (ID: 21)
+[2026-03-27 10:08:36.425329] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:08:36.427387] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:08:36.443092] WS AUTH SUCCESS: Nikhila (ID: 22)
+[2026-03-27 10:11:15.486921] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:11:15.500011] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:11:15.515826] WS AUTH SUCCESS: Nikhila (ID: 22)
+[2026-03-27 10:12:08.002989] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:12:08.004918] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:12:08.034303] WS AUTH SUCCESS: raghu (ID: 23)
+[2026-03-27 10:13:21.017143] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:13:21.019537] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:13:21.031346] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 10:14:16.548066] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:14:16.553874] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:14:16.566367] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 10:14:42.136703] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:14:42.138966] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:14:42.146827] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 10:18:17.377336] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:18:17.379944] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:18:17.427027] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 10:19:17.330668] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:19:17.332522] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:19:17.339831] WS AUTH SUCCESS: vamsi4 (ID: 24)
+[2026-03-27 10:19:38.879156] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:19:38.881384] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:19:38.892516] WS AUTH SUCCESS: vamsi4 (ID: 24)
+[2026-03-27 10:19:58.973681] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:19:58.975403] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:19:58.981793] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 10:21:23.475737] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:21:23.477810] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:21:23.485630] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 10:22:47.516792] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:22:47.521516] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:22:47.528496] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 10:26:11.697352] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 10:26:11.700066] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 10:26:11.716647] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 11:00:50.597545] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 11:00:50.601661] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 11:00:50.615705] WS AUTH SUCCESS: venky (ID: 1)
+[2026-03-27 11:02:54.329402] WS MIDDLEWARE CALLED | Token found: True
+[2026-03-27 11:02:54.333765] WS AUTH ATTEMPT with token: eyJhbGciOi...
+[2026-03-27 11:02:54.341742] WS AUTH SUCCESS: hari (ID: 25)
+[2026-03-27 11:05:45.217278] INFO (AiFoodSearch): Calling Groq for 'dosa'
+[2026-03-27 11:05:46.936857] RAW CONTENT (AiFoodSearch): {
+  "name": "Generic Dosa",
+   "calories": 168,
+   "protein": 3.9,
+   "carbs": 30.0,
+   "fat": 3.5,
+   "category": "Indian Dish",
+   "serving_size": "1 large dosa",
+   "servings_per_container": "1",
+   "saturated_fat": 0.5,
+   "trans_fat": 0.0,
+   "polyunsaturated_fat": 1.2,
+   "monounsaturated_fat": 1.2,
+   "cholesterol": 2.3,
+   "sodium": 10.0,
+   "dietary_fiber": 2.5,
+   "total_sugars": 1.3,
+   "added_sugars": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 20.0,
+   "iron": 2.5,
+   "potassium": 140.0
+}
+[2026-03-27 11:10:04.046529] INFO: Calling Groq Vision API...
+[2026-03-27 11:10:06.139173] RAW CONTENT: ```json
+{
+    "name": "Banana",
+    "calories": 105,
+    "protein": 1.3,
+    "carbs": 27.0,
+    "fat": 0.3,
+    "category": "Fruit",
+    "meal_type": "Snacks",
+    "serving_size": "1 medium",
+    "servings_per_container": "",
+    "saturated_fat": 0.1,
+    "trans_fat": 0.0,
+    "polyunsaturated_fat": 0.1,
+    "monounsaturated_fat": 0.1,
+    "cholesterol": 0.0,
+    "sodium": 1.0,
+    "dietary_fiber": 3.1,
+    "total_sugars": 14.4,
+    "added_sugars": 0.0,
+    "vitamin_d": 0.0,
+    "calcium": 5.0,
+    "iron": 0.3,
+    "potassium": 422.0
+}
+```
+[2026-03-27 11:10:06.140329] SUCCESS: {'name': 'Banana', 'calories': 105, 'protein': 1.3, 'carbs': 27.0, 'fat': 0.3, 'category': 'Fruit', 'meal_type': 'Snacks', 'serving_size': '1 medium', 'servings_per_container': '', 'saturated_fat': 0.1, 'trans_fat': 0.0, 'polyunsaturated_fat': 0.1, 'monounsaturated_fat': 0.1, 'cholesterol': 0.0, 'sodium': 1.0, 'dietary_fiber': 3.1, 'total_sugars': 14.4, 'added_sugars': 0.0, 'vitamin_d': 0.0, 'calcium': 5.0, 'iron': 0.3, 'potassium': 422.0}

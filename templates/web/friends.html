@@ -1,0 +1,283 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Friends - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="row mb-4 align-items-center">
+    <div class="col-md-8">
+        <h1 class="h2 font-weight-bold">Community & Friends</h1>
+        <p class="text-muted">Connect, compete, and conquer your fitness goals together.</p>
+    </div>
+    <div class="col-md-4 text-md-end">
+        <button class="btn btn-primary rounded-pill px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#addFriendModal">
+            <i class="fas fa-user-plus me-2"></i> Add Friend
+        </button>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Left Column: Leaderboard & Friends -->
+    <div class="col-lg-8">
+        
+        <!-- Leaderboard -->
+        <div class="card border-0 shadow-sm mb-4" style="max-height: 500px">
+            <div class="card-header bg-white border-0 pt-4 pb-2">
+                <h5 class="font-weight-bold mb-0 text-primary"><i class="fas fa-trophy me-2 text-warning"></i> Daily Leaderboard</h5>
+            </div>
+            <div class="card-body p-0 scroll-styled" style="overflow-y: auto;">
+                {% if leaderboard_stats %}
+                    <div class="list-group list-group-flush">
+                    {% for stat in leaderboard_stats %}
+                        <div class="list-group-item d-flex align-items-center p-3 border-0 border-bottom {% if stat.user == request.user %}bg-primary bg-opacity-10{% endif %}">
+                            <h4 class="mb-0 text-muted me-3" style="width: 25px;">#{{ forloop.counter }}</h4>
+                            <img src="{% if stat.user.profile.profile_photo %}{{ stat.user.profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ stat.user.username }}&background=E0E7FF&color=4F46E5{% endif %}" alt="Avatar" class="rounded-circle me-3" width="48" height="48" style="object-fit:cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="font-weight-bold mb-0">{{ stat.user.username }} {% if stat.user == request.user %}<span class="badge bg-primary ms-1">You</span>{% endif %}</h6>
+                                <small class="text-muted">{{ stat.workouts_completed }} Workouts</small>
+                            </div>
+                            <div class="text-end">
+                                <h5 class="font-weight-bold text-success mb-0">{{ stat.calories_burned }} <small class="text-muted" style="font-size:0.65em;">kcal</small></h5>
+                                <span class="small font-weight-bold text-dark">{{ stat.steps }} steps</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="text-center py-5">
+                        <p class="text-muted">No activity found yet today.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- NEW: Compare Stats -->
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white border-0 pt-4 pb-0">
+                <h5 class="font-weight-bold mb-0"><i class="fas fa-chart-line me-2 text-info"></i> Compare Stats (Last 7 Days)</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-4 h-100">
+                            <h6 class="font-weight-bold small text-muted text-uppercase mb-3">Your Steps vs Best Friend</h6>
+                            <div class="d-flex align-items-end gap-2 mb-2">
+                                <div class="bg-primary rounded-top" style="height: 100px; width: 30px;" title="You"></div>
+                                <div class="bg-info rounded-top" style="height: 120px; width: 30px;" title="Friend"></div>
+                            </div>
+                            <p class="mb-0 small font-weight-bold">
+                                {{ my_weekly_stats.total_steps|default:0 }} / 
+                                {% if friend_weekly_ranking.0 %}
+                                    {{ friend_weekly_ranking.0.total_steps }}
+                                {% else %}
+                                    0
+                                {% endif %} steps
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded-4 h-100">
+                            <h6 class="font-weight-bold small text-muted text-uppercase mb-3">Calories Comparison</h6>
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="small">You</span>
+                                <span class="font-weight-bold text-success">{{ my_weekly_stats.total_calories|default:0 }} kcal</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%"></div>
+                            </div>
+                            {% if friend_weekly_ranking.0 %}
+                            <div class="d-flex align-items-center justify-content-between mt-3 mb-2">
+                                <span class="small">{{ friend_weekly_ranking.0.user__username }}</span>
+                                <span class="font-weight-bold text-dark">{{ friend_weekly_ranking.0.total_calories }} kcal</span>
+                            </div>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 90%"></div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Right Column: Requests & Challenges & Groups -->
+    <div class="col-lg-4">
+        
+        <!-- Pending Friend Requests -->
+        {% if incoming_requests %}
+        <div class="card border-0 shadow-sm mb-4 bg-light">
+            <div class="card-header bg-transparent border-0 pt-3 pb-0">
+                <h6 class="font-weight-bold mb-0 text-danger"><i class="fas fa-bell me-2"></i> Pending Requests ({{ incoming_requests.count }})</h6>
+            </div>
+            <div class="card-body p-2">
+                {% for req in incoming_requests %}
+                <div class="bg-white p-3 rounded-4 shadow-sm mb-2 d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="font-weight-bold d-block">{{ req.sender.username }}</span>
+                    </div>
+                    <div>
+                        <form method="POST" action="{% url 'friends' %}" class="d-inline">
+                            {% csrf_token %}
+                            <input type="hidden" name="action" value="accept_request">
+                            <input type="hidden" name="request_id" value="{{ req.id }}">
+                            <button type="submit" class="btn btn-success btn-sm rounded-circle"><i class="fas fa-check"></i></button>
+                        </form>
+                        <form method="POST" action="{% url 'friends' %}" class="d-inline">
+                            {% csrf_token %}
+                            <input type="hidden" name="action" value="reject_request">
+                            <input type="hidden" name="request_id" value="{{ req.id }}">
+                            <button type="submit" class="btn btn-outline-danger btn-sm rounded-circle ms-1"><i class="fas fa-times"></i></button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Groups -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header bg-white border-0 pt-4 pb-2">
+                <h6 class="font-weight-bold mb-0"><i class="fas fa-users me-2 text-primary"></i> My Groups</h6>
+            </div>
+            <div class="card-body pt-0">
+                {% if groups %}
+                    <div class="d-flex flex-column gap-2">
+                    {% for member in groups %}
+                        <a href="{% url 'group_detail' member.group.id %}" class="text-decoration-none text-dark">
+                            <div class="p-3 border rounded-4 bg-light cursor-pointer hover-scale transition-all">
+                                <h6 class="font-weight-bold mb-1">{{ member.group.name }}</h6>
+                                <small class="text-muted d-block">{{ member.group.goal|default:"No active goal" }}</small>
+                                <span class="badge bg-primary bg-opacity-10 text-primary mt-2">{{ member.get_role_display }}</span>
+                            </div>
+                        </a>
+                    {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="text-center py-4">
+                        <i class="fas fa-users fa-2x text-muted opacity-50 mb-3"></i>
+                        <p class="text-muted small mb-0">You haven't joined any groups.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Friend Suggestions -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header bg-white border-0 pt-4 pb-2">
+                <h6 class="font-weight-bold mb-0"><i class="fas fa-magic me-2 text-success"></i> Suggestions</h6>
+            </div>
+            <div class="card-body p-2">
+                {% if suggestions %}
+                    {% for suggestion in suggestions %}
+                    <div class="bg-white p-3 rounded-4 shadow-sm mb-2 d-flex align-items-center justify-content-between border">
+                        <div class="d-flex align-items-center">
+                            <img src="{% if suggestion.profile.profile_photo %}{{ suggestion.profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ suggestion.username }}&background=random{% endif %}" alt="Avatar" class="rounded-circle me-3" width="40" height="40" style="object-fit:cover;">
+                            <div>
+                                <span class="font-weight-bold d-block">{{ suggestion.username }}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <form method="POST" action="{% url 'friends' %}" class="d-inline">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="send_request">
+                                <input type="hidden" name="username" value="{{ suggestion.username }}">
+                                <button type="submit" class="btn btn-outline-primary btn-sm rounded-circle" title="Add Friend"><i class="fas fa-user-plus"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="text-center py-4">
+                        <p class="text-muted small mb-0">No new suggestions.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Active Challenges -->
+        <div class="card border-0 shadow-sm border-top border-4 border-warning">
+            <div class="card-header bg-white border-0 pt-4 pb-2">
+                <h6 class="font-weight-bold mb-0"><i class="fas fa-fire me-2 text-warning"></i> Active Challenges</h6>
+            </div>
+            <div class="card-body pt-0">
+                {% if active_challenges %}
+                    {% for cp in active_challenges %}
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="font-weight-bold small">{{ cp.challenge.name }}</span>
+                            <span class="small font-weight-bold text-success">{{ cp.current_value }} / {{ cp.challenge.target_value }}</span>
+                        </div>
+                        <div class="progress" style="height: 6px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted" style="font-size: 0.7em;">Group: {{ cp.challenge.group.name }}</small>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="text-center py-4">
+                        <p class="text-muted small mb-0">No active challenges right now. Rest up!</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Friend Modal -->
+<div class="modal fade {% if search_query %}show{% endif %}" id="addFriendModal" tabindex="-1" aria-hidden="true" {% if search_query %}style="display: block;"{% endif %}>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 20px; border: none; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title font-weight-bold">Find Friends</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted small mb-4">Discover users in the community and start your journey together.</p>
+                
+                <form method="GET" action="{% url 'friends' %}" class="mb-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0" id="search-addon"><i class="fas fa-search text-muted"></i></span>
+                        <input type="text" name="search_query" class="form-control bg-light border-0 ps-0" placeholder="Search by username..." value="{{ search_query }}">
+                        <button type="submit" class="btn btn-primary px-3">Search</button>
+                    </div>
+                </form>
+
+                {% if search_query %}
+                    <h6 class="font-weight-bold small text-muted text-uppercase mb-3">Found Researchers ({{ search_results|length }})</h6>
+                    <div class="list-group list-group-flush mb-4 scroll-styled" style="max-height: 300px; overflow-y: auto;">
+                        {% for user in search_results %}
+                        <div class="list-group-item px-0 py-3 border-0 border-bottom d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <img src="{% if user.profile.profile_photo %}{{ user.profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ user.username }}&background=random{% endif %}" class="rounded-circle me-3" width="40" height="40">
+                                <div>
+                                    <span class="font-weight-bold d-block">{{ user.username }}</span>
+                                    <small class="text-muted">User ID: #{{ user.id }}</small>
+                                </div>
+                            </div>
+                            <form method="POST" action="{% url 'friends' %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="send_request">
+                                <input type="hidden" name="username" value="{{ user.username }}">
+                                <button type="submit" class="btn btn-sm btn-outline-primary rounded-pill px-3">Add</button>
+                            </form>
+                        </div>
+                        {% empty %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-user-slash text-muted mb-2"></i>
+                            <p class="small text-muted mb-0">No users found for "{{ search_query }}"</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                
+                <div class="alert alert-light border-0 small py-3 mb-0 rounded-4">
+                    <i class="fas fa-info-circle text-primary me-2"></i> 
+                    Ask your friend for their exact username. Search is case-insensitive.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

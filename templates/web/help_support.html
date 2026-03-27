@@ -1,0 +1,212 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Help & Support - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+        <div class="d-flex align-items-center mb-4">
+            <a href="{% url 'profile' %}" class="btn btn-link text-decoration-none p-0 me-3">
+                <i class="fas fa-arrow-left text-primary fs-4"></i>
+            </a>
+            <div>
+                <h3 class="font-weight-bold mb-0">Help & Support</h3>
+                <small class="text-muted">We're here to help you</small>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="card p-3 mb-4 border-0 shadow-sm rounded-4">
+            <h6 class="font-weight-bold text-dark mb-4 ms-2 mt-2">Contact Us</h6>
+            <div class="list-group list-group-flush border-0">
+                <a href="#" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="fas fa-file-alt text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Getting Started Guide</h6>
+                            <small class="text-muted" style="font-size: 11px;">Learn how the app works</small>
+                        </div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-muted small"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="fas fa-comments text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">FAQs</h6>
+                            <small class="text-muted" style="font-size: 11px;">Frequently asked questions</small>
+                        </div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-muted small"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="fas fa-comment-dots text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Live Chat</h6>
+                            <small class="text-muted" style="font-size: 11px;">Chat with our support team</small>
+                        </div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-muted small"></i>
+                </a>
+                <a href="mailto:support@myfitnessbuddy.com" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="fas fa-envelope text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Email Support</h6>
+                            <small class="text-muted" style="font-size: 11px;">support@myfitnessbuddy.com</small>
+                        </div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-muted small"></i>
+                </a>
+                <a href="tel:+917674992476" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 p-2 me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="fas fa-phone-alt text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 font-weight-bold">Call Us</h6>
+                            <small class="text-muted" style="font-size: 11px;">+91-7674992476</small>
+                        </div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-muted small"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <div class="card p-4 mb-4 border-0 shadow-sm rounded-4">
+            <h6 class="font-weight-bold text-dark mb-4">Frequently Asked Questions</h6>
+            
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="accordion-item border-bottom mb-2">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed px-0 shadow-none bg-transparent font-weight-bold text-dark" style="font-size: 14px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            How do I track my steps?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body px-0 text-muted small">
+                            You can connect Google Fit or Apple Health in your account settings, or log steps manually.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item border-bottom mb-2">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed px-0 shadow-none bg-transparent font-weight-bold text-dark" style="font-size: 14px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            How do I track my meals?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body px-0 text-muted small">
+                            Go to the Food Diary page to search algorithms and log your daily meals.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-bottom mb-2">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed px-0 shadow-none bg-transparent font-weight-bold text-dark" style="font-size: 14px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            How do I earn XP?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body px-0 text-muted small">
+                            Earn XP by logging workouts, hitting calorie targets, and maintaining a streak.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-bottom mb-2">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed px-0 shadow-none bg-transparent font-weight-bold text-dark" style="font-size: 14px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            How do I add friends?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body px-0 text-muted small">
+                            Go to the Community page and use the Friend Request features to add users.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-bottom mb-2">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed px-0 shadow-none bg-transparent font-weight-bold text-dark" style="font-size: 14px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                            What is the AI Coach?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body px-0 text-muted small">
+                            The AI Coach provides personalized nutrition insights and workout advice automatically.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border-bottom mb-2">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed px-0 shadow-none bg-transparent font-weight-bold text-dark" style="font-size: 14px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                            Can I sync with other devices?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body px-0 text-muted small">
+                            Yes, you can enable syncing in the Data Sharing section of Privacy Settings.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-2 border-0">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed px-0 shadow-none bg-transparent font-weight-bold text-dark" style="font-size: 14px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                            Is my data private?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body px-0 text-muted small">
+                            We take privacy seriously. Check out the Privacy & Security tab to manage sharing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- App Information -->
+        <h6 class="font-weight-bold text-muted mb-3 ps-2 mt-4">App Information</h6>
+        <div class="card p-4 mb-4 border-0 shadow-sm rounded-4">
+            <div class="d-flex justify-content-between mb-3 text-muted" style="font-size: 13px;">
+                <span>Version</span>
+                <span class="font-weight-bold text-dark">1.0.0</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3 text-muted" style="font-size: 13px;">
+                <span>Build</span>
+                <span class="font-weight-bold text-dark">2026.02.14</span>
+            </div>
+            <div class="d-flex justify-content-between text-muted" style="font-size: 13px;">
+                <span>Developer</span>
+                <span class="font-weight-bold text-dark">My Fitness Buddy</span>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <h6 class="font-weight-bold text-muted mb-3 ps-2 mt-4">Resources</h6>
+        <div class="card p-4 mb-4 border-0 shadow-sm rounded-4">
+            <button class="btn btn-outline-secondary rounded-pill py-3 mb-3 font-weight-bold w-100">Terms of Service</button>
+            <button class="btn btn-outline-secondary rounded-pill py-3 font-weight-bold w-100">Privacy Policy</button>
+        </div>
+
+        <a href="{% url 'profile' %}" class="btn btn-success w-100 rounded-pill py-3 font-weight-bold shadow fs-5 mb-5 mt-2">
+            Back to Profile
+        </a>
+    </div>
+</div>
+{% endblock %}

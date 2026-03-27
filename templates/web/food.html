@@ -1,0 +1,515 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block title %}Food Diary - Dashboard{% endblock %}
+
+{% block extra_css %}
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; }
+    .glassmorphism { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+    .progress-ring__circle { transition: stroke-dashoffset 0.6s ease; transform: rotate(-90deg); transform-origin: 50% 50%; }
+    .glass-unit { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    @keyframes bounce-short { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .animate-bounce-short { animation: bounce-short 0.5s ease; }
+    .card-hover:hover { transform: translateY(-4px); transition: all 0.3s ease; }
+    .sticky-save { position: sticky; bottom: 1rem; z-index: 50; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto py-4 px-4 sm:px-6 lg:px-8 space-y-3">
+    
+    <!-- 1. HEADER SECTION -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+            <h1 class="text-2xl font-bold text-slate-800">Food Diary</h1>
+        </div>
+        
+        <div class="flex items-center bg-white rounded-2xl shadow-sm border border-slate-100 p-2">
+            <a href="?date={{ prev_date|date:'Y-m-d' }}" class="p-2 hover:bg-slate-50 rounded-xl transition-colors">
+                <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </a>
+            <div class="px-6 flex flex-col items-center">
+                <span class="text-sm text-slate-400 font-medium">Day View</span>
+                <span class="text-base font-bold text-slate-700">
+                    {% if active_date == today %}Today{% else %}{{ active_date|date:"l, M j" }}{% endif %}
+                </span>
+            </div>
+            <a href="?date={{ next_date|date:'Y-m-d' }}" class="p-2 hover:bg-slate-50 rounded-xl transition-colors">
+                <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <div class="ml-2 border-l border-slate-100 pl-4 pr-2">
+                <input type="date" id="dateSelector" value="{{ active_date|date:'Y-m-d' }}" class="hidden">
+                <label for="dateSelector" class="cursor-pointer p-2 hover:bg-slate-50 rounded-xl block transition-colors">
+                    <svg class="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. CALORIE SUMMARY CARD -->
+    <div class="bg-white rounded-3xl shadow-xl shadow-slate-200/50 p-4 border border-slate-50 relative overflow-hidden">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
+            <div class="space-y-1">
+                <p class="text-slate-400 font-medium text-base">Calories Remaining</p>
+                <div class="flex items-baseline gap-2">
+                    <span class="text-5xl font-black text-slate-800">{{ summary.remaining }}</span>
+                    <span class="text-slate-400 font-medium">kcal</span>
+                </div>
+            </div>
+            
+            <div class="relative flex items-center justify-center">
+                <svg class="w-48 h-48">
+                    <circle class="text-slate-100" stroke-width="12" stroke="currentColor" fill="transparent" r="80" cx="96" cy="96"/>
+                    <circle class="text-blue-500 progress-ring__circle" stroke-width="12" stroke-dasharray="502.65" stroke-dashoffset="{{ summary.progress_offset }}" stroke-linecap="round" stroke="currentColor" fill="transparent" r="80" cx="96" cy="96"/>
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-orange-100 p-4 rounded-3xl">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.915-1.251-1.103-1.894-.189-.643-.242-1.284-.242-1.932 0-.532.057-1.064.19-1.571z" clip-rule="evenodd"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 w-full md:w-auto">
+                <div class="text-center">
+                    <p class="text-xl font-bold text-slate-800">{{ summary.goal }}</p>
+                    <p class="text-slate-400 text-xs font-medium">Goal</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-bold text-slate-800">{{ summary.food }}</p>
+                    <p class="text-slate-400 text-xs font-medium">Food</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-bold text-slate-800">{{ summary.exercise }}</p>
+                    <p class="text-slate-400 text-xs font-medium">Exercise</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute -bottom-24 -left-20 w-64 h-64 bg-slate-50 rounded-full blur-3xl opacity-50"></div>
+    </div>
+
+    <!-- 3. VISUAL TRACKING SECTION -->
+    <div class="grid grid-cols-1">
+        <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex items-center gap-4 cursor-pointer card-hover" data-bs-toggle="modal" data-bs-target="#addFoodModal" onclick="setMealType('breakfast')">
+            <div class="bg-emerald-50 p-3 rounded-2xl">
+                <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <div>
+                <h3 class="font-bold text-sm text-slate-800">Search Food</h3>
+                <p class="text-slate-400 text-[10px]">Manual find from database</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 5. MEAL SECTIONS -->
+    <div class="space-y-3">
+        {% for meal_id, data in meals.items %}
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+            <div class="p-3 flex items-center justify-between border-b border-slate-50">
+                <div class="flex items-center gap-3">
+                    <div class="{% if meal_id == 'Breakfast' %}bg-amber-100 text-amber-500{% elif meal_id == 'Lunch' %}bg-blue-100 text-blue-500{% elif meal_id == 'Dinner' %}bg-indigo-100 text-indigo-500{% else %}bg-slate-100 text-slate-500{% endif %} p-1.5 rounded-lg">
+                        {% if meal_id == 'Breakfast' %}
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        {% elif meal_id == 'Lunch' %}
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 2.5m-9-.5l4.5 4M4 12h16m-7-9l-9 9 9 9 9-9-9-9z"/></svg>
+                        {% elif meal_id == 'Dinner' %}
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                        {% else %}
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <h2 class="text-base font-bold text-slate-800">{{ meal_id }}</h2>
+                        <p class="text-slate-400 text-[10px] font-medium">{{ data.entries.count }} items</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <span class="text-sm font-black text-slate-700 block">{{ data.total }} kcal</span>
+                </div>
+            </div>
+            
+            <div class="p-3">
+                {% if data.entries %}
+                <div class="space-y-1">
+                    {% for entry in data.entries %}
+                    <div class="flex flex-col p-2 bg-slate-50 rounded-lg group mb-1">
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1">
+                                <h4 class="font-bold text-slate-700 text-sm">{{ entry.food_name }}</h4>
+                                <p class="text-slate-400 text-[9px] mt-0.5">
+                                    C: {{ entry.carbs }}g • P: {{ entry.protein }}g • F: {{ entry.fat }}g
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="font-bold text-slate-600 text-xs">{{ entry.calories }} kcal</span>
+                                <a href="{% url 'food_delete' entry.id %}?date={{ active_date|date:'Y-m-d' }}" class="text-slate-300 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        {% if entry.calories > 250 %}
+                        <div class="mt-2 p-2 bg-blue-50 border border-blue-100 rounded-lg flex items-center gap-2 animate-pulse" id="swap-{{ entry.id }}">
+                            <div class="bg-blue-100 p-1 rounded-lg">
+                                <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.989-2.386l-.548-.547z"/></svg>
+                            </div>
+                            <span class="text-[10px] font-bold text-blue-800 italic">Finding better alternative...</span>
+                        </div>
+                        <script>
+                            (function() {
+                                fetch("/api/diary/smart-swaps/?food={{ entry.food_name|urlencode }}")
+                                .then(r => r.json())
+                                .then(data => {
+                                    const box = document.getElementById('swap-{{ entry.id }}');
+                                    if(!box) return;
+                                    box.classList.remove('animate-pulse');
+                                    box.innerHTML = `
+                                        <div class="bg-indigo-100 p-1 rounded-lg">
+                                            <svg class="w-3.5 h-3.5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-[10px] font-bold text-indigo-700">Better Alt: <span class="underline cursor-pointer" onclick="applySwap('${data.better_option}')">${data.better_option}</span> (${data.calorie_difference})</p>
+                                        </div>
+                                    `;
+                                })
+                                .catch(() => { document.getElementById('swap-{{ entry.id }}')?.remove(); });
+                            })();
+                        </script>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="text-center py-8 bg-slate-50/50 border border-dashed border-slate-200 rounded-2xl">
+                    <p class="text-slate-400 font-medium text-xs">No food logged yet</p>
+                </div>
+                {% endif %}
+                
+                <button class="w-full mt-4 py-3 border-2 border-dashed border-slate-200 rounded-xl text-slate-400 font-bold text-xs hover:border-blue-300 hover:text-blue-500 hover:bg-blue-50 transition-all flex items-center justify-center gap-2"
+                        data-bs-toggle="modal" data-bs-target="#addFoodModal" onclick="setMealType('{{ meal_id|lower }}')">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                    Add to {{ meal_id }}
+                </button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- 6. WATER INTAKE TRACKER -->
+    <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-4">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <div class="bg-blue-100 p-4 rounded-2xl">
+                    <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21c-4.418 0-8-3.582-8-8s8-13 8-13 8 9.582 8 13-3.582 8-8 8z"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold text-slate-800">Water Intake</h2>
+                    <p class="text-slate-400 text-xs font-medium" id="water-text">{{ water_liters|floatformat:2 }}L / 3.0L</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-4 w-full md:w-auto">
+                <button onclick="updateWater('minus')" class="w-12 h-12 flex items-center justify-center bg-slate-50 text-slate-500 rounded-xl hover:bg-slate-100 transition-colors font-black text-2xl">-</button>
+                <div class="flex-1 bg-slate-100 h-10 rounded-xl overflow-hidden flex gap-1 p-1">
+                    <div class="flex gap-2 overflow-x-auto pb-4" id="water-visual">
+                        {% for i in glass_range %}
+                        <div class="glass-unit h-16 w-10 flex-shrink-0 rounded-lg {% if forloop.counter <= water_glasses %}bg-blue-500 animate-bounce-short{% else %}bg-slate-200{% endif %} transition-all duration-500 transform hover:scale-110"></div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <button onclick="updateWater('plus')" class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-colors font-black text-2xl shadow-lg shadow-blue-100">+</button>
+            </div>
+        </div>
+        <p class="text-center text-slate-300 text-xs mt-6 font-medium uppercase tracking-widest">Goal: 12 glasses (3.0L) • 1 glass = 250ml</p>
+    </div>
+
+    <!-- 7. SAVE BUTTON -->
+    <div class="flex justify-center pt-8 pb-4">
+        <button onclick="window.location.reload()" class="bg-green-600 text-white px-12 py-4 rounded-2xl font-black text-lg shadow-xl shadow-green-200 hover:bg-green-700 hover:scale-105 transition-all flex items-center gap-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/></svg>
+            Save Daily Changes
+        </button>
+    </div>
+</div>
+
+<!-- REUSE PREVIOUS MODAL STRUCTURE BUT WITH NEW CLASSES -->
+<div class="modal fade" id="addFoodModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content overflow-hidden border-0 bg-slate-50" style="border-radius: 40px; box-shadow: 0 40px 100px -20px rgba(0,0,0,0.2);">
+            <div class="bg-white p-10">
+                <div class="flex justify-between items-center mb-10">
+                    <h5 class="text-2xl font-black text-slate-800">Search Food</h3>
+                    <button type="button" class="text-slate-300 hover:text-slate-500" data-bs-dismiss="modal">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                </div>
+
+                <div class="relative flex flex-col gap-4">
+                    <div class="flex gap-2 p-1 bg-blue-50 rounded-2xl w-fit">
+                        <span id="current-selected-meal-text" class="px-3 py-1 font-black text-blue-600 text-xs uppercase tracking-widest">BREAKFAST</span>
+                        <select id="quick-meal-select" class="hidden">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snacks">Snacks</option>
+                        </select>
+                    </div>
+                    <input type="text" id="quick-food-search" placeholder="Type chicken, apple, rice..." 
+                           class="w-full bg-slate-50 border-0 rounded-2xl px-6 py-4 font-bold text-slate-700 focus:ring-2 focus:ring-blue-500/20 transition-all">
+                    <div id="quick-results-dropdown" class="absolute top-full left-0 right-0 mt-3 bg-white rounded-3xl shadow-2xl border border-slate-100 hidden z-50 max-h-96 overflow-y-auto overflow-x-hidden">
+                        <!-- Results inject here -->
+                    </div>
+                </div>
+
+                <div class="flex gap-3 mb-10 overflow-x-auto pb-4" id="meal-chips">
+                    <button type="button" class="chip-btn px-6 py-3 rounded-2xl font-bold bg-blue-500 text-white shadow-lg shadow-blue-100" data-meal="breakfast">Breakfast</button>
+                    <button type="button" class="chip-btn px-6 py-3 rounded-2xl font-bold bg-slate-100 text-slate-500 hover:bg-slate-200" data-meal="lunch">Lunch</button>
+                    <button type="button" class="chip-btn px-6 py-3 rounded-2xl font-bold bg-slate-100 text-slate-500 hover:bg-slate-200" data-meal="dinner">Dinner</button>
+                    <button type="button" class="chip-btn px-6 py-3 rounded-2xl font-bold bg-slate-100 text-slate-500 hover:bg-slate-200" data-meal="snacks">Snacks</button>
+                </div>
+
+                <div id="modal-search-results" class="space-y-4 max-height-[500px] overflow-y-auto">
+                    <div class="text-center py-20">
+                        <div class="bg-slate-50 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        </div>
+                        <p class="text-slate-400 font-bold">Search items above</p>
+                    </div>
+                </div>
+
+                <form method="post" action="{% url 'food' %}?date={{ active_date|date:'Y-m-d' }}" id="add-food-form" class="hidden">
+                    {% csrf_token %}
+                    <input type="hidden" name="meal_type" id="id_meal_type_hidden" value="breakfast">
+                    <input type="hidden" name="food_name" id="id_food_name_hidden">
+                    <input type="hidden" name="quantity" value="1 serving">
+                    <input type="number" name="calories">
+                    <input type="number" name="protein" step="0.1">
+                    <input type="number" name="carbs" step="0.1">
+                    <input type="number" name="fat" step="0.1">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Date Selection
+    document.getElementById('dateSelector').addEventListener('change', (e) => {
+        window.location.href = `?date=${e.target.value}`;
+    });
+
+    // Water Update
+    async function updateWater(action) {
+        const dateStr = "{{ active_date|date:'Y-m-d' }}";
+        const formData = new FormData();
+        formData.append('action', action);
+        formData.append('date', dateStr);
+        formData.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+        try {
+            const res = await fetch("{% url 'water_update' %}", { method: 'POST', body: formData });
+            const data = await res.json();
+            
+            if (data.amount_ml !== undefined) {
+                // Update text
+                document.getElementById('water-text').innerText = `${(data.amount_ml / 1000).toFixed(2)}L / 3.0L`;
+                
+                // Update visuals
+                const glasses = Math.floor(data.amount_ml / 250);
+                const visual = document.getElementById('water-visual');
+                [...visual.children].forEach((div, idx) => {
+                    if (idx < glasses) {
+                        div.classList.add('bg-blue-500', 'animate-bounce-short');
+                        div.classList.remove('bg-slate-200');
+                    } else {
+                        div.classList.remove('bg-blue-500', 'animate-bounce-short');
+                        div.classList.add('bg-slate-200');
+                    }
+                });
+            }
+        } catch (e) { console.error(e); }
+    }
+
+    // QUICK SEARCH LOGIC
+    const quickInput = document.getElementById('quick-food-search');
+    const quickResults = document.getElementById('quick-results-dropdown');
+    const quickMealSelect = document.getElementById('quick-meal-select'); // Added for instruction 1 & 2
+    let quickTimeout = null;
+
+    quickInput.oninput = (e) => {
+        const query = e.target.value;
+        if (query.length < 2) {
+            quickResults.classList.add('hidden');
+            return;
+        }
+
+        clearTimeout(quickTimeout);
+        quickTimeout = setTimeout(async () => {
+            const resp = await fetch(`{% url 'ai_search' %}?q=${encodeURIComponent(query)}`);
+            const data = await resp.json();
+            
+            quickResults.innerHTML = '';
+            quickResults.classList.remove('hidden');
+            
+            if (data.length === 0) {
+                quickResults.innerHTML = '<div class="p-6 text-slate-400 font-bold text-center">No results found</div>';
+                return;
+            }
+
+            data.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'p-6 border-b border-slate-50 hover:bg-slate-50 cursor-pointer transition-colors flex flex-col gap-4';
+                el.innerHTML = `
+                    <div class="flex justify-between items-center">
+                        <div class="flex-1">
+                            <div class="font-bold text-slate-800 text-lg">${item.name}</div>
+                            <div class="text-xs text-slate-400 font-bold uppercase tracking-wider mt-1">${item.calories} kcal • C:${item.carbs}g P:${item.protein}g F:${item.fat}g</div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-100 p-1 rounded-2xl">
+                            <button class="w-10 h-10 flex items-center justify-center bg-white rounded-xl text-slate-600 font-black text-xl hover:bg-slate-200 transition-all q-minus">-</button>
+                            <span class="w-8 text-center font-black text-slate-700 q-val">1</span>
+                            <button class="w-10 h-10 flex items-center justify-center bg-white rounded-xl text-slate-600 font-black text-xl hover:bg-slate-200 transition-all q-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-blue-500 text-white py-4 rounded-2xl font-black text-sm shadow-lg shadow-blue-100 hover:bg-blue-600 transition-all active:scale-95 add-btn">
+                        Log Food
+                    </button>
+                `;
+                
+                let q = 1;
+                el.querySelector('.q-minus').onclick = (e) => { e.stopPropagation(); if(q > 1) { q--; el.querySelector('.q-val').innerText = q; } };
+                el.querySelector('.q-plus').onclick = (e) => { e.stopPropagation(); q++; el.querySelector('.q-val').innerText = q; };
+
+                el.querySelector('.add-btn').onclick = (ev) => {
+                    ev.stopPropagation();
+                    const selectedMeal = quickMealSelect.value;
+                    const qCount = q;
+                    
+                    document.getElementById('id_food_name_hidden').value = item.name;
+                    document.getElementById('id_meal_type_hidden').value = selectedMeal;
+                    addForm.querySelector('[name="quantity"]').value = `${qCount} serving(s)`;
+                    addForm.querySelector('[name="calories"]').value = Math.round(item.calories * qCount);
+                    addForm.querySelector('[name="protein"]').value = (item.protein * qCount).toFixed(1);
+                    addForm.querySelector('[name="carbs"]').value = (item.carbs * qCount).toFixed(1);
+                    addForm.querySelector('[name="fat"]').value = (item.fat * qCount).toFixed(1);
+                    addForm.submit();
+                };
+                quickResults.appendChild(el);
+            });
+        }, 300);
+    };
+
+    // MODAL SEARCH LOGIC
+    const searchInput = document.getElementById('food-search-input');
+    const resultsDiv = document.getElementById('modal-search-results');
+    const chips = document.querySelectorAll('.chip-btn');
+    const hiddenMeal = document.getElementById('id_meal_type_hidden');
+    const addForm = document.getElementById('add-food-form');
+
+    // MEAL SELECTION HELPER
+    window.setMealType = (type) => {
+        hiddenMeal.value = type;
+        if(quickMealSelect) quickMealSelect.value = type;
+        const textDisplay = document.getElementById('current-selected-meal-text');
+        if(textDisplay) textDisplay.innerText = type.toUpperCase();
+        
+        chips.forEach(btn => {
+            btn.classList.remove('bg-blue-500', 'text-white', 'shadow-lg', 'shadow-blue-100');
+            btn.classList.add('bg-slate-100', 'text-slate-500');
+            if (btn.dataset.meal === type) {
+                btn.classList.replace('bg-slate-100', 'bg-blue-500');
+                btn.classList.replace('text-slate-500', 'text-white');
+                btn.classList.add('shadow-lg', 'shadow-blue-100');
+            }
+        });
+    };
+
+    chips.forEach(btn => {
+        btn.onclick = () => setMealType(btn.dataset.meal);
+    });
+
+    // AUTO-HIDE QUICK RESULTS ON CLICK OUTSIDE
+    document.addEventListener('click', (e) => {
+        if (!quickInput.contains(e.target) && !quickResults.contains(e.target)) {
+            quickResults.classList.add('hidden');
+        }
+    });
+
+    // Helper for applying swap suggestions
+    window.applySwap = (foodName) => {
+        const input = document.getElementById('quick-food-search');
+        if(!input) return;
+        input.value = foodName;
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        
+        const modalEl = document.getElementById('addFoodModal');
+        if(modalEl) {
+            const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+            modal.show();
+        }
+    }
+
+
+    let debounce;
+    searchInput.oninput = () => {
+        clearTimeout(debounce);
+        const q = searchInput.value.trim();
+        if (q.length < 2) return;
+
+        debounce = setTimeout(async () => {
+            resultsDiv.innerHTML = '<div class="text-center py-20"><div class="spinner-border animate-spin inline-block w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full"></div></div>';
+            const res = await fetch(`{% url 'ai_search' %}?q=${encodeURIComponent(q)}`);
+            const data = await res.json();
+            
+            resultsDiv.innerHTML = '';
+            data.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'bg-white p-6 rounded-3xl shadow-sm border border-slate-50 flex flex-col gap-4 group hover:bg-slate-50 transition-colors';
+                el.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-emerald-50 w-16 h-16 rounded-2xl flex items-center justify-center text-emerald-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-800">${item.name}</h4>
+                                <p class="text-slate-400 font-medium">C:${item.carbs}g • P:${item.protein}g • F:${item.fat}g • <b>${item.calories} kcal</b></p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-100 p-1 rounded-2xl">
+                            <button class="w-10 h-10 flex items-center justify-center bg-white rounded-xl text-slate-600 font-black text-xl hover:bg-slate-200 transition-all q-minus">-</button>
+                            <span class="w-8 text-center font-black text-slate-700 q-val">1</span>
+                            <button class="w-10 h-10 flex items-center justify-center bg-white rounded-xl text-slate-600 font-black text-xl hover:bg-slate-200 transition-all q-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-blue-500 text-white py-4 rounded-2xl font-black text-sm shadow-lg shadow-blue-100 hover:bg-blue-600 transition-all active:scale-95 log-btn">
+                        Log Food Result
+                    </button>
+                `;
+                
+                let q = 1;
+                el.querySelector('.q-minus').onclick = () => { if(q > 1) { q--; el.querySelector('.q-val').innerText = q; } };
+                el.querySelector('.q-plus').onclick = () => { q++; el.querySelector('.q-val').innerText = q; };
+
+                el.querySelector('.log-btn').onclick = () => {
+                    const qCount = q;
+                    document.getElementById('id_food_name_hidden').value = item.name;
+                    addForm.querySelector('[name="quantity"]').value = `${qCount} serving(s)`;
+                    addForm.querySelector('[name="calories"]').value = Math.round(item.calories * qCount);
+                    addForm.querySelector('[name="protein"]').value = (item.protein * qCount).toFixed(1);
+                    addForm.querySelector('[name="carbs"]').value = (item.carbs * qCount).toFixed(1);
+                    addForm.querySelector('[name="fat"]').value = (item.fat * qCount).toFixed(1);
+                    addForm.submit();
+                };
+                resultsDiv.appendChild(el);
+            });
+        }, 500);
+    };
+</script>
+{% endblock %}

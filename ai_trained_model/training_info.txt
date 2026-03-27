@@ -1,0 +1,1 @@
+This AI model is trained using a custom dataset of 692 fitness-related questions and answers. The system uses local retrieval-based logic to match user queries with the dataset and generate responses. No external APIs or API keys are used in this module. This AI is integrated only in the AI Coach page for demonstration purposes.

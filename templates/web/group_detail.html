@@ -1,0 +1,166 @@
+{% extends 'web/base.html' %}
+
+{% block title %}{{ group.name }} - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="row mb-4 align-items-center">
+    <div class="col-md-8">
+        <a href="{% url 'friends' %}" class="btn btn-outline-secondary btn-sm mb-3"><i class="fas fa-arrow-left"></i> Back to Community</a>
+        <h1 class="h2 font-weight-bold">{{ group.name }}</h1>
+        <p class="text-muted">{{ group.description|default:"No description provided." }}</p>
+        {% if group.goal %}
+        <span class="badge bg-primary px-3 py-2"><i class="fas fa-bullseye me-2"></i> Goal: {{ group.goal }}</span>
+        {% endif %}
+    </div>
+    <div class="col-md-4 text-md-end">
+        {% if not is_member %}
+        <form method="POST" action="{% url 'friends' %}">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="join_group">
+            <input type="hidden" name="group_id" value="{{ group.id }}">
+            <button type="submit" class="btn btn-success btn-lg rounded-pill px-4 shadow-sm">
+                <i class="fas fa-user-plus me-2"></i> Join Group
+            </button>
+        </form>
+        {% else %}
+        <button class="btn btn-outline-success btn-lg rounded-pill px-4" disabled>
+            <i class="fas fa-check me-2"></i> Joined
+        </button>
+        {% endif %}
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Left Column: Chat messages -->
+    <div class="col-lg-7">
+        <div class="card border-0 shadow-sm h-100 d-flex flex-column">
+            <div class="card-header bg-white border-0 pt-4 pb-2">
+                <h5 class="font-weight-bold mb-0"><i class="fas fa-comments text-primary me-2"></i> Group Chat</h5>
+            </div>
+            <div class="card-body scroll-styled flex-grow-1" style="max-height: 500px; overflow-y: auto; background-color: #f8f9fa;">
+                {% if messages %}
+                    {% for msg in messages %}
+                    <div class="d-flex mb-3 {% if msg.sender == request.user %}justify-content-end{% endif %}">
+                        {% if msg.sender != request.user %}
+                        <img src="{% if msg.sender.profile.profile_photo %}{{ msg.sender.profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ msg.sender.username }}&background=E0E7FF&color=4F46E5{% endif %}" alt="Avatar" class="rounded-circle me-2 align-self-end mb-1" width="32" height="32" style="object-fit:cover;">
+                        {% endif %}
+                        <div class="p-3 {% if msg.sender == request.user %}bg-primary text-white rounded-start rounded-top{% else %}bg-white border text-dark rounded-end rounded-top{% endif %}" style="max-width: 75%; border-radius: 1rem;">
+                            {% if msg.sender != request.user %}
+                            <small class="font-weight-bold d-block mb-1 opacity-75">{{ msg.sender.username }}</small>
+                            {% endif %}
+                            <p class="mb-0">{{ msg.message }}</p>
+                            <small class="d-block text-end mt-1 {% if msg.sender == request.user %}text-white-50{% else %}text-muted{% endif %}" style="font-size: 0.7em;">{{ msg.created_at|date:"M j, Y, H:i:s" }}</small>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="text-center py-5 text-muted">
+                        <i class="fas fa-comment-slash fa-3x mb-3 opacity-50"></i>
+                        <p>No messages yet. Start the conversation!</p>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="card-footer bg-white border-top p-3">
+                {% if is_member %}
+                <form method="POST" action="{% url 'group_detail' group.id %}" class="d-flex gap-2">
+                    {% csrf_token %}
+                    <input type="text" name="message" class="form-control rounded-pill bg-light border-0 px-4" placeholder="Type a message..." required autocomplete="off">
+                    <button type="submit" class="btn btn-primary rounded-circle" style="width: 45px; height: 45px; min-width: 45px;"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                {% else %}
+                <div class="text-center text-muted py-2">
+                    Please join the group to send messages.
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Column: Leaderboard, Challenges, Members -->
+    <div class="col-lg-5">
+        <!-- Group Leaderboard Today -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header bg-white border-0 pt-4 pb-2">
+                <h6 class="font-weight-bold mb-0"><i class="fas fa-trophy text-warning me-2"></i> Today's Leaderboard</h6>
+            </div>
+            <div class="card-body p-0">
+                <div class="list-group list-group-flush">
+                    {% if leaderboard %}
+                        {% for stat in leaderboard %}
+                        <div class="list-group-item d-flex align-items-center p-3 border-0 border-bottom">
+                            <span class="text-muted fw-bold me-3" style="width: 20px;">#{{ forloop.counter }}</span>
+                            <img src="{% if stat.user.profile.profile_photo %}{{ stat.user.profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ stat.user.username }}&background=E0E7FF&color=4F46E5{% endif %}" alt="Avatar" class="rounded-circle me-3" width="40" height="40" style="object-fit:cover;">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 font-weight-bold">{{ stat.user.username }} {% if stat.user == request.user %}<span class="badge bg-primary ms-1">You</span>{% endif %}</h6>
+                                <small class="text-success fw-bold">{{ stat.calories_burned }} kcal</small>
+                            </div>
+                            <div class="text-end">
+                                <span class="badge bg-light text-dark border">{{ stat.steps }} steps</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="text-center py-4 text-muted small">No activity recorded today.</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenges -->
+        <div class="card border-0 shadow-sm mb-4 border-top border-4 border-danger">
+            <div class="card-header bg-white border-0 pt-4 pb-2">
+                <h6 class="font-weight-bold mb-0"><i class="fas fa-fire text-danger me-2"></i> Group Challenges</h6>
+            </div>
+            <div class="card-body pt-0">
+                {% if challenges %}
+                    {% for challenge in challenges %}
+                    <div class="mb-3 p-3 bg-light rounded-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h6 class="font-weight-bold mb-0">{{ challenge.name }}</h6>
+                            <span class="badge bg-danger">{{ challenge.get_metric_type_display }}</span>
+                        </div>
+                        <p class="text-muted small mb-2">{{ challenge.description }}</p>
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="small fw-bold">Target: {{ challenge.target_value }}</span>
+                            <span class="small text-muted">{{ challenge.start_date|date:"M d" }} - {{ challenge.end_date|date:"M d" }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="text-center py-4 text-muted small">No active challenges.</div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Members Link -->
+        <div class="card border-0 shadow-sm bg-primary text-white text-center cursor-pointer hover-scale transition-all" data-bs-toggle="collapse" data-bs-target="#membersList">
+            <div class="card-body p-3">
+                <h6 class="mb-0 font-weight-bold"><i class="fas fa-users me-2"></i> View {{ members.count }} Members</h6>
+            </div>
+        </div>
+        <div class="collapse mt-2" id="membersList">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body py-2 px-0">
+                    <div class="list-group list-group-flush" style="max-height: 250px; overflow-y: auto;">
+                        {% for member in members %}
+                        <div class="list-group-item d-flex align-items-center py-2 px-3 border-0">
+                            <img src="{% if member.user.profile.profile_photo %}{{ member.user.profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ member.user.username }}&background=E0E7FF&color=4F46E5{% endif %}" alt="Avatar" class="rounded-circle me-3" width="32" height="32" style="object-fit:cover;">
+                            <span class="font-weight-bold flex-grow-1">{{ member.user.username }}</span>
+                            <span class="badge bg-light text-dark">{{ member.get_role_display }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Auto scroll chat to bottom
+    document.addEventListener("DOMContentLoaded", function() {
+        var chatBox = document.querySelector('.scroll-styled');
+        chatBox.scrollTop = chatBox.scrollHeight;
+    });
+</script>
+{% endblock %}

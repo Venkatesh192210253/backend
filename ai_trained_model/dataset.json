@@ -1,0 +1,3462 @@
+[
+  {
+    "question": "What is the best breakfast for weight loss?",
+    "answer": "For weight loss, a high-protein breakfast like eggs with spinach or Greek yogurt with berries is ideal. Protein keeps you full longer and boosts metabolism.",
+    "category": "diet"
+  },
+  {
+    "question": "Can you suggest a healthy breakfast?",
+    "answer": "A nutritious option is oatmeal with nuts and fruit, or whole grain toast with avocado and eggs. Aim for a mix of complex carbs, healthy fats, and protein.",
+    "category": "diet"
+  },
+  {
+    "question": "Best diet plan for losing weight fast?",
+    "answer": "Focus on a calorie deficit, high-protein intake, and plenty of vegetables. Minimize processed sugars and focus on whole foods. Consistency is more important than speed.",
+    "category": "diet"
+  },
+  {
+    "question": "What should I eat for breakfast to stay energetic?",
+    "answer": "Include complex carbohydrates like oats or quinoa, combined with protein like eggs or nuts. This provides steady energy release throughout the morning.",
+    "category": "diet"
+  },
+  {
+    "question": "Is breakfast necessary for weight loss?",
+    "answer": "While not strictly mandatory, eating a healthy breakfast can prevent overeating later in the day and help maintain energy levels for morning workouts.",
+    "category": "diet"
+  },
+  {
+    "question": "How can I lose belly fat?",
+    "answer": "Belly fat loss requires a consistent calorie deficit and comprehensive exercise. You can't spot-reduce fat, but staying active and eating clean will help.",
+    "category": "diet"
+  },
+  {
+    "question": "Best workout for beginners?",
+    "answer": "Start with basic compound movements like squats, push-ups, and lunges. Aim for 3 days a week of full-body resistance training for the best foundation.",
+    "category": "workout"
+  },
+  {
+    "question": "What is a good morning workout routine?",
+    "answer": "A mix of light cardio (like a brisk walk) followed by bodyweight exercises like planks, squats, and push-ups can wake up your metabolism effectively.",
+    "category": "workout"
+  },
+  {
+    "question": "How many times a week should I exercise?",
+    "answer": "For general health, aim for at least 150 minutes of moderate activity or 75 minutes of vigorous activity per week, plus strength training 2+ times.",
+    "category": "workout"
+  },
+  {
+    "question": "Best diet for building muscle?",
+    "answer": "Focus on a protein-rich diet (1.6-2.2g per kg of body weight) with a slight calorie surplus. Include lean meats, dairy, legumes, and sufficient carbs for energy.",
+    "category": "diet"
+  },
+  {
+    "question": "High protein food list?",
+    "answer": "Excellent sources include chicken breast, eggs, Greek yogurt, lentils, lean beef, fish, tofu, and quinoa.",
+    "category": "food"
+  },
+  {
+    "question": "Low calorie snacks?",
+    "answer": "Try cucumbers with hummus, an apple with a few almonds, air-popped popcorn, or rice cakes with a light spread.",
+    "category": "food"
+  },
+  {
+    "question": "How to track my meals?",
+    "answer": "Use the Food Diary feature in this app! Log every meal, including portion sizes, to get an accurate picture of your daily intake.",
+    "category": "food"
+  },
+  {
+    "question": "How to change my goal weight?",
+    "answer": "Go to Profile > Goal Settings. There you can update your current and target weight.",
+    "category": "profile"
+  },
+  {
+    "question": "Where can I see my progress?",
+    "answer": "Check the Dashboard for daily summaries, or the 'Analytics' section for detailed trends over time.",
+    "category": "profile"
+  },
+  {
+    "question": "How to update my name?",
+    "answer": "Go to Profile > Edit Profile (or Settings) and update your display name in the personal information section.",
+    "category": "profile"
+  },
+  {
+    "question": "How to delete my account?",
+    "answer": "Go to Profile > Privacy & Security > Delete Account. You will need to type 'DELETE' to confirm.",
+    "category": "account"
+  },
+  {
+    "question": "How to change my password?",
+    "answer": "Go to Profile > Privacy & Security > Change Password. You'll need your old password to set a new one.",
+    "category": "account"
+  },
+  {
+    "question": "What are the app's privacy settings?",
+    "answer": "You can manage who sees your activity, your profile visibility in search, and data sharing in the Privacy & Security menu.",
+    "category": "account"
+  },
+  {
+    "question": "How to log out?",
+    "answer": "Go to Profile settings and scroll to the bottom to find the Log Out button.",
+    "category": "account"
+  },
+  {
+    "question": "What is HIIT?",
+    "answer": "HIIT stands for High-Intensity Interval Training. It involves short bursts of intense exercise followed by quick rest periods. It's great for burning calories.",
+    "category": "workout"
+  },
+  {
+    "question": "Is cardio better than weightlifting?",
+    "answer": "Both are important! Cardio improves heart health and burns calories during the session, while weightlifting builds muscle and boosts your resting metabolic rate.",
+    "category": "workout"
+  },
+  {
+    "question": "Best exercise for legs?",
+    "answer": "Squats, lunges, leg press, and deadlifts are fundamental for building strong legs.",
+    "category": "workout"
+  },
+  {
+    "question": "Best exercise for arms?",
+    "answer": "Bicep curls, tricep dips, and push-ups are classic and effective for arm development.",
+    "category": "workout"
+  },
+  {
+    "question": "What should I eat after a workout?",
+    "answer": "A combination of protein and carbohydrates is best, like a protein shake with a banana or a chicken salad with sweet potatoes.",
+    "category": "diet"
+  },
+  {
+    "question": "How much water should I drink?",
+    "answer": "Aim for about 2-3 liters a day, or more if you are exercising intensely. Use the water tracker to stay consistent!",
+    "category": "food"
+  },
+  {
+    "question": "Best breakfast for muscle gain?",
+    "answer": "Scrambled eggs with whole grain toast and a side of Greek yogurt is an excellent muscle-building breakfast.",
+    "category": "diet"
+  },
+  {
+    "question": "What is intermittent fasting?",
+    "answer": "It's an eating pattern where you cycle between periods of eating and fasting, often using a 16:8 window. It can help some people manage calorie intake.",
+    "category": "diet"
+  },
+  {
+    "question": "Is sugar bad for weight loss?",
+    "answer": "Excessive added sugar adds empty calories and can cause insulin spikes. Reducing sugar is one of the easiest ways to cut calories.",
+    "category": "diet"
+  },
+  {
+    "question": "Are carbs bad for weight loss?",
+    "answer": "No, complex carbs like whole grains and vegetables are important for energy. Just manage your total daily calorie intake.",
+    "category": "diet"
+  },
+  {
+    "question": "How to stay motivated?",
+    "answer": "Set small achievable goals, track your progress, and find a workout buddy. Remember why you started!",
+    "category": "profile"
+  },
+  {
+    "question": "Why is my weight not changing?",
+    "answer": "Weight can fluctuate due to water retention or muscle gain. Focus on measurements and how your clothes fit, not just the scale.",
+    "category": "profile"
+  },
+  {
+    "question": "What is the calorie tracker?",
+    "answer": "It helps you monitor your daily intake vs. your expenditure to ensure you are on track for your weight goals.",
+    "category": "food"
+  },
+  {
+    "question": "How to add custom food?",
+    "answer": "If you can't find a food in our database, you can use the 'Add Custom' option and enter the nutrition facts manually.",
+    "category": "food"
+  },
+  {
+    "question": "Where is the support team?",
+    "answer": "You can go to Profile > Help & Support > Contact Us to send us a message or report an issue.",
+    "category": "account"
+  },
+  {
+    "question": "Best workout for fat loss?",
+    "answer": "A combination of strength training and HIIT (High Intensity Interval Training) is excellent for maximizing fat burn while preserving muscle.",
+    "category": "workout"
+  },
+  {
+    "question": "Can I eat pizza on a diet?",
+    "answer": "Yes! In moderation. Weight loss is about your overall weekly calorie balance. Just fit a slice into your daily goal.",
+    "category": "diet"
+  },
+  {
+    "question": "How to improve sleep?",
+    "answer": "Establish a consistent sleep schedule, limit screen time before bed, and avoid heavy meals or caffeine late in the day.",
+    "category": "profile"
+  },
+  {
+    "question": "What are macros?",
+    "answer": "Macros (macronutrients) are protein, carbohydrates, and fats. They make up the calorie content of your food.",
+    "category": "food"
+  },
+  {
+    "question": "How many calories are in an apple?",
+    "answer": "A medium apple contains about 95 calories, mostly from fiber and natural sugars.",
+    "category": "food"
+  },
+  {
+    "question": "Best time to workout?",
+    "answer": "The best time is whenever you are most consistent. Some prefer the energy of a morning session, others use evening workouts to de-stress.",
+    "category": "workout"
+  },
+  {
+    "question": "How to prevent injury?",
+    "answer": "Always warm up before exercise, use proper form, and listen to your body. Don't push through sharp pain.",
+    "category": "workout"
+  },
+  {
+    "question": "What should I eat for dinner?",
+    "answer": "Try a lean protein source like grilled fish or tofu, served with a large portion of steamed vegetables and a small serving of brown rice.",
+    "category": "diet"
+  },
+  {
+    "question": "Is white rice okay?",
+    "answer": "Yes, it's a good energy source. However, brown rice or quinoa is generally better for weight loss due to higher fiber content.",
+    "category": "food"
+  },
+  {
+    "question": "How to increase protein intake?",
+    "answer": "Add a scoop of protein powder to your oats, include egg whites in your breakfast, or snack on edamame or cottage cheese.",
+    "category": "diet"
+  },
+  {
+    "question": "Best exercise for core?",
+    "answer": "Planks, dead bugs, and bird-dogs are excellent for core stability and strength.",
+    "category": "workout"
+  },
+  {
+    "question": "What is a calorie deficit?",
+    "answer": "It means consuming fewer calories than your body burns each day, forcing it to use stored fat for energy.",
+    "category": "diet"
+  },
+  {
+    "question": "How to track water intake?",
+    "answer": "Use the water glass icon on your dashboard. Each tap adds a glass to your daily total.",
+    "category": "food"
+  },
+  {
+    "question": "Can I drink coffee on a diet?",
+    "answer": "Yes, black coffee is very low in calories. Just be mindful of added cream and sugar.",
+    "category": "diet"
+  },
+  {
+    "question": "How to deal with cravings?",
+    "answer": "Drink water, eat more fiber, and make sure you are getting enough sleep. Sometimes a small, controlled portion of the food you crave can help.",
+    "category": "diet"
+  },
+  {
+    "question": "What is the best way to get fit?",
+    "answer": "Consistency in both nutrition and exercise is the key. Find activities you enjoy and stick to a realistic meal plan.",
+    "category": "workout"
+  },
+  {
+    "question": "How to reduce stress?",
+    "answer": "Try regular physical activity, meditation, enough sleep, and maintaining a balanced diet.",
+    "category": "profile"
+  },
+  {
+    "question": "What is BMI?",
+    "answer": "BMI (Body Mass Index) is a simple height-to-weight ratio. It's a general indicator of health but doesn't account for muscle mass.",
+    "category": "profile"
+  },
+  {
+    "question": "What is BMR?",
+    "answer": "BMR (Basal Metabolic Rate) is the number of calories your body needs to perform basic life-sustaining functions at rest.",
+    "category": "profile"
+  },
+  {
+    "question": "How to change app theme?",
+    "answer": "Themes can currently be toggled in your device system settings (Dark/Light mode).",
+    "category": "account"
+  },
+  {
+    "question": "How to connect my watch?",
+    "answer": "Go to Profile > Settings > Devices to connect your fitness tracker for automatic step and activity syncing.",
+    "category": "account"
+  },
+  {
+    "question": "What to eat if I'm always hungry?",
+    "answer": "Eat more high-volume, low-calorie foods like big salads, soups, and vegetables. Also, ensure you're getting enough protein.",
+    "category": "diet"
+  },
+  {
+    "question": "Is keto good for weight loss?",
+    "answer": "Keto can be effective for weight loss by inducing ketosis, but it requires strict carb limitation. Consult a professional before starting.",
+    "category": "diet"
+  },
+  {
+    "question": "Best stretching routine?",
+    "answer": "Focus on dynamic stretches before a workout and static stretches after. Target major muscle groups like hamstrings, quads, and shoulders.",
+    "category": "workout"
+  },
+  {
+    "question": "What is muscle soreness (DOMS)?",
+    "answer": "Delayed Onset Muscle Soreness occurs 24-48 hours after intense exercise. It's normal as your muscles repair and grow stronger.",
+    "category": "workout"
+  },
+  {
+    "question": "Best breakfast for heart health?",
+    "answer": "Oatmeal with walnuts and blueberries is a top choice for heart health and steady energy.",
+    "category": "diet"
+  },
+  {
+    "question": "How to cut carbs?",
+    "answer": "Replace rice with cauliflower rice, use zucchini noodles (zoodles), or use lettuce wraps instead of bread.",
+    "category": "diet"
+  },
+  {
+    "question": "Is breakfast the most important meal?",
+    "answer": "It varies by person. It helps some maintain energy, but others prefer starting their morning with a fasting period.",
+    "category": "diet"
+  },
+  {
+    "question": "Are potatoes healthy?",
+    "answer": "Yes, they are nutrient-dense and very satiating. Baked or boiled are healthy; fried are not.",
+    "category": "food"
+  },
+  {
+    "question": "What are trans fats?",
+    "answer": "Trans fats are unhealthy fats often found in processed foods. Avoid them as they increase LDL (bad) cholesterol levels.",
+    "category": "food"
+  },
+  {
+    "question": "How to find healthy recipes?",
+    "answer": "Check the 'Recipe' section in the app for meal ideas categorized by your dietary preferences.",
+    "category": "diet"
+  },
+  {
+    "question": "What is a rest day?",
+    "answer": "A day with no vigorous exercise. It allows your body to recover from intense sessions and prevent overtraining.",
+    "category": "workout"
+  },
+  {
+    "question": "How to build endurance?",
+    "answer": "Gradually increase the duration and intensity of your cardio sessions over several weeks.",
+    "category": "workout"
+  },
+  {
+    "question": "Best way to gain weight?",
+    "answer": "Eat a calorie surplus from nutrient-dense foods like avocados, nuts, whole grains, and lean proteins, combined with strength training.",
+    "category": "diet"
+  },
+  {
+    "question": "How to track snacks?",
+    "answer": "Select 'Snacks' in the Food Diary addition screen and search for your item.",
+    "category": "food"
+  },
+  {
+    "question": "Where are my stats?",
+    "answer": "Your daily, weekly, and monthly stats are available on the main Dashboard and Analytics pages.",
+    "category": "profile"
+  },
+  {
+    "question": "How to sync data?",
+    "answer": "The app syncs automatically when you have an internet connection. Pull down on the dashboard to force a refresh.",
+    "category": "account"
+  },
+  {
+    "question": "How to get help?",
+    "answer": "Tap on Profile, then Help & Support to find FAQs or email us directly.",
+    "category": "account"
+  },
+  {
+    "question": "Is avocado good for you?",
+    "answer": "Yes, it is highly nutritious and loaded with healthy monounsaturated fats and fiber.",
+    "category": "food"
+  },
+  {
+    "question": "How much fat should I eat?",
+    "answer": "Generally, 20-35% of your daily calories should come from healthy fats.",
+    "category": "diet"
+  },
+  {
+    "question": "What is active recovery?",
+    "answer": "Low-intensity exercise on rest days, like walking or yoga, to help blood flow and muscle repair.",
+    "category": "workout"
+  },
+  {
+    "question": "Best workout for back pain?",
+    "answer": "Exercises that strengthen the core and lower back, like bird-dogs, cat-cow stretches, and dead bugs, can help.",
+    "category": "workout"
+  },
+  {
+    "question": "How to squat properly?",
+    "answer": "Feet shoulder-width apart, chest up, weight on heels, and lower your hips as if sitting in a chair. Keep your knees aligned with your toes.",
+    "category": "workout"
+  },
+  {
+    "question": "Best fruit for energy?",
+    "answer": "Bananas are excellent for quick energy, while berries provide longer-lasting energy due to their fiber content.",
+    "category": "food"
+  },
+  {
+    "question": "Why count calories?",
+    "answer": "It provides awareness of your energy intake and helps ensure you match your intake with your fitness goals.",
+    "category": "diet"
+  },
+  {
+    "question": "How to handle a cheat meal?",
+    "answer": "Don't guilt yourself! Enjoy it, and then get right back to your healthy routine with your very next meal.",
+    "category": "diet"
+  },
+  {
+    "question": "What is volume eating?",
+    "answer": "Eating large quantities of low-calorie foods (like leafy greens) to feel full while maintaining a calorie deficit.",
+    "category": "diet"
+  },
+  {
+    "question": "How to improve posture?",
+    "answer": "Incorporate exercises like planks, rows, and face pulls into your routine, and be mindful of your sitting position.",
+    "category": "workout"
+  },
+  {
+    "question": "Best cardio for weight loss?",
+    "answer": "Brisk walking, running, cycling, and swimming are all effective. HIIT is also great for burning more in less time.",
+    "category": "workout"
+  },
+  {
+    "question": "How to meal prep?",
+    "answer": "Cook large portions of protein, grains, and vegetables on the weekend and store them in containers for the week.",
+    "category": "diet"
+  },
+  {
+    "question": "What is the best post-workout shake?",
+    "answer": "A whey or plant-based protein shake with a fast-acting carb like a banana or dextrose works well.",
+    "category": "diet"
+  },
+  {
+    "question": "Why eat protein for breakfast?",
+    "answer": "It helps stabilize blood sugar and keeps you feeling full for longer, reducing the urge to snack on high-calorie foods later.",
+    "category": "diet"
+  },
+  {
+    "question": "Best way to lose 5kg?",
+    "answer": "Maintain a 500-calorie daily deficit and stay active. This should lead to about 0.5kg of fat loss per week.",
+    "category": "diet"
+  },
+  {
+    "question": "Is fruit juice healthy?",
+    "answer": "It is better than soda but high in sugar and low in fiber compared to whole fruit. Better to eat the whole fruit.",
+    "category": "food"
+  },
+  {
+    "question": "How to measure portions?",
+    "answer": "Use a food scale for the most accuracy, or use your hand as a guide (fist for carbs, palm for protein).",
+    "category": "food"
+  },
+  {
+    "question": "What is a healthy heart rate?",
+    "answer": "A typical resting heart rate is 60-100 bpm. Athletes often have lower rates. Consult a doctor for personalized ranges.",
+    "category": "profile"
+  },
+  {
+    "question": "How to set a step goal?",
+    "answer": "Go to Goal Settings. 10,000 steps is a common goal, but you can adjust it based on your current activity level.",
+    "category": "profile"
+  },
+  {
+    "question": "Does green tea help weight loss?",
+    "answer": "It contains antioxidants and a small amount of caffeine that may slightly boost metabolism, but it's not a magic fix.",
+    "category": "diet"
+  },
+  {
+    "question": "How to reduce bloating?",
+    "answer": "Drink more water, limit sodium, eat slower, and identify if any specific foods trigger it for you.",
+    "category": "diet"
+  },
+  {
+    "question": "What is a good breakfast under 300 calories?",
+    "answer": "A boiled egg on a slice of whole grain toast, or a small bowl of Greek yogurt with a handful of berries.",
+    "category": "diet"
+  },
+  {
+    "question": "Best breakfast for busy mornings?",
+    "answer": "Overnight oats prepared the night before or a quick protein smoothie with fruit and spinach.",
+    "category": "diet"
+  },
+  {
+    "question": "How to start a diet?",
+    "answer": "Don't change everything at once. Start by tracking what you eat now, then gradually replace processed foods with whole ingredients.",
+    "category": "diet"
+  },
+  {
+    "question": "What foods have healthy fats?",
+    "answer": "Avocados, nuts, seeds, fatty fish (like salmon), and olive oil are great sources.",
+    "category": "food"
+  },
+  {
+    "question": "How much fiber should I eat?",
+    "answer": "Aim for about 25-30 grams per day to support digestion and satiety.",
+    "category": "food"
+  },
+  {
+    "question": "Is dark chocolate okay?",
+    "answer": "Yes, in small amounts. High-cocoa dark chocolate (70%+) has beneficial antioxidants.",
+    "category": "food"
+  },
+  {
+    "question": "How to tone my muscles?",
+    "answer": "'Toning' means losing fat while having muscle. Focus on strength training and a protein-rich diet.",
+    "category": "workout"
+  },
+  {
+    "question": "Best time to stretch?",
+    "answer": "Dynamic stretching before a workout; static stretching after your workout when muscles are warm.",
+    "category": "workout"
+  },
+  {
+    "question": "How to do a push-up?",
+    "answer": "Keep your body in a straight line, hands slightly wider than shoulders, and lower yourself until your chest nearly touches the floor.",
+    "category": "workout"
+  },
+  {
+    "question": "Is soda bad for weight loss?",
+    "answer": "Yes, regular soda is high in liquid sugar/calories. Diet soda has no calories but may trigger cravings for some.",
+    "category": "diet"
+  },
+  {
+    "question": "What is mindful eating?",
+    "answer": "Paying full attention to the experience of eating and noticing your body's hunger and fullness cues.",
+    "category": "diet"
+  },
+  {
+    "question": "How to eat less salt?",
+    "answer": "Avoid processed meats and canned soups, use herbs and spices for flavor, and check labels for sodium content.",
+    "category": "food"
+  },
+  {
+    "question": "How many calories in a boiled egg?",
+    "answer": "One large boiled egg is about 70-80 calories.",
+    "category": "food"
+  },
+  {
+    "question": "Best way to recover after legs day?",
+    "answer": "Light walking, plenty of water, high-protein intake, and adequate sleep help muscles recover.",
+    "category": "workout"
+  },
+  {
+    "question": "How to track exercise?",
+    "answer": "Use the 'Activity' or 'Workout' section in the app to log your sessions and see calories burned.",
+    "category": "workout"
+  },
+  {
+    "question": "Why am I gaining weight on a diet?",
+    "answer": "You might be underestimating portions, gaining muscle, or retaining water. Re-evaluate your calorie tracking accuracy.",
+    "category": "diet"
+  },
+  {
+    "question": "How to get a flat stomach?",
+    "answer": "A consistent calorie deficit, core exercises, and reducing processed foods will help lower overall body fat.",
+    "category": "diet"
+  },
+  {
+    "question": "What is the 80/20 rule in diet?",
+    "answer": "Eating healthy, whole foods 80% of the time, and allowing for moderate treats the other 20%.",
+    "category": "diet"
+  },
+  {
+    "question": "What to drink instead of juice?",
+    "answer": "Sparkling water with a slice of lemon, herbal tea, or flavored water without sugar.",
+    "category": "food"
+  },
+  {
+    "question": "How to stick to a routine?",
+    "answer": "Make it a habit! Schedule your workouts like meetings and meal prep to avoid making decisions when you're hungry.",
+    "category": "profile"
+  },
+  {
+    "question": "Does sleep affect weight loss?",
+    "answer": "Yes! Poor sleep increases hunger hormones and decreases willpower, making it harder to stick to a diet.",
+    "category": "profile"
+  },
+  {
+    "question": "How to see my friend's progress?",
+    "answer": "Go to the Community or Friends section and tap on their profile to see their recent activity if they have shared it.",
+    "category": "account"
+  },
+  {
+    "question": "How to find recipes in the app?",
+    "answer": "Check the main menu for the 'Recipe' icon which lists various healthy meal ideas.",
+    "category": "food"
+  },
+  {
+    "question": "Is breakfast necessary for muscle?",
+    "answer": "Eating protein early can jump-start muscle protein synthesis for the day.",
+    "category": "diet"
+  },
+  {
+    "question": "Best breakfast for fiber?",
+    "answer": "Oatmeal with chia seeds and fruit, or lentil-based breakfast bowls are very high in fiber.",
+    "category": "diet"
+  },
+  {
+    "question": "How to reduce sugar in diet?",
+    "answer": "Stop buying sugary drinks, use fruit to sweeten oats/yogurt, and read labels for hidden sugars.",
+    "category": "diet"
+  },
+  {
+    "question": "Why does my weight fluctuate daily?",
+    "answer": "It's usually water weight, salt intake, or inflammation. Look at weekly averages instead of daily numbers.",
+    "category": "profile"
+  },
+  {
+    "question": "How to track progress photos?",
+    "answer": "Go to Profile > Progress Photos to upload and compare your physical transformation securely.",
+    "category": "profile"
+  },
+  {
+    "question": "How to use the barcode scanner?",
+    "answer": "Tap the '+' on the Food Diary, and select the barcode icon to scan a package for instant logging.",
+    "category": "food"
+  },
+  {
+    "question": "How to track calories accurately?",
+    "answer": "Use a digital kitchen scale to weigh your food in grams for most accurate calorie counts.",
+    "category": "food"
+  },
+  {
+    "question": "What to do if I miss a workout?",
+    "answer": "Don't worry! Just get back to your schedule the next day. One missed session won't ruin your progress.",
+    "category": "workout"
+  },
+  {
+    "question": "How many days should I lift weights?",
+    "answer": "For most, 3-5 days per week is effective for building muscle and allowing for recovery.",
+    "category": "workout"
+  },
+  {
+    "question": "Best breakfast for diabetes?",
+    "answer": "Generally, low-GI foods like eggs and non-starchy vegetables are good options. Consult your doctor for specific advice.",
+    "category": "diet"
+  },
+  {
+    "question": "Which workout burns most calories?",
+    "answer": "High-intensity cardio (like running or swimming) and HIIT are usually the highest calorie burners per hour.",
+    "category": "workout"
+  },
+  {
+    "question": "How to stay full all day?",
+    "answer": "Eat meals high in protein, fiber, and healthy fats. These are the most satiating nutrients.",
+    "category": "diet"
+  },
+  {
+    "question": "Why is protein important?",
+    "answer": "It is necessary for repairing tissues, building muscle, and making enzymes and hormones.",
+    "category": "diet"
+  },
+  {
+    "question": "How much protein in a chicken breast?",
+    "answer": "A typically sized chicken breast (150g) has about 45-50 grams of protein.",
+    "category": "food"
+  },
+  {
+    "question": "Best breakfast for weight loss and energy?",
+    "answer": "Greek yogurt with a little granola and berries, or two eggs with whole grain toast.",
+    "category": "diet"
+  },
+  {
+    "question": "How to do a plank?",
+    "answer": "Hold your body in a straight line supported by your forearms and toes. Squeeze your core and glutes.",
+    "category": "workout"
+  },
+  {
+    "question": "Best exercise for shoulders?",
+    "answer": "Overhead presses, lateral raises, and front raises are effective for building shoulder strength.",
+    "category": "workout"
+  },
+  {
+    "question": "How to eat more vegetables?",
+    "answer": "Add them to smoothies, mix them into sauces, or make them the main part of your meal using recipes like stir-fries.",
+    "category": "diet"
+  },
+  {
+    "question": "Is honey better than sugar?",
+    "answer": "It has some nutrients but is still high in calories and sugar. Use it sparingly like any other sweetener.",
+    "category": "food"
+  },
+  {
+    "question": "Best breakfast under 500 calories?",
+    "answer": "Two large eggs, two slices of whole grain toast, and an avocado wedge is roughly 450-500 calories.",
+    "category": "diet"
+  },
+  {
+    "question": "What is clean eating?",
+    "answer": "Focusing on whole, unprocessed foods and avoiding artificial ingredients and excessive sugar.",
+    "category": "diet"
+  },
+  {
+    "question": "How to use the water tracker?",
+    "answer": "Tap the plus button on the dashboard's water widget every time you finish a glass of water.",
+    "category": "food"
+  },
+  {
+    "question": "How to update goal settings?",
+    "answer": "Go to Profile > Goal Settings to change your targets for steps, calories, or weight.",
+    "category": "profile"
+  },
+  {
+    "question": "Where are my achievements?",
+    "answer": "You can view your badges and accomplishments in the 'Achievements' section of your profile.",
+    "category": "profile"
+  },
+  {
+    "question": "How to share my activity?",
+    "answer": "Tap the share icon on any workout or achievement to post it to your fitness community.",
+    "category": "account"
+  },
+  {
+    "question": "How to reset my password?",
+    "answer": "Tap 'Forgot Password' on the login screen to receive a reset link via your registered email.",
+    "category": "account"
+  },
+  {
+    "question": "Best breakfast options in the app?",
+    "answer": "You can find pre-loaded options like 'Classic Oats', 'Berry Smoothie', and 'Egg & Spinach Wrap' in our recipes.",
+    "category": "diet"
+  },
+  {
+    "question": "How to lose weight without exercise?",
+    "answer": "It is possible through a calorie deficit alone, but exercise helps maintain muscle and overall health.",
+    "category": "diet"
+  },
+  {
+    "question": "Is yogurt good for breakfast?",
+    "answer": "Yes, especially plain Greek yogurt which is high in protein and lower in sugar than flavored ones.",
+    "category": "diet"
+  },
+  {
+    "question": "How to read nutrition labels?",
+    "answer": "Check serving size first, then look at total calories, then aim for high fiber/protein and low added sugars/trans fats.",
+    "category": "food"
+  },
+  {
+    "question": "What to eat if I'm vegan?",
+    "answer": "Focus on plant-based protein like beans, lentils, tofu, and nuts, and ensure you get B12 and other key nutrients.",
+    "category": "diet"
+  },
+  {
+    "question": "How to do a lunge?",
+    "answer": "Step forward with one leg until your back knee almost touches the floor. Step back and repeat with the other leg.",
+    "category": "workout"
+  },
+  {
+    "question": "Best workout for arms at home?",
+    "answer": "Push-ups, tricep dips on a chair, and using water bottles as light weights for curls and extensions.",
+    "category": "workout"
+  },
+  {
+    "question": "How to track cheat days?",
+    "answer": "Log them normally to maintain the habit and awareness, even if you exceed your daily calorie goal.",
+    "category": "diet"
+  },
+  {
+    "question": "Does walking count as a workout?",
+    "answer": "Yes! Especially brisk walking. It's great for heart health and calorie burning.",
+    "category": "workout"
+  },
+  {
+    "question": "Best time of day to eat?",
+    "answer": "There is no single best time. Find a window that works for your energy and schedule.",
+    "category": "diet"
+  },
+  {
+    "question": "Why am I always tired?",
+    "answer": "Potential causes include lack of sleep, poor nutrition, dehydration, or excessive stress. Check your logs for patterns.",
+    "category": "profile"
+  },
+  {
+    "question": "How to set a calorie goal?",
+    "answer": "The app calculates your target based on your height, weight, activity level, and weight loss goal.",
+    "category": "profile"
+  },
+  {
+    "question": "Where to find FAQ?",
+    "answer": "Go to Profile > Help & Support > FAQs for answers to common questions about using the app.",
+    "category": "account"
+  },
+  {
+    "question": "How to update email?",
+    "answer": "For security, please contact our support team through the Help & Support menu to update your account email.",
+    "category": "account"
+  },
+  {
+    "question": "Is bread bad?",
+    "answer": "Whole grain bread is a good source of fiber and energy. Moderation is key to any food group.",
+    "category": "diet"
+  },
+  {
+    "question": "Best workout for seniors?",
+    "answer": "Low-impact activities like walking, swimming, and resistance band training are excellent for maintaining health.",
+    "category": "workout"
+  },
+  {
+    "question": "How to reduce portion size?",
+    "answer": "Use smaller plates, drink water before meals, and start with a big portion of vegetables.",
+    "category": "diet"
+  },
+  {
+    "question": "Best snacks for energy?",
+    "answer": "A handful of nuts, a piece of fruit, or a hard-boiled egg are great choices.",
+    "category": "food"
+  },
+  {
+    "question": "How to improve metabolic health?",
+    "answer": "Build muscle through strength training, stay active during the day, and eat a fiber-rich whole food diet.",
+    "category": "profile"
+  },
+  {
+    "question": "What are the benefits of fiber?",
+    "answer": "It regulates digestion and helps maintain steady blood sugar levels.",
+    "category": "food"
+  },
+  {
+    "question": "How to cook healthy?",
+    "answer": "Grill, bake, steam, or air-fry instead of deep-frying. Use spices instead of heavy sauces for flavor.",
+    "category": "diet"
+  },
+  {
+    "question": "Can I eat late at night?",
+    "answer": "Yes, total daily calories are what matter most. However, heavy late night meals might affect your sleep quality.",
+    "category": "diet"
+  },
+  {
+    "question": "What to do if I overeat?",
+    "answer": "Don't stress. Drink water and resume your normal meal plan with the very next session.",
+    "category": "diet"
+  },
+  {
+    "question": "How to manage my subscription?",
+    "answer": "Manage your premium features and payments in Profile > Account > Subscription Settings.",
+    "category": "account"
+  },
+  {
+    "question": "Why track steps?",
+    "answer": "It provides a baseline for your daily non-exercise physical activity, which is crucial for overall health.",
+    "category": "workout"
+  },
+  {
+    "question": "Best breakfast for weight loss specifically?",
+    "answer": "A vegetable omelet with two eggs and a side of half an avocado.",
+    "category": "diet"
+  },
+  {
+    "question": "How to do a mountain climber?",
+    "answer": "In a plank position, alternate bringing your knees to your chest as quickly as you can with good form.",
+    "category": "workout"
+  },
+  {
+    "question": "Best time for cardio?",
+    "answer": "Whenever you can consistently do it! Some like early morning fasted cardio, while others use it to wake up in the afternoon.",
+    "category": "workout"
+  },
+  {
+    "question": "What is the 30-day challenge?",
+    "answer": "A series of daily workouts and nutrition tasks designed to help you build healthy habits and see results quickly.",
+    "category": "workout"
+  },
+  {
+    "question": "How to eat healthy at a restaurant?",
+    "answer": "Look for grilled options, ask for dressings on the side, and choose vegetable-heavy dishes.",
+    "category": "diet"
+  },
+  {
+    "question": "Does muscle weigh more than fat?",
+    "answer": "No, 1kg of muscle and 1kg of fat weigh the same, but muscle is much denser and takes up less space.",
+    "category": "profile"
+  },
+  {
+    "question": "How to stay hydrated?",
+    "answer": "Carry a water bottle everywhere and use the app's reminders to drink throughout the day.",
+    "category": "food"
+  },
+  {
+    "question": "Why should I log my weight?",
+    "answer": "Regular weighting helps identify long-term trends and keeps you accountable to your progress.",
+    "category": "profile"
+  },
+  {
+    "question": "What should I eat to improve skin?",
+    "answer": "Foods high in antioxidants like berries, healthy fats like nuts and fish, and plenty of water.",
+    "category": "diet"
+  },
+  {
+    "question": "How to change country?",
+    "answer": "Go to Profile > Edit Profile to update your location and country settings.",
+    "category": "profile"
+  },
+  {
+    "question": "How many calories in a slice of pizza?",
+    "answer": "It varies greatly, but a typical slice of pepperoni pizza is about 250-300 calories.",
+    "category": "food"
+  },
+  {
+    "question": "Best breakfast for long energy?",
+    "answer": "Steel-cut oats with almond butter and a sprinkle of seeds will give you several hours of steady energy.",
+    "category": "diet"
+  },
+  {
+    "question": "Why is my profile public?",
+    "answer": "You can change your profile visibility settings in the Privacy & Security menu to make it private.",
+    "category": "account"
+  },
+  {
+    "question": "How to get premium?",
+    "answer": "Tap on any locked feature or used the 'Go Premium' link in your profile to see our plans.",
+    "category": "account"
+  },
+  {
+    "question": "Best diet for longevity?",
+    "answer": "A balanced, whole-food diet high in fiber and low in processed foods and added sugars.",
+    "category": "diet"
+  },
+  {
+    "question": "Analyze my progress",
+    "answer": "Based on your recent activity, you are showing great consistency. Your calorie intake is within target, and your step count has increased by 15% this week. Keep maintaining this momentum!",
+    "category": "profile"
+  },
+  {
+    "question": "Suggest today\u2019s workout",
+    "answer": "For today, I recommend a 45-minute strength training session focusing on compound movements: Squats, Push-ups, and Planks. Complete 3 sets of 12-15 reps each.",
+    "category": "workout"
+  },
+  {
+    "question": "Review my diet",
+    "answer": "Your protein intake looks solid! To optimize even further, consider increasing your intake of green leafy vegetables and ensuring you drink at least 8 glasses of water today.",
+    "category": "diet"
+  },
+  {
+    "question": "Predict my results",
+    "answer": "If you maintain your current calorie deficit and activity levels, you are on track to reach your target weight in approximately 4-6 weeks. Stay consistent!",
+    "category": "profile"
+  },
+  {
+    "question": "Progress Prediction",
+    "answer": "Our model predicts steady progress if you continue your current 500-calorie daily deficit. You could see an average of 0.5kg weight loss per week.",
+    "category": "profile"
+  },
+  {
+    "question": "Workout Tips",
+    "answer": "Tip of the day: Always prioritize form over weight. Controlled movements engage more muscle fibers and significantly reduce injury risk.",
+    "category": "workout"
+  },
+  {
+    "question": "Goal Adjustment",
+    "answer": "If you're finding your current targets too easy or too hard, you can refine them in Profile > Goal Settings to better match your evolving fitness levels.",
+    "category": "profile"
+  },
+  {
+    "question": "Motivation",
+    "answer": "Remember why you started! Every healthy choice you make today is a step toward the person you want to become. You've got this! \ud83d\udcaa",
+    "category": "general"
+  },
+  {
+    "question": "Summary of MyFitnessBuddy?",
+    "answer": "Your all-in-one companion for tracking nutrition, activity, and achieving your healthiest self!",
+    "category": "general"
+  },
+  {
+    "question": "What is the nutrition information for Tea 1?",
+    "answer": "Tea 1 contains 212 calories, 6.3g of fat, 67.6g of carbohydrates, and 10.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 2?",
+    "answer": "Chapati 2 contains 507 calories, 9.2g of fat, 77.6g of carbohydrates, and 44.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 3?",
+    "answer": "Fried Rice 3 contains 286 calories, 5.0g of fat, 80.1g of carbohydrates, and 25.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 4?",
+    "answer": "Grilled Sandwich 4 contains 543 calories, 19.0g of fat, 73.9g of carbohydrates, and 47.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 5?",
+    "answer": "Ice Cream 5 contains 398 calories, 24.8g of fat, 35.6g of carbohydrates, and 8.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vanilla Ice Cream 6?",
+    "answer": "Vanilla Ice Cream 6 contains 210 calories, 12.5g of fat, 46.1g of carbohydrates, and 16.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Burger 7?",
+    "answer": "Burger 7 contains 697 calories, 17.7g of fat, 26.0g of carbohydrates, and 29.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 8?",
+    "answer": "Palak Paneer 8 contains 227 calories, 24.7g of fat, 8.6g of carbohydrates, and 26.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada 9?",
+    "answer": "Vada 9 contains 503 calories, 10.9g of fat, 66.8g of carbohydrates, and 15.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vanilla Ice Cream 10?",
+    "answer": "Vanilla Ice Cream 10 contains 191 calories, 8.1g of fat, 47.2g of carbohydrates, and 34.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 11?",
+    "answer": "Palak Paneer 11 contains 68 calories, 6.2g of fat, 37.0g of carbohydrates, and 15.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Aloo Gobi 12?",
+    "answer": "Aloo Gobi 12 contains 199 calories, 32.9g of fat, 69.1g of carbohydrates, and 20.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dosa 13?",
+    "answer": "Dosa 13 contains 645 calories, 21.4g of fat, 93.9g of carbohydrates, and 4.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 14?",
+    "answer": "Fried Rice 14 contains 431 calories, 32.1g of fat, 73.8g of carbohydrates, and 9.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Curry 15?",
+    "answer": "Chicken Curry 15 contains 552 calories, 14.9g of fat, 53.5g of carbohydrates, and 21.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Egg 16?",
+    "answer": "Fried Egg 16 contains 610 calories, 5.7g of fat, 70.3g of carbohydrates, and 16.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for White Rice 17?",
+    "answer": "White Rice 17 contains 307 calories, 16.2g of fat, 5.4g of carbohydrates, and 8.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Manchurian 18?",
+    "answer": "Veg Manchurian 18 contains 484 calories, 21.3g of fat, 28.2g of carbohydrates, and 15.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 19?",
+    "answer": "French Fries 19 contains 306 calories, 25.2g of fat, 34.4g of carbohydrates, and 40.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dosa 20?",
+    "answer": "Dosa 20 contains 391 calories, 11.2g of fat, 98.2g of carbohydrates, and 27.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coffee 21?",
+    "answer": "Coffee 21 contains 250 calories, 11.0g of fat, 64.7g of carbohydrates, and 15.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Biryani 22?",
+    "answer": "Biryani 22 contains 187 calories, 21.4g of fat, 14.0g of carbohydrates, and 6.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tamarind Rice 23?",
+    "answer": "Tamarind Rice 23 contains 242 calories, 1.1g of fat, 82.3g of carbohydrates, and 7.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 24?",
+    "answer": "Palak Paneer 24 contains 461 calories, 5.3g of fat, 99.4g of carbohydrates, and 49.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 25?",
+    "answer": "Grilled Sandwich 25 contains 282 calories, 10.9g of fat, 8.5g of carbohydrates, and 23.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Noodles 26?",
+    "answer": "Fried Noodles 26 contains 398 calories, 0.6g of fat, 70.4g of carbohydrates, and 30.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Pizza 27?",
+    "answer": "Veg Pizza 27 contains 339 calories, 2.2g of fat, 76.4g of carbohydrates, and 33.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 28?",
+    "answer": "Fried Rice 28 contains 517 calories, 0.9g of fat, 71.5g of carbohydrates, and 31.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Samosa 29?",
+    "answer": "Samosa 29 contains 331 calories, 23.1g of fat, 34.7g of carbohydrates, and 13.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rajma 30?",
+    "answer": "Rajma 30 contains 409 calories, 30.2g of fat, 64.4g of carbohydrates, and 34.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Upma 31?",
+    "answer": "Upma 31 contains 515 calories, 33.4g of fat, 57.2g of carbohydrates, and 9.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Green Tea 32?",
+    "answer": "Green Tea 32 contains 193 calories, 9.3g of fat, 69.4g of carbohydrates, and 1.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Masala Dosa 33?",
+    "answer": "Masala Dosa 33 contains 645 calories, 30.1g of fat, 9.1g of carbohydrates, and 4.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Milk 34?",
+    "answer": "Milk 34 contains 225 calories, 34.9g of fat, 34.3g of carbohydrates, and 7.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Gobi Manchurian 35?",
+    "answer": "Gobi Manchurian 35 contains 170 calories, 15.1g of fat, 61.0g of carbohydrates, and 2.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cabbage Stir Fry 36?",
+    "answer": "Cabbage Stir Fry 36 contains 526 calories, 1.7g of fat, 85.9g of carbohydrates, and 17.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 37?",
+    "answer": "Scrambled Eggs 37 contains 513 calories, 23.5g of fat, 64.9g of carbohydrates, and 4.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Maggi Noodles 38?",
+    "answer": "Maggi Noodles 38 contains 576 calories, 4.7g of fat, 94.0g of carbohydrates, and 22.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada Pav 39?",
+    "answer": "Vada Pav 39 contains 126 calories, 1.2g of fat, 65.3g of carbohydrates, and 42.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 40?",
+    "answer": "Fried Rice 40 contains 114 calories, 26.2g of fat, 10.8g of carbohydrates, and 3.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada Pav 41?",
+    "answer": "Vada Pav 41 contains 186 calories, 4.5g of fat, 48.0g of carbohydrates, and 9.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 42?",
+    "answer": "Palak Paneer 42 contains 389 calories, 18.4g of fat, 74.9g of carbohydrates, and 18.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Upma 43?",
+    "answer": "Upma 43 contains 626 calories, 6.0g of fat, 52.4g of carbohydrates, and 18.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 44?",
+    "answer": "Grilled Sandwich 44 contains 470 calories, 3.7g of fat, 62.6g of carbohydrates, and 35.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 45?",
+    "answer": "French Fries 45 contains 263 calories, 24.4g of fat, 79.3g of carbohydrates, and 26.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sweet Corn Soup 46?",
+    "answer": "Sweet Corn Soup 46 contains 547 calories, 30.8g of fat, 94.4g of carbohydrates, and 11.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dal Tadka 47?",
+    "answer": "Dal Tadka 47 contains 153 calories, 32.1g of fat, 92.4g of carbohydrates, and 11.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 48?",
+    "answer": "Egg Curry 48 contains 347 calories, 30.1g of fat, 30.2g of carbohydrates, and 3.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Popcorn 49?",
+    "answer": "Popcorn 49 contains 249 calories, 18.8g of fat, 65.0g of carbohydrates, and 33.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Medu Vada 50?",
+    "answer": "Medu Vada 50 contains 78 calories, 2.7g of fat, 37.0g of carbohydrates, and 46.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coffee 51?",
+    "answer": "Coffee 51 contains 252 calories, 2.6g of fat, 78.5g of carbohydrates, and 28.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Butter Masala 52?",
+    "answer": "Paneer Butter Masala 52 contains 422 calories, 15.8g of fat, 51.4g of carbohydrates, and 46.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 53?",
+    "answer": "Scrambled Eggs 53 contains 681 calories, 12.6g of fat, 93.1g of carbohydrates, and 45.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 54?",
+    "answer": "Poha 54 contains 548 calories, 10.9g of fat, 10.7g of carbohydrates, and 31.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada Pav 55?",
+    "answer": "Vada Pav 55 contains 371 calories, 20.0g of fat, 41.4g of carbohydrates, and 7.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pakora 56?",
+    "answer": "Pakora 56 contains 377 calories, 2.5g of fat, 73.8g of carbohydrates, and 15.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 57?",
+    "answer": "Fried Rice 57 contains 307 calories, 14.7g of fat, 14.8g of carbohydrates, and 13.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vegetable Curry 58?",
+    "answer": "Vegetable Curry 58 contains 402 calories, 30.6g of fat, 59.1g of carbohydrates, and 17.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Pizza 59?",
+    "answer": "Chicken Pizza 59 contains 50 calories, 21.0g of fat, 79.1g of carbohydrates, and 10.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Boiled Egg 60?",
+    "answer": "Boiled Egg 60 contains 362 calories, 30.3g of fat, 5.6g of carbohydrates, and 16.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Spring Rolls 61?",
+    "answer": "Spring Rolls 61 contains 607 calories, 5.7g of fat, 85.7g of carbohydrates, and 9.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cake 62?",
+    "answer": "Cake 62 contains 298 calories, 0.7g of fat, 89.2g of carbohydrates, and 30.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cake 63?",
+    "answer": "Cake 63 contains 169 calories, 21.7g of fat, 94.6g of carbohydrates, and 11.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 64?",
+    "answer": "Egg Curry 64 contains 355 calories, 32.4g of fat, 11.8g of carbohydrates, and 29.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cheese Burger 65?",
+    "answer": "Cheese Burger 65 contains 152 calories, 20.3g of fat, 59.0g of carbohydrates, and 2.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Butter Masala 66?",
+    "answer": "Paneer Butter Masala 66 contains 529 calories, 16.8g of fat, 17.1g of carbohydrates, and 39.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Pizza 67?",
+    "answer": "Chicken Pizza 67 contains 499 calories, 15.7g of fat, 73.7g of carbohydrates, and 24.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 68?",
+    "answer": "Egg Curry 68 contains 543 calories, 13.5g of fat, 10.0g of carbohydrates, and 10.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Noodles 69?",
+    "answer": "Chicken Noodles 69 contains 362 calories, 30.9g of fat, 25.4g of carbohydrates, and 20.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 70?",
+    "answer": "Poha 70 contains 657 calories, 4.0g of fat, 82.1g of carbohydrates, and 28.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Orange Juice 71?",
+    "answer": "Orange Juice 71 contains 593 calories, 13.4g of fat, 33.1g of carbohydrates, and 40.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brown Rice 72?",
+    "answer": "Brown Rice 72 contains 57 calories, 14.7g of fat, 99.5g of carbohydrates, and 5.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 73?",
+    "answer": "Grilled Sandwich 73 contains 260 calories, 5.2g of fat, 91.9g of carbohydrates, and 35.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 74?",
+    "answer": "Palak Paneer 74 contains 372 calories, 14.0g of fat, 28.2g of carbohydrates, and 5.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mango Juice 75?",
+    "answer": "Mango Juice 75 contains 590 calories, 26.6g of fat, 92.4g of carbohydrates, and 30.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tomato Soup 76?",
+    "answer": "Tomato Soup 76 contains 452 calories, 2.1g of fat, 19.0g of carbohydrates, and 23.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Idli 77?",
+    "answer": "Idli 77 contains 392 calories, 12.0g of fat, 76.3g of carbohydrates, and 23.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tea 78?",
+    "answer": "Tea 78 contains 464 calories, 13.5g of fat, 54.4g of carbohydrates, and 23.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cheese Burger 79?",
+    "answer": "Cheese Burger 79 contains 65 calories, 32.3g of fat, 25.3g of carbohydrates, and 24.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poori 80?",
+    "answer": "Poori 80 contains 325 calories, 32.0g of fat, 89.3g of carbohydrates, and 27.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Pizza 81?",
+    "answer": "Veg Pizza 81 contains 168 calories, 31.9g of fat, 5.1g of carbohydrates, and 3.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 82?",
+    "answer": "Scrambled Eggs 82 contains 565 calories, 21.0g of fat, 48.2g of carbohydrates, and 5.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 83?",
+    "answer": "Paratha 83 contains 131 calories, 24.2g of fat, 54.0g of carbohydrates, and 18.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pakora 84?",
+    "answer": "Pakora 84 contains 346 calories, 18.2g of fat, 56.6g of carbohydrates, and 15.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 85?",
+    "answer": "Paneer Sandwich 85 contains 238 calories, 30.3g of fat, 20.3g of carbohydrates, and 30.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fruit Salad 86?",
+    "answer": "Fruit Salad 86 contains 572 calories, 35.0g of fat, 84.5g of carbohydrates, and 26.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dosa 87?",
+    "answer": "Dosa 87 contains 606 calories, 16.9g of fat, 86.6g of carbohydrates, and 20.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Pizza 88?",
+    "answer": "Veg Pizza 88 contains 93 calories, 33.4g of fat, 79.6g of carbohydrates, and 13.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 89?",
+    "answer": "Butter Naan 89 contains 151 calories, 1.4g of fat, 98.1g of carbohydrates, and 22.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Curd Rice 90?",
+    "answer": "Curd Rice 90 contains 210 calories, 0.9g of fat, 92.3g of carbohydrates, and 34.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 91?",
+    "answer": "Poha 91 contains 478 calories, 21.3g of fat, 56.4g of carbohydrates, and 45.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 92?",
+    "answer": "Grilled Sandwich 92 contains 479 calories, 33.5g of fat, 14.1g of carbohydrates, and 31.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Smoothie 93?",
+    "answer": "Smoothie 93 contains 224 calories, 26.0g of fat, 45.3g of carbohydrates, and 30.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Manchurian 94?",
+    "answer": "Veg Manchurian 94 contains 469 calories, 6.7g of fat, 22.5g of carbohydrates, and 3.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pizza 95?",
+    "answer": "Pizza 95 contains 585 calories, 2.9g of fat, 89.2g of carbohydrates, and 30.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Green Tea 96?",
+    "answer": "Green Tea 96 contains 84 calories, 19.5g of fat, 40.2g of carbohydrates, and 39.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Biryani 97?",
+    "answer": "Chicken Biryani 97 contains 125 calories, 22.1g of fat, 66.5g of carbohydrates, and 20.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 98?",
+    "answer": "Grilled Sandwich 98 contains 293 calories, 5.8g of fat, 99.8g of carbohydrates, and 30.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 99?",
+    "answer": "Poha 99 contains 454 calories, 9.0g of fat, 36.0g of carbohydrates, and 25.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Ice Cream 100?",
+    "answer": "Chocolate Ice Cream 100 contains 593 calories, 21.9g of fat, 77.5g of carbohydrates, and 38.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Orange Juice 101?",
+    "answer": "Orange Juice 101 contains 71 calories, 22.3g of fat, 69.3g of carbohydrates, and 12.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Cake 102?",
+    "answer": "Chocolate Cake 102 contains 111 calories, 29.9g of fat, 77.5g of carbohydrates, and 15.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Biryani 103?",
+    "answer": "Biryani 103 contains 292 calories, 4.0g of fat, 18.7g of carbohydrates, and 39.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Curry 104?",
+    "answer": "Mutton Curry 104 contains 613 calories, 8.6g of fat, 93.8g of carbohydrates, and 42.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Omelette 105?",
+    "answer": "Omelette 105 contains 598 calories, 22.3g of fat, 66.7g of carbohydrates, and 26.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 106?",
+    "answer": "Egg Curry 106 contains 573 calories, 12.6g of fat, 39.8g of carbohydrates, and 13.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Gobi Manchurian 107?",
+    "answer": "Gobi Manchurian 107 contains 315 calories, 2.4g of fat, 37.4g of carbohydrates, and 9.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada 108?",
+    "answer": "Vada 108 contains 53 calories, 5.0g of fat, 97.2g of carbohydrates, and 18.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 109?",
+    "answer": "Paneer Sandwich 109 contains 331 calories, 26.8g of fat, 9.7g of carbohydrates, and 35.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rajma 110?",
+    "answer": "Rajma 110 contains 434 calories, 33.9g of fat, 48.8g of carbohydrates, and 36.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Gobi Manchurian 111?",
+    "answer": "Gobi Manchurian 111 contains 162 calories, 18.1g of fat, 65.2g of carbohydrates, and 26.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 112?",
+    "answer": "Egg Curry 112 contains 512 calories, 31.2g of fat, 61.3g of carbohydrates, and 48.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Smoothie 113?",
+    "answer": "Smoothie 113 contains 96 calories, 10.6g of fat, 80.3g of carbohydrates, and 15.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vanilla Ice Cream 114?",
+    "answer": "Vanilla Ice Cream 114 contains 511 calories, 19.4g of fat, 71.4g of carbohydrates, and 20.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cake 115?",
+    "answer": "Cake 115 contains 455 calories, 3.1g of fat, 19.1g of carbohydrates, and 46.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fruit Salad 116?",
+    "answer": "Fruit Salad 116 contains 503 calories, 5.8g of fat, 86.3g of carbohydrates, and 46.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Curd Rice 117?",
+    "answer": "Curd Rice 117 contains 459 calories, 31.1g of fat, 23.7g of carbohydrates, and 15.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Egg 118?",
+    "answer": "Fried Egg 118 contains 234 calories, 8.2g of fat, 44.1g of carbohydrates, and 41.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pakora 119?",
+    "answer": "Pakora 119 contains 234 calories, 10.1g of fat, 97.7g of carbohydrates, and 4.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chole 120?",
+    "answer": "Chole 120 contains 673 calories, 25.0g of fat, 58.8g of carbohydrates, and 13.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 121?",
+    "answer": "Butter Naan 121 contains 380 calories, 14.5g of fat, 22.8g of carbohydrates, and 39.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pulao 122?",
+    "answer": "Pulao 122 contains 502 calories, 4.0g of fat, 37.2g of carbohydrates, and 38.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Salad 123?",
+    "answer": "Paneer Salad 123 contains 671 calories, 34.0g of fat, 78.2g of carbohydrates, and 10.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Orange Juice 124?",
+    "answer": "Orange Juice 124 contains 183 calories, 24.7g of fat, 46.5g of carbohydrates, and 19.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sweet Corn Soup 125?",
+    "answer": "Sweet Corn Soup 125 contains 234 calories, 24.2g of fat, 90.5g of carbohydrates, and 49.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sweet Corn Soup 126?",
+    "answer": "Sweet Corn Soup 126 contains 464 calories, 30.8g of fat, 19.4g of carbohydrates, and 32.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Green Tea 127?",
+    "answer": "Green Tea 127 contains 375 calories, 12.2g of fat, 36.4g of carbohydrates, and 41.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 128?",
+    "answer": "Scrambled Eggs 128 contains 378 calories, 11.2g of fat, 22.8g of carbohydrates, and 12.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 129?",
+    "answer": "Fried Rice 129 contains 604 calories, 10.0g of fat, 79.4g of carbohydrates, and 26.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Black Coffee 130?",
+    "answer": "Black Coffee 130 contains 145 calories, 26.6g of fat, 16.2g of carbohydrates, and 36.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Noodles 131?",
+    "answer": "Fried Noodles 131 contains 353 calories, 1.9g of fat, 28.7g of carbohydrates, and 27.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Curry 132?",
+    "answer": "Chicken Curry 132 contains 405 calories, 7.3g of fat, 24.5g of carbohydrates, and 15.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Biryani 133?",
+    "answer": "Mutton Biryani 133 contains 84 calories, 4.8g of fat, 70.4g of carbohydrates, and 28.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pongal 134?",
+    "answer": "Pongal 134 contains 498 calories, 24.6g of fat, 55.3g of carbohydrates, and 9.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vegetable Curry 135?",
+    "answer": "Vegetable Curry 135 contains 174 calories, 20.0g of fat, 67.6g of carbohydrates, and 27.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tea 136?",
+    "answer": "Tea 136 contains 516 calories, 26.4g of fat, 83.0g of carbohydrates, and 38.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Khichdi 137?",
+    "answer": "Khichdi 137 contains 78 calories, 11.3g of fat, 12.0g of carbohydrates, and 49.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 138?",
+    "answer": "Egg Curry 138 contains 313 calories, 0.8g of fat, 19.1g of carbohydrates, and 19.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Milk 139?",
+    "answer": "Milk 139 contains 457 calories, 10.6g of fat, 58.6g of carbohydrates, and 38.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pulao 140?",
+    "answer": "Pulao 140 contains 526 calories, 29.0g of fat, 7.0g of carbohydrates, and 13.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Khichdi 141?",
+    "answer": "Khichdi 141 contains 484 calories, 26.3g of fat, 74.8g of carbohydrates, and 12.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dosa 142?",
+    "answer": "Dosa 142 contains 214 calories, 22.0g of fat, 66.4g of carbohydrates, and 39.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 143?",
+    "answer": "Protein Shake 143 contains 474 calories, 28.9g of fat, 18.8g of carbohydrates, and 36.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Maggi Noodles 144?",
+    "answer": "Maggi Noodles 144 contains 303 calories, 1.7g of fat, 39.1g of carbohydrates, and 48.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Popcorn 145?",
+    "answer": "Popcorn 145 contains 609 calories, 34.3g of fat, 99.4g of carbohydrates, and 1.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Banana Shake 146?",
+    "answer": "Banana Shake 146 contains 369 calories, 14.1g of fat, 13.6g of carbohydrates, and 24.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rasam 147?",
+    "answer": "Rasam 147 contains 623 calories, 5.5g of fat, 78.4g of carbohydrates, and 27.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coffee 148?",
+    "answer": "Coffee 148 contains 592 calories, 11.8g of fat, 90.3g of carbohydrates, and 18.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Upma 149?",
+    "answer": "Upma 149 contains 466 calories, 5.4g of fat, 10.2g of carbohydrates, and 47.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Black Coffee 150?",
+    "answer": "Black Coffee 150 contains 313 calories, 17.6g of fat, 27.8g of carbohydrates, and 34.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Biryani 151?",
+    "answer": "Chicken Biryani 151 contains 661 calories, 13.7g of fat, 77.1g of carbohydrates, and 35.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Black Coffee 152?",
+    "answer": "Black Coffee 152 contains 254 calories, 10.2g of fat, 32.8g of carbohydrates, and 42.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for White Rice 153?",
+    "answer": "White Rice 153 contains 487 calories, 5.1g of fat, 45.8g of carbohydrates, and 37.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dosa 154?",
+    "answer": "Dosa 154 contains 142 calories, 3.8g of fat, 26.0g of carbohydrates, and 19.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Spring Rolls 155?",
+    "answer": "Spring Rolls 155 contains 379 calories, 10.6g of fat, 37.5g of carbohydrates, and 16.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fish Curry 156?",
+    "answer": "Fish Curry 156 contains 468 calories, 22.5g of fat, 23.6g of carbohydrates, and 40.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cheese Burger 157?",
+    "answer": "Cheese Burger 157 contains 117 calories, 21.0g of fat, 82.8g of carbohydrates, and 11.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Salad 158?",
+    "answer": "Chicken Salad 158 contains 151 calories, 10.5g of fat, 33.1g of carbohydrates, and 49.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Cake 159?",
+    "answer": "Chocolate Cake 159 contains 476 calories, 34.1g of fat, 9.2g of carbohydrates, and 22.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 160?",
+    "answer": "Protein Shake 160 contains 420 calories, 18.3g of fat, 11.9g of carbohydrates, and 23.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coconut Rice 161?",
+    "answer": "Coconut Rice 161 contains 247 calories, 28.4g of fat, 50.1g of carbohydrates, and 42.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 162?",
+    "answer": "Egg Curry 162 contains 696 calories, 29.0g of fat, 72.5g of carbohydrates, and 5.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 163?",
+    "answer": "Egg Curry 163 contains 76 calories, 18.6g of fat, 94.7g of carbohydrates, and 1.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 164?",
+    "answer": "Butter Naan 164 contains 310 calories, 33.7g of fat, 28.2g of carbohydrates, and 23.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brownie 165?",
+    "answer": "Brownie 165 contains 292 calories, 19.6g of fat, 55.9g of carbohydrates, and 27.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Curry 166?",
+    "answer": "Chicken Curry 166 contains 197 calories, 28.8g of fat, 45.3g of carbohydrates, and 39.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pongal 167?",
+    "answer": "Pongal 167 contains 220 calories, 14.3g of fat, 11.7g of carbohydrates, and 21.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 168?",
+    "answer": "Ice Cream 168 contains 528 calories, 25.3g of fat, 66.0g of carbohydrates, and 32.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brown Rice 169?",
+    "answer": "Brown Rice 169 contains 148 calories, 16.7g of fat, 20.7g of carbohydrates, and 9.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pizza 170?",
+    "answer": "Pizza 170 contains 64 calories, 27.4g of fat, 82.5g of carbohydrates, and 12.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Sandwich 171?",
+    "answer": "Chicken Sandwich 171 contains 666 calories, 23.7g of fat, 71.0g of carbohydrates, and 21.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Curry 172?",
+    "answer": "Chicken Curry 172 contains 370 calories, 6.8g of fat, 78.4g of carbohydrates, and 31.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Lemon Rice 173?",
+    "answer": "Lemon Rice 173 contains 149 calories, 15.7g of fat, 74.6g of carbohydrates, and 19.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tomato Soup 174?",
+    "answer": "Tomato Soup 174 contains 180 calories, 29.9g of fat, 28.5g of carbohydrates, and 43.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 175?",
+    "answer": "Paratha 175 contains 104 calories, 24.8g of fat, 18.3g of carbohydrates, and 45.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cake 176?",
+    "answer": "Cake 176 contains 262 calories, 1.4g of fat, 5.7g of carbohydrates, and 12.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cupcake 177?",
+    "answer": "Cupcake 177 contains 632 calories, 16.9g of fat, 5.9g of carbohydrates, and 20.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 178?",
+    "answer": "Grilled Sandwich 178 contains 543 calories, 4.9g of fat, 58.1g of carbohydrates, and 28.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Curry 179?",
+    "answer": "Mutton Curry 179 contains 638 calories, 29.8g of fat, 85.3g of carbohydrates, and 25.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rajma 180?",
+    "answer": "Rajma 180 contains 674 calories, 17.7g of fat, 24.4g of carbohydrates, and 23.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Masala Dosa 181?",
+    "answer": "Masala Dosa 181 contains 526 calories, 16.3g of fat, 37.4g of carbohydrates, and 29.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 182?",
+    "answer": "Ice Cream 182 contains 343 calories, 0.8g of fat, 94.5g of carbohydrates, and 24.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Curd Rice 183?",
+    "answer": "Curd Rice 183 contains 507 calories, 7.7g of fat, 96.7g of carbohydrates, and 49.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Cake 184?",
+    "answer": "Chocolate Cake 184 contains 676 calories, 22.5g of fat, 42.4g of carbohydrates, and 17.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Idli 185?",
+    "answer": "Idli 185 contains 59 calories, 19.3g of fat, 73.1g of carbohydrates, and 30.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Curry 186?",
+    "answer": "Mutton Curry 186 contains 429 calories, 5.2g of fat, 33.8g of carbohydrates, and 18.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 187?",
+    "answer": "Chapati 187 contains 202 calories, 12.3g of fat, 54.9g of carbohydrates, and 7.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Curd Rice 188?",
+    "answer": "Curd Rice 188 contains 522 calories, 22.5g of fat, 70.1g of carbohydrates, and 28.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Lemon Rice 189?",
+    "answer": "Lemon Rice 189 contains 203 calories, 27.1g of fat, 17.3g of carbohydrates, and 13.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Omelette 190?",
+    "answer": "Omelette 190 contains 95 calories, 24.8g of fat, 94.1g of carbohydrates, and 22.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pulao 191?",
+    "answer": "Pulao 191 contains 149 calories, 27.2g of fat, 10.8g of carbohydrates, and 10.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Upma 192?",
+    "answer": "Upma 192 contains 474 calories, 8.2g of fat, 80.3g of carbohydrates, and 32.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Salad 193?",
+    "answer": "Veg Salad 193 contains 386 calories, 9.7g of fat, 37.3g of carbohydrates, and 18.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Milk 194?",
+    "answer": "Milk 194 contains 540 calories, 11.0g of fat, 10.3g of carbohydrates, and 49.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 195?",
+    "answer": "Grilled Sandwich 195 contains 549 calories, 10.9g of fat, 89.7g of carbohydrates, and 44.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Salad 196?",
+    "answer": "Chicken Salad 196 contains 643 calories, 15.4g of fat, 81.3g of carbohydrates, and 22.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Upma 197?",
+    "answer": "Upma 197 contains 184 calories, 27.1g of fat, 55.7g of carbohydrates, and 18.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 198?",
+    "answer": "Ice Cream 198 contains 130 calories, 30.4g of fat, 12.0g of carbohydrates, and 38.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Curry 199?",
+    "answer": "Chicken Curry 199 contains 95 calories, 28.1g of fat, 67.4g of carbohydrates, and 12.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pongal 200?",
+    "answer": "Pongal 200 contains 552 calories, 9.4g of fat, 5.2g of carbohydrates, and 22.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 201?",
+    "answer": "Scrambled Eggs 201 contains 93 calories, 13.2g of fat, 76.6g of carbohydrates, and 2.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brown Rice 202?",
+    "answer": "Brown Rice 202 contains 88 calories, 19.7g of fat, 51.9g of carbohydrates, and 27.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada Pav 203?",
+    "answer": "Vada Pav 203 contains 610 calories, 11.2g of fat, 57.8g of carbohydrates, and 13.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Black Coffee 204?",
+    "answer": "Black Coffee 204 contains 546 calories, 32.7g of fat, 22.5g of carbohydrates, and 42.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dosa 205?",
+    "answer": "Dosa 205 contains 524 calories, 33.1g of fat, 79.7g of carbohydrates, and 3.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 206?",
+    "answer": "French Fries 206 contains 559 calories, 19.5g of fat, 85.6g of carbohydrates, and 40.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Burger 207?",
+    "answer": "Veg Burger 207 contains 62 calories, 3.6g of fat, 86.7g of carbohydrates, and 31.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Samosa 208?",
+    "answer": "Samosa 208 contains 490 calories, 2.1g of fat, 70.7g of carbohydrates, and 4.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Burger 209?",
+    "answer": "Veg Burger 209 contains 60 calories, 34.2g of fat, 13.8g of carbohydrates, and 30.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pav Bhaji 210?",
+    "answer": "Pav Bhaji 210 contains 88 calories, 6.4g of fat, 43.0g of carbohydrates, and 11.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Noodles 211?",
+    "answer": "Chicken Noodles 211 contains 502 calories, 15.8g of fat, 41.5g of carbohydrates, and 39.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pakora 212?",
+    "answer": "Pakora 212 contains 487 calories, 4.1g of fat, 95.6g of carbohydrates, and 19.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Ice Cream 213?",
+    "answer": "Chocolate Ice Cream 213 contains 615 calories, 8.6g of fat, 41.7g of carbohydrates, and 20.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 214?",
+    "answer": "Ice Cream 214 contains 122 calories, 10.7g of fat, 22.6g of carbohydrates, and 40.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 215?",
+    "answer": "Paratha 215 contains 230 calories, 33.5g of fat, 53.4g of carbohydrates, and 28.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 216?",
+    "answer": "Protein Shake 216 contains 225 calories, 19.5g of fat, 32.7g of carbohydrates, and 13.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Upma 217?",
+    "answer": "Upma 217 contains 400 calories, 3.7g of fat, 57.1g of carbohydrates, and 34.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Ice Cream 218?",
+    "answer": "Chocolate Ice Cream 218 contains 263 calories, 31.9g of fat, 81.7g of carbohydrates, and 38.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Pizza 219?",
+    "answer": "Veg Pizza 219 contains 633 calories, 6.0g of fat, 36.7g of carbohydrates, and 35.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Curry 220?",
+    "answer": "Mutton Curry 220 contains 463 calories, 4.8g of fat, 43.4g of carbohydrates, and 27.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Salad 221?",
+    "answer": "Paneer Salad 221 contains 139 calories, 24.5g of fat, 78.0g of carbohydrates, and 6.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sweet Corn Soup 222?",
+    "answer": "Sweet Corn Soup 222 contains 373 calories, 18.8g of fat, 59.3g of carbohydrates, and 37.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 223?",
+    "answer": "Chapati 223 contains 169 calories, 25.0g of fat, 77.9g of carbohydrates, and 5.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Hakka Noodles 224?",
+    "answer": "Hakka Noodles 224 contains 258 calories, 1.9g of fat, 78.3g of carbohydrates, and 8.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 225?",
+    "answer": "French Fries 225 contains 614 calories, 4.6g of fat, 70.6g of carbohydrates, and 6.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 226?",
+    "answer": "Protein Shake 226 contains 574 calories, 16.9g of fat, 50.6g of carbohydrates, and 3.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Black Coffee 227?",
+    "answer": "Black Coffee 227 contains 162 calories, 22.6g of fat, 19.3g of carbohydrates, and 7.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Sandwich 228?",
+    "answer": "Chicken Sandwich 228 contains 421 calories, 22.3g of fat, 94.0g of carbohydrates, and 19.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 229?",
+    "answer": "Paneer Sandwich 229 contains 491 calories, 31.4g of fat, 14.1g of carbohydrates, and 19.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pulao 230?",
+    "answer": "Pulao 230 contains 628 calories, 7.4g of fat, 69.6g of carbohydrates, and 29.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Donut 231?",
+    "answer": "Donut 231 contains 397 calories, 20.7g of fat, 95.4g of carbohydrates, and 43.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 232?",
+    "answer": "Egg Curry 232 contains 391 calories, 25.5g of fat, 24.8g of carbohydrates, and 50.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vegetable Curry 233?",
+    "answer": "Vegetable Curry 233 contains 174 calories, 3.7g of fat, 42.9g of carbohydrates, and 27.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 234?",
+    "answer": "Ice Cream 234 contains 561 calories, 6.7g of fat, 79.0g of carbohydrates, and 22.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 235?",
+    "answer": "French Fries 235 contains 574 calories, 12.3g of fat, 38.8g of carbohydrates, and 48.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vegetable Curry 236?",
+    "answer": "Vegetable Curry 236 contains 677 calories, 4.3g of fat, 62.4g of carbohydrates, and 46.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sandwich 237?",
+    "answer": "Sandwich 237 contains 413 calories, 9.1g of fat, 15.5g of carbohydrates, and 43.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Donut 238?",
+    "answer": "Donut 238 contains 206 calories, 9.1g of fat, 83.0g of carbohydrates, and 37.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 239?",
+    "answer": "Paneer Sandwich 239 contains 676 calories, 6.4g of fat, 28.5g of carbohydrates, and 12.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada 240?",
+    "answer": "Vada 240 contains 54 calories, 23.4g of fat, 83.8g of carbohydrates, and 15.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rajma 241?",
+    "answer": "Rajma 241 contains 205 calories, 2.8g of fat, 17.4g of carbohydrates, and 11.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Salad 242?",
+    "answer": "Chicken Salad 242 contains 393 calories, 26.3g of fat, 79.9g of carbohydrates, and 38.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Curry 243?",
+    "answer": "Mutton Curry 243 contains 571 calories, 25.1g of fat, 81.7g of carbohydrates, and 4.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Potato Chips 244?",
+    "answer": "Potato Chips 244 contains 637 calories, 13.1g of fat, 51.7g of carbohydrates, and 11.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Manchurian 245?",
+    "answer": "Veg Manchurian 245 contains 635 calories, 22.0g of fat, 41.0g of carbohydrates, and 39.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada Pav 246?",
+    "answer": "Vada Pav 246 contains 214 calories, 11.2g of fat, 9.3g of carbohydrates, and 23.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Manchurian 247?",
+    "answer": "Chicken Manchurian 247 contains 556 calories, 32.8g of fat, 74.6g of carbohydrates, and 30.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Jeera Rice 248?",
+    "answer": "Jeera Rice 248 contains 358 calories, 9.0g of fat, 87.9g of carbohydrates, and 40.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 249?",
+    "answer": "Poha 249 contains 246 calories, 2.7g of fat, 58.2g of carbohydrates, and 14.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pizza 250?",
+    "answer": "Pizza 250 contains 253 calories, 20.3g of fat, 37.3g of carbohydrates, and 17.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cabbage Stir Fry 251?",
+    "answer": "Cabbage Stir Fry 251 contains 392 calories, 13.9g of fat, 12.9g of carbohydrates, and 18.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 252?",
+    "answer": "Butter Naan 252 contains 141 calories, 32.3g of fat, 7.1g of carbohydrates, and 19.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Milk 253?",
+    "answer": "Milk 253 contains 414 calories, 32.6g of fat, 60.7g of carbohydrates, and 11.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poori 254?",
+    "answer": "Poori 254 contains 459 calories, 5.1g of fat, 10.9g of carbohydrates, and 28.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Masala Dosa 255?",
+    "answer": "Masala Dosa 255 contains 637 calories, 15.7g of fat, 87.1g of carbohydrates, and 8.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Noodles 256?",
+    "answer": "Chicken Noodles 256 contains 168 calories, 11.4g of fat, 23.0g of carbohydrates, and 9.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 257?",
+    "answer": "Scrambled Eggs 257 contains 420 calories, 27.3g of fat, 52.0g of carbohydrates, and 27.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 258?",
+    "answer": "Butter Naan 258 contains 165 calories, 29.5g of fat, 23.6g of carbohydrates, and 17.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Jeera Rice 259?",
+    "answer": "Jeera Rice 259 contains 61 calories, 18.7g of fat, 45.7g of carbohydrates, and 27.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tomato Soup 260?",
+    "answer": "Tomato Soup 260 contains 491 calories, 27.0g of fat, 56.1g of carbohydrates, and 32.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dal Tadka 261?",
+    "answer": "Dal Tadka 261 contains 560 calories, 20.9g of fat, 48.6g of carbohydrates, and 18.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Soup 262?",
+    "answer": "Chicken Soup 262 contains 282 calories, 4.3g of fat, 33.3g of carbohydrates, and 7.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 263?",
+    "answer": "Paneer Sandwich 263 contains 254 calories, 5.3g of fat, 7.7g of carbohydrates, and 37.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Salad 264?",
+    "answer": "Salad 264 contains 606 calories, 9.1g of fat, 98.2g of carbohydrates, and 40.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Popcorn 265?",
+    "answer": "Popcorn 265 contains 335 calories, 16.5g of fat, 35.3g of carbohydrates, and 40.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Cake 266?",
+    "answer": "Chocolate Cake 266 contains 372 calories, 3.9g of fat, 15.4g of carbohydrates, and 24.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Milk 267?",
+    "answer": "Milk 267 contains 199 calories, 22.6g of fat, 64.6g of carbohydrates, and 16.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pizza 268?",
+    "answer": "Pizza 268 contains 645 calories, 33.7g of fat, 38.9g of carbohydrates, and 12.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brown Rice 269?",
+    "answer": "Brown Rice 269 contains 391 calories, 31.7g of fat, 78.7g of carbohydrates, and 41.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 270?",
+    "answer": "Paratha 270 contains 309 calories, 17.6g of fat, 6.3g of carbohydrates, and 19.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Lemon Rice 271?",
+    "answer": "Lemon Rice 271 contains 640 calories, 3.6g of fat, 61.6g of carbohydrates, and 29.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coconut Rice 272?",
+    "answer": "Coconut Rice 272 contains 448 calories, 19.0g of fat, 85.3g of carbohydrates, and 7.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cake 273?",
+    "answer": "Cake 273 contains 608 calories, 21.4g of fat, 16.3g of carbohydrates, and 44.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Biryani 274?",
+    "answer": "Mutton Biryani 274 contains 278 calories, 22.8g of fat, 15.5g of carbohydrates, and 36.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 275?",
+    "answer": "Butter Naan 275 contains 300 calories, 19.1g of fat, 95.7g of carbohydrates, and 30.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Burger 276?",
+    "answer": "Chicken Burger 276 contains 491 calories, 14.3g of fat, 38.8g of carbohydrates, and 17.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Chicken 277?",
+    "answer": "Grilled Chicken 277 contains 552 calories, 20.7g of fat, 51.7g of carbohydrates, and 22.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Biryani 278?",
+    "answer": "Chicken Biryani 278 contains 621 calories, 32.1g of fat, 92.5g of carbohydrates, and 16.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 279?",
+    "answer": "Palak Paneer 279 contains 258 calories, 11.2g of fat, 29.2g of carbohydrates, and 44.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Salad 280?",
+    "answer": "Paneer Salad 280 contains 93 calories, 14.0g of fat, 53.9g of carbohydrates, and 38.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tea 281?",
+    "answer": "Tea 281 contains 604 calories, 19.5g of fat, 5.3g of carbohydrates, and 3.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vegetable Curry 282?",
+    "answer": "Vegetable Curry 282 contains 504 calories, 15.9g of fat, 80.3g of carbohydrates, and 42.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pizza 283?",
+    "answer": "Pizza 283 contains 55 calories, 27.6g of fat, 8.9g of carbohydrates, and 31.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Manchurian 284?",
+    "answer": "Veg Manchurian 284 contains 642 calories, 27.3g of fat, 76.9g of carbohydrates, and 23.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Butter Masala 285?",
+    "answer": "Paneer Butter Masala 285 contains 531 calories, 25.9g of fat, 35.9g of carbohydrates, and 35.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Black Coffee 286?",
+    "answer": "Black Coffee 286 contains 418 calories, 2.5g of fat, 29.7g of carbohydrates, and 21.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 287?",
+    "answer": "Palak Paneer 287 contains 217 calories, 18.7g of fat, 58.2g of carbohydrates, and 39.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 288?",
+    "answer": "Paratha 288 contains 678 calories, 2.9g of fat, 14.6g of carbohydrates, and 18.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 289?",
+    "answer": "Poha 289 contains 565 calories, 11.8g of fat, 20.2g of carbohydrates, and 19.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Pizza 290?",
+    "answer": "Chicken Pizza 290 contains 285 calories, 7.5g of fat, 51.7g of carbohydrates, and 5.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Biryani 291?",
+    "answer": "Mutton Biryani 291 contains 541 calories, 13.0g of fat, 73.1g of carbohydrates, and 29.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sweet Corn Soup 292?",
+    "answer": "Sweet Corn Soup 292 contains 510 calories, 12.6g of fat, 50.3g of carbohydrates, and 18.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Egg 293?",
+    "answer": "Fried Egg 293 contains 135 calories, 20.3g of fat, 33.4g of carbohydrates, and 23.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 294?",
+    "answer": "Butter Naan 294 contains 409 calories, 1.8g of fat, 88.3g of carbohydrates, and 43.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Manchurian 295?",
+    "answer": "Chicken Manchurian 295 contains 282 calories, 6.9g of fat, 14.8g of carbohydrates, and 29.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Idli 296?",
+    "answer": "Idli 296 contains 599 calories, 31.8g of fat, 70.6g of carbohydrates, and 19.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Burger 297?",
+    "answer": "Veg Burger 297 contains 155 calories, 14.7g of fat, 20.0g of carbohydrates, and 14.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Khichdi 298?",
+    "answer": "Khichdi 298 contains 291 calories, 6.1g of fat, 29.4g of carbohydrates, and 8.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Chicken 299?",
+    "answer": "Grilled Chicken 299 contains 297 calories, 9.0g of fat, 98.9g of carbohydrates, and 40.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Soup 300?",
+    "answer": "Chicken Soup 300 contains 688 calories, 11.9g of fat, 25.5g of carbohydrates, and 14.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fish Curry 301?",
+    "answer": "Fish Curry 301 contains 668 calories, 6.0g of fat, 35.5g of carbohydrates, and 30.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coconut Rice 302?",
+    "answer": "Coconut Rice 302 contains 65 calories, 20.9g of fat, 90.6g of carbohydrates, and 14.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Burger 303?",
+    "answer": "Burger 303 contains 672 calories, 12.7g of fat, 69.6g of carbohydrates, and 35.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rasam 304?",
+    "answer": "Rasam 304 contains 290 calories, 5.1g of fat, 96.0g of carbohydrates, and 9.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Black Coffee 305?",
+    "answer": "Black Coffee 305 contains 51 calories, 12.7g of fat, 94.3g of carbohydrates, and 30.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 306?",
+    "answer": "Ice Cream 306 contains 405 calories, 24.1g of fat, 20.9g of carbohydrates, and 28.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vegetable Curry 307?",
+    "answer": "Vegetable Curry 307 contains 385 calories, 22.3g of fat, 93.3g of carbohydrates, and 19.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 308?",
+    "answer": "Protein Shake 308 contains 532 calories, 5.9g of fat, 93.0g of carbohydrates, and 48.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Pizza 309?",
+    "answer": "Veg Pizza 309 contains 453 calories, 13.8g of fat, 6.0g of carbohydrates, and 13.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vegetable Curry 310?",
+    "answer": "Vegetable Curry 310 contains 102 calories, 9.0g of fat, 79.8g of carbohydrates, and 45.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Samosa 311?",
+    "answer": "Samosa 311 contains 113 calories, 4.5g of fat, 28.8g of carbohydrates, and 11.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mango Juice 312?",
+    "answer": "Mango Juice 312 contains 568 calories, 6.3g of fat, 42.7g of carbohydrates, and 14.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Burger 313?",
+    "answer": "Veg Burger 313 contains 665 calories, 5.8g of fat, 44.1g of carbohydrates, and 24.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Orange Juice 314?",
+    "answer": "Orange Juice 314 contains 618 calories, 14.7g of fat, 72.9g of carbohydrates, and 24.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Curd Rice 315?",
+    "answer": "Curd Rice 315 contains 487 calories, 13.3g of fat, 76.2g of carbohydrates, and 41.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Pizza 316?",
+    "answer": "Veg Pizza 316 contains 697 calories, 26.6g of fat, 76.1g of carbohydrates, and 9.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fruit Juice 317?",
+    "answer": "Fruit Juice 317 contains 578 calories, 27.2g of fat, 76.7g of carbohydrates, and 16.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Bhindi Fry 318?",
+    "answer": "Bhindi Fry 318 contains 397 calories, 29.4g of fat, 11.6g of carbohydrates, and 28.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cheese Burger 319?",
+    "answer": "Cheese Burger 319 contains 86 calories, 16.2g of fat, 40.7g of carbohydrates, and 37.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Medu Vada 320?",
+    "answer": "Medu Vada 320 contains 691 calories, 25.1g of fat, 97.3g of carbohydrates, and 14.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Banana Shake 321?",
+    "answer": "Banana Shake 321 contains 630 calories, 4.8g of fat, 11.6g of carbohydrates, and 15.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 322?",
+    "answer": "French Fries 322 contains 378 calories, 9.2g of fat, 44.6g of carbohydrates, and 6.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pulao 323?",
+    "answer": "Pulao 323 contains 648 calories, 5.9g of fat, 53.5g of carbohydrates, and 17.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fruit Salad 324?",
+    "answer": "Fruit Salad 324 contains 334 calories, 13.6g of fat, 36.9g of carbohydrates, and 48.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 325?",
+    "answer": "Grilled Sandwich 325 contains 294 calories, 10.0g of fat, 82.8g of carbohydrates, and 16.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pizza 326?",
+    "answer": "Pizza 326 contains 360 calories, 11.7g of fat, 68.5g of carbohydrates, and 38.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Egg 327?",
+    "answer": "Fried Egg 327 contains 469 calories, 4.1g of fat, 50.6g of carbohydrates, and 22.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Chicken 328?",
+    "answer": "Grilled Chicken 328 contains 160 calories, 4.7g of fat, 16.9g of carbohydrates, and 43.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Khichdi 329?",
+    "answer": "Khichdi 329 contains 473 calories, 18.9g of fat, 68.3g of carbohydrates, and 35.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pongal 330?",
+    "answer": "Pongal 330 contains 153 calories, 33.5g of fat, 56.5g of carbohydrates, and 18.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Sandwich 331?",
+    "answer": "Chicken Sandwich 331 contains 104 calories, 5.7g of fat, 15.8g of carbohydrates, and 32.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Jeera Rice 332?",
+    "answer": "Jeera Rice 332 contains 527 calories, 34.4g of fat, 10.6g of carbohydrates, and 21.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Manchurian 333?",
+    "answer": "Chicken Manchurian 333 contains 499 calories, 16.8g of fat, 52.2g of carbohydrates, and 32.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brownie 334?",
+    "answer": "Brownie 334 contains 502 calories, 24.7g of fat, 92.4g of carbohydrates, and 31.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Noodles 335?",
+    "answer": "Chicken Noodles 335 contains 569 calories, 3.9g of fat, 70.4g of carbohydrates, and 46.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fruit Juice 336?",
+    "answer": "Fruit Juice 336 contains 429 calories, 30.5g of fat, 52.7g of carbohydrates, and 8.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pongal 337?",
+    "answer": "Pongal 337 contains 688 calories, 13.0g of fat, 34.8g of carbohydrates, and 45.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 338?",
+    "answer": "French Fries 338 contains 93 calories, 20.3g of fat, 55.2g of carbohydrates, and 35.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Cake 339?",
+    "answer": "Chocolate Cake 339 contains 488 calories, 23.5g of fat, 9.7g of carbohydrates, and 43.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cabbage Stir Fry 340?",
+    "answer": "Cabbage Stir Fry 340 contains 462 calories, 3.9g of fat, 97.5g of carbohydrates, and 9.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Hakka Noodles 341?",
+    "answer": "Hakka Noodles 341 contains 238 calories, 20.5g of fat, 88.5g of carbohydrates, and 10.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 342?",
+    "answer": "Scrambled Eggs 342 contains 110 calories, 16.4g of fat, 94.3g of carbohydrates, and 4.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Noodles 343?",
+    "answer": "Fried Noodles 343 contains 237 calories, 3.1g of fat, 90.4g of carbohydrates, and 49.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Maggi Noodles 344?",
+    "answer": "Maggi Noodles 344 contains 700 calories, 11.8g of fat, 42.8g of carbohydrates, and 16.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 345?",
+    "answer": "Butter Naan 345 contains 82 calories, 9.9g of fat, 57.3g of carbohydrates, and 27.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada 346?",
+    "answer": "Vada 346 contains 642 calories, 32.3g of fat, 59.9g of carbohydrates, and 38.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 347?",
+    "answer": "Chapati 347 contains 654 calories, 31.7g of fat, 73.8g of carbohydrates, and 46.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Salad 348?",
+    "answer": "Paneer Salad 348 contains 693 calories, 34.3g of fat, 31.9g of carbohydrates, and 48.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mango Juice 349?",
+    "answer": "Mango Juice 349 contains 414 calories, 11.3g of fat, 100.0g of carbohydrates, and 10.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Soup 350?",
+    "answer": "Chicken Soup 350 contains 52 calories, 22.0g of fat, 27.3g of carbohydrates, and 19.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pav Bhaji 351?",
+    "answer": "Pav Bhaji 351 contains 474 calories, 1.4g of fat, 7.4g of carbohydrates, and 28.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Samosa 352?",
+    "answer": "Samosa 352 contains 675 calories, 4.4g of fat, 13.5g of carbohydrates, and 48.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Pizza 353?",
+    "answer": "Veg Pizza 353 contains 199 calories, 32.8g of fat, 73.4g of carbohydrates, and 9.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sambar 354?",
+    "answer": "Sambar 354 contains 642 calories, 19.6g of fat, 94.2g of carbohydrates, and 43.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Milk 355?",
+    "answer": "Milk 355 contains 218 calories, 6.6g of fat, 88.2g of carbohydrates, and 22.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cupcake 356?",
+    "answer": "Cupcake 356 contains 660 calories, 4.6g of fat, 99.5g of carbohydrates, and 42.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Burger 357?",
+    "answer": "Veg Burger 357 contains 498 calories, 16.4g of fat, 98.3g of carbohydrates, and 37.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Idli 358?",
+    "answer": "Idli 358 contains 351 calories, 26.8g of fat, 88.1g of carbohydrates, and 14.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Idli 359?",
+    "answer": "Idli 359 contains 126 calories, 25.9g of fat, 54.2g of carbohydrates, and 46.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Medu Vada 360?",
+    "answer": "Medu Vada 360 contains 613 calories, 4.3g of fat, 90.3g of carbohydrates, and 46.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada 361?",
+    "answer": "Vada 361 contains 349 calories, 11.5g of fat, 44.8g of carbohydrates, and 2.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Chicken 362?",
+    "answer": "Grilled Chicken 362 contains 488 calories, 11.1g of fat, 93.6g of carbohydrates, and 44.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Biryani 363?",
+    "answer": "Veg Biryani 363 contains 185 calories, 9.6g of fat, 74.0g of carbohydrates, and 14.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cheese Burger 364?",
+    "answer": "Cheese Burger 364 contains 597 calories, 14.8g of fat, 7.3g of carbohydrates, and 32.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coffee 365?",
+    "answer": "Coffee 365 contains 312 calories, 30.2g of fat, 93.1g of carbohydrates, and 37.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 366?",
+    "answer": "Grilled Sandwich 366 contains 685 calories, 13.0g of fat, 83.6g of carbohydrates, and 35.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fruit Salad 367?",
+    "answer": "Fruit Salad 367 contains 679 calories, 26.9g of fat, 7.1g of carbohydrates, and 18.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Spring Rolls 368?",
+    "answer": "Spring Rolls 368 contains 122 calories, 16.5g of fat, 74.3g of carbohydrates, and 8.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Curry 369?",
+    "answer": "Mutton Curry 369 contains 606 calories, 15.6g of fat, 60.2g of carbohydrates, and 35.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Butter Masala 370?",
+    "answer": "Paneer Butter Masala 370 contains 236 calories, 23.5g of fat, 55.0g of carbohydrates, and 45.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cupcake 371?",
+    "answer": "Cupcake 371 contains 398 calories, 12.7g of fat, 28.1g of carbohydrates, and 27.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Orange Juice 372?",
+    "answer": "Orange Juice 372 contains 607 calories, 30.5g of fat, 36.7g of carbohydrates, and 47.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tamarind Rice 373?",
+    "answer": "Tamarind Rice 373 contains 288 calories, 3.4g of fat, 38.0g of carbohydrates, and 31.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tea 374?",
+    "answer": "Tea 374 contains 318 calories, 4.6g of fat, 92.4g of carbohydrates, and 19.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Butter Masala 375?",
+    "answer": "Paneer Butter Masala 375 contains 469 calories, 9.0g of fat, 92.9g of carbohydrates, and 35.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Pizza 376?",
+    "answer": "Chicken Pizza 376 contains 175 calories, 7.5g of fat, 53.9g of carbohydrates, and 44.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cabbage Stir Fry 377?",
+    "answer": "Cabbage Stir Fry 377 contains 658 calories, 13.6g of fat, 14.1g of carbohydrates, and 3.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Spring Rolls 378?",
+    "answer": "Spring Rolls 378 contains 376 calories, 23.5g of fat, 92.8g of carbohydrates, and 19.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Idli 379?",
+    "answer": "Idli 379 contains 443 calories, 10.7g of fat, 19.4g of carbohydrates, and 12.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brownie 380?",
+    "answer": "Brownie 380 contains 152 calories, 31.0g of fat, 63.1g of carbohydrates, and 12.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 381?",
+    "answer": "Paneer Sandwich 381 contains 416 calories, 2.2g of fat, 22.7g of carbohydrates, and 35.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Gobi Manchurian 382?",
+    "answer": "Gobi Manchurian 382 contains 504 calories, 16.6g of fat, 50.6g of carbohydrates, and 49.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 383?",
+    "answer": "Grilled Sandwich 383 contains 505 calories, 6.7g of fat, 9.0g of carbohydrates, and 39.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Salad 384?",
+    "answer": "Chicken Salad 384 contains 238 calories, 12.6g of fat, 96.5g of carbohydrates, and 33.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Curry 385?",
+    "answer": "Chicken Curry 385 contains 85 calories, 2.7g of fat, 23.7g of carbohydrates, and 46.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 386?",
+    "answer": "Protein Shake 386 contains 677 calories, 29.2g of fat, 10.3g of carbohydrates, and 8.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Biryani 387?",
+    "answer": "Biryani 387 contains 530 calories, 29.3g of fat, 59.5g of carbohydrates, and 19.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 388?",
+    "answer": "Scrambled Eggs 388 contains 186 calories, 34.5g of fat, 54.7g of carbohydrates, and 43.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Pizza 389?",
+    "answer": "Chicken Pizza 389 contains 507 calories, 33.9g of fat, 55.8g of carbohydrates, and 17.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 390?",
+    "answer": "Protein Shake 390 contains 308 calories, 31.5g of fat, 37.3g of carbohydrates, and 37.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cheese Burger 391?",
+    "answer": "Cheese Burger 391 contains 129 calories, 34.9g of fat, 79.4g of carbohydrates, and 32.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Samosa 392?",
+    "answer": "Samosa 392 contains 421 calories, 3.7g of fat, 81.9g of carbohydrates, and 36.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Samosa 393?",
+    "answer": "Samosa 393 contains 343 calories, 30.7g of fat, 32.4g of carbohydrates, and 48.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Noodles 394?",
+    "answer": "Fried Noodles 394 contains 392 calories, 28.7g of fat, 96.7g of carbohydrates, and 18.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Upma 395?",
+    "answer": "Upma 395 contains 316 calories, 32.0g of fat, 27.0g of carbohydrates, and 30.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for French Fries 396?",
+    "answer": "French Fries 396 contains 283 calories, 18.0g of fat, 83.0g of carbohydrates, and 14.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 397?",
+    "answer": "Butter Naan 397 contains 326 calories, 32.5g of fat, 76.6g of carbohydrates, and 40.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Biryani 398?",
+    "answer": "Veg Biryani 398 contains 472 calories, 31.0g of fat, 27.3g of carbohydrates, and 39.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 399?",
+    "answer": "Chapati 399 contains 422 calories, 13.5g of fat, 57.4g of carbohydrates, and 35.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 400?",
+    "answer": "Poha 400 contains 142 calories, 30.0g of fat, 65.3g of carbohydrates, and 38.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Chicken 401?",
+    "answer": "Grilled Chicken 401 contains 432 calories, 2.9g of fat, 39.3g of carbohydrates, and 12.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Burger 402?",
+    "answer": "Veg Burger 402 contains 197 calories, 28.0g of fat, 68.2g of carbohydrates, and 28.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chocolate Ice Cream 403?",
+    "answer": "Chocolate Ice Cream 403 contains 327 calories, 20.5g of fat, 22.8g of carbohydrates, and 42.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pav Bhaji 404?",
+    "answer": "Pav Bhaji 404 contains 70 calories, 30.5g of fat, 67.9g of carbohydrates, and 48.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 405?",
+    "answer": "Butter Naan 405 contains 240 calories, 30.3g of fat, 38.7g of carbohydrates, and 3.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Protein Shake 406?",
+    "answer": "Protein Shake 406 contains 410 calories, 29.9g of fat, 9.9g of carbohydrates, and 19.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 407?",
+    "answer": "Paratha 407 contains 498 calories, 8.9g of fat, 91.7g of carbohydrates, and 48.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Egg 408?",
+    "answer": "Fried Egg 408 contains 380 calories, 8.4g of fat, 5.1g of carbohydrates, and 38.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 409?",
+    "answer": "Paratha 409 contains 288 calories, 4.5g of fat, 35.8g of carbohydrates, and 7.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Brownie 410?",
+    "answer": "Brownie 410 contains 477 calories, 2.2g of fat, 89.6g of carbohydrates, and 45.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Manchurian 411?",
+    "answer": "Chicken Manchurian 411 contains 89 calories, 14.5g of fat, 44.0g of carbohydrates, and 40.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Ice Cream 412?",
+    "answer": "Ice Cream 412 contains 313 calories, 20.3g of fat, 15.3g of carbohydrates, and 13.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Boiled Egg 413?",
+    "answer": "Boiled Egg 413 contains 434 calories, 14.8g of fat, 35.6g of carbohydrates, and 19.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Salad 414?",
+    "answer": "Salad 414 contains 462 calories, 29.3g of fat, 73.5g of carbohydrates, and 33.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Hakka Noodles 415?",
+    "answer": "Hakka Noodles 415 contains 356 calories, 12.2g of fat, 39.2g of carbohydrates, and 25.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Lemon Rice 416?",
+    "answer": "Lemon Rice 416 contains 652 calories, 20.8g of fat, 52.4g of carbohydrates, and 23.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Soup 417?",
+    "answer": "Chicken Soup 417 contains 616 calories, 30.8g of fat, 53.0g of carbohydrates, and 12.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Khichdi 418?",
+    "answer": "Khichdi 418 contains 592 calories, 9.5g of fat, 86.2g of carbohydrates, and 12.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Biryani 419?",
+    "answer": "Chicken Biryani 419 contains 418 calories, 35.0g of fat, 6.6g of carbohydrates, and 2.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 420?",
+    "answer": "Chapati 420 contains 467 calories, 14.1g of fat, 21.9g of carbohydrates, and 12.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Salad 421?",
+    "answer": "Salad 421 contains 185 calories, 13.5g of fat, 40.9g of carbohydrates, and 48.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Biryani 422?",
+    "answer": "Mutton Biryani 422 contains 144 calories, 22.5g of fat, 13.6g of carbohydrates, and 40.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fish Curry 423?",
+    "answer": "Fish Curry 423 contains 201 calories, 31.4g of fat, 48.7g of carbohydrates, and 1.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Mutton Biryani 424?",
+    "answer": "Mutton Biryani 424 contains 673 calories, 22.8g of fat, 94.0g of carbohydrates, and 7.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Butter Naan 425?",
+    "answer": "Butter Naan 425 contains 76 calories, 13.1g of fat, 59.0g of carbohydrates, and 47.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Donut 426?",
+    "answer": "Donut 426 contains 290 calories, 23.6g of fat, 36.1g of carbohydrates, and 10.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Omelette 427?",
+    "answer": "Omelette 427 contains 175 calories, 28.9g of fat, 51.8g of carbohydrates, and 42.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Green Tea 428?",
+    "answer": "Green Tea 428 contains 454 calories, 12.8g of fat, 71.2g of carbohydrates, and 36.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Omelette 429?",
+    "answer": "Omelette 429 contains 501 calories, 27.2g of fat, 24.8g of carbohydrates, and 36.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pakora 430?",
+    "answer": "Pakora 430 contains 634 calories, 21.0g of fat, 18.0g of carbohydrates, and 45.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Manchurian 431?",
+    "answer": "Veg Manchurian 431 contains 634 calories, 3.8g of fat, 54.7g of carbohydrates, and 44.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Omelette 432?",
+    "answer": "Omelette 432 contains 345 calories, 19.8g of fat, 50.1g of carbohydrates, and 47.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Spring Rolls 433?",
+    "answer": "Spring Rolls 433 contains 211 calories, 25.8g of fat, 78.8g of carbohydrates, and 28.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Burger 434?",
+    "answer": "Chicken Burger 434 contains 403 calories, 23.3g of fat, 44.3g of carbohydrates, and 8.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 435?",
+    "answer": "Paratha 435 contains 104 calories, 7.0g of fat, 18.8g of carbohydrates, and 25.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Banana Shake 436?",
+    "answer": "Banana Shake 436 contains 532 calories, 15.2g of fat, 5.7g of carbohydrates, and 36.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cheese Burger 437?",
+    "answer": "Cheese Burger 437 contains 88 calories, 24.6g of fat, 39.8g of carbohydrates, and 25.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Burger 438?",
+    "answer": "Burger 438 contains 95 calories, 0.9g of fat, 23.5g of carbohydrates, and 7.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Palak Paneer 439?",
+    "answer": "Palak Paneer 439 contains 486 calories, 25.4g of fat, 33.5g of carbohydrates, and 2.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 440?",
+    "answer": "Chapati 440 contains 464 calories, 20.8g of fat, 49.9g of carbohydrates, and 18.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Lemon Rice 441?",
+    "answer": "Lemon Rice 441 contains 299 calories, 24.4g of fat, 51.3g of carbohydrates, and 42.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Sandwich 442?",
+    "answer": "Chicken Sandwich 442 contains 440 calories, 26.5g of fat, 95.9g of carbohydrates, and 36.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Grilled Sandwich 443?",
+    "answer": "Grilled Sandwich 443 contains 503 calories, 30.7g of fat, 80.1g of carbohydrates, and 32.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Egg 444?",
+    "answer": "Fried Egg 444 contains 379 calories, 12.0g of fat, 56.0g of carbohydrates, and 23.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Dosa 445?",
+    "answer": "Dosa 445 contains 414 calories, 8.1g of fat, 62.1g of carbohydrates, and 22.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Burger 446?",
+    "answer": "Burger 446 contains 357 calories, 11.2g of fat, 40.2g of carbohydrates, and 31.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Noodles 447?",
+    "answer": "Fried Noodles 447 contains 67 calories, 29.4g of fat, 95.3g of carbohydrates, and 23.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Khichdi 448?",
+    "answer": "Khichdi 448 contains 579 calories, 28.2g of fat, 12.8g of carbohydrates, and 21.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sandwich 449?",
+    "answer": "Sandwich 449 contains 359 calories, 12.6g of fat, 87.4g of carbohydrates, and 9.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Butter Masala 450?",
+    "answer": "Paneer Butter Masala 450 contains 158 calories, 6.0g of fat, 52.7g of carbohydrates, and 23.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 451?",
+    "answer": "Paneer Sandwich 451 contains 590 calories, 30.4g of fat, 47.1g of carbohydrates, and 22.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Smoothie 452?",
+    "answer": "Smoothie 452 contains 121 calories, 34.9g of fat, 24.8g of carbohydrates, and 27.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 453?",
+    "answer": "Chapati 453 contains 698 calories, 3.3g of fat, 73.1g of carbohydrates, and 19.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Potato Chips 454?",
+    "answer": "Potato Chips 454 contains 325 calories, 24.8g of fat, 75.8g of carbohydrates, and 31.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Maggi Noodles 455?",
+    "answer": "Maggi Noodles 455 contains 540 calories, 29.7g of fat, 36.6g of carbohydrates, and 8.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rajma 456?",
+    "answer": "Rajma 456 contains 166 calories, 14.3g of fat, 63.4g of carbohydrates, and 34.6g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pulao 457?",
+    "answer": "Pulao 457 contains 580 calories, 11.8g of fat, 47.7g of carbohydrates, and 40.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Salad 458?",
+    "answer": "Salad 458 contains 85 calories, 5.1g of fat, 30.1g of carbohydrates, and 28.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pulao 459?",
+    "answer": "Pulao 459 contains 429 calories, 21.0g of fat, 19.6g of carbohydrates, and 5.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for White Rice 460?",
+    "answer": "White Rice 460 contains 451 calories, 6.5g of fat, 17.1g of carbohydrates, and 36.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Samosa 461?",
+    "answer": "Samosa 461 contains 554 calories, 9.4g of fat, 48.2g of carbohydrates, and 2.4g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Sambar 462?",
+    "answer": "Sambar 462 contains 641 calories, 15.4g of fat, 5.7g of carbohydrates, and 28.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Burger 463?",
+    "answer": "Chicken Burger 463 contains 467 calories, 28.7g of fat, 78.3g of carbohydrates, and 21.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Noodles 464?",
+    "answer": "Chicken Noodles 464 contains 103 calories, 17.4g of fat, 70.0g of carbohydrates, and 16.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Noodles 465?",
+    "answer": "Fried Noodles 465 contains 522 calories, 29.7g of fat, 80.7g of carbohydrates, and 29.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Gobi Manchurian 466?",
+    "answer": "Gobi Manchurian 466 contains 368 calories, 4.5g of fat, 32.3g of carbohydrates, and 24.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poha 467?",
+    "answer": "Poha 467 contains 376 calories, 6.8g of fat, 82.6g of carbohydrates, and 39.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Bhindi Fry 468?",
+    "answer": "Bhindi Fry 468 contains 355 calories, 1.2g of fat, 8.7g of carbohydrates, and 45.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tamarind Rice 469?",
+    "answer": "Tamarind Rice 469 contains 523 calories, 15.5g of fat, 38.8g of carbohydrates, and 5.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 470?",
+    "answer": "Fried Rice 470 contains 693 calories, 0.6g of fat, 66.3g of carbohydrates, and 18.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coffee 471?",
+    "answer": "Coffee 471 contains 226 calories, 22.9g of fat, 46.5g of carbohydrates, and 23.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paratha 472?",
+    "answer": "Paratha 472 contains 520 calories, 22.6g of fat, 87.0g of carbohydrates, and 44.3g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Manchurian 473?",
+    "answer": "Chicken Manchurian 473 contains 376 calories, 30.6g of fat, 75.3g of carbohydrates, and 27.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fried Rice 474?",
+    "answer": "Fried Rice 474 contains 515 calories, 31.6g of fat, 49.9g of carbohydrates, and 10.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Biryani 475?",
+    "answer": "Chicken Biryani 475 contains 444 calories, 21.0g of fat, 65.1g of carbohydrates, and 12.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coconut Rice 476?",
+    "answer": "Coconut Rice 476 contains 333 calories, 15.4g of fat, 92.2g of carbohydrates, and 28.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Egg Curry 477?",
+    "answer": "Egg Curry 477 contains 244 calories, 23.6g of fat, 79.1g of carbohydrates, and 40.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Curd Rice 478?",
+    "answer": "Curd Rice 478 contains 388 calories, 15.5g of fat, 64.2g of carbohydrates, and 14.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 479?",
+    "answer": "Paneer Sandwich 479 contains 113 calories, 19.2g of fat, 7.6g of carbohydrates, and 32.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rasam 480?",
+    "answer": "Rasam 480 contains 122 calories, 9.6g of fat, 25.0g of carbohydrates, and 40.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vanilla Ice Cream 481?",
+    "answer": "Vanilla Ice Cream 481 contains 485 calories, 13.6g of fat, 42.9g of carbohydrates, and 21.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Scrambled Eggs 482?",
+    "answer": "Scrambled Eggs 482 contains 346 calories, 10.0g of fat, 59.1g of carbohydrates, and 10.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 483?",
+    "answer": "Chapati 483 contains 371 calories, 31.7g of fat, 89.5g of carbohydrates, and 12.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Poori 484?",
+    "answer": "Poori 484 contains 449 calories, 29.4g of fat, 49.4g of carbohydrates, and 22.2g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Butter Masala 485?",
+    "answer": "Paneer Butter Masala 485 contains 512 calories, 20.3g of fat, 23.4g of carbohydrates, and 22.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Rajma 486?",
+    "answer": "Rajma 486 contains 536 calories, 11.6g of fat, 90.6g of carbohydrates, and 38.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Maggi Noodles 487?",
+    "answer": "Maggi Noodles 487 contains 405 calories, 22.4g of fat, 97.8g of carbohydrates, and 21.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Coffee 488?",
+    "answer": "Coffee 488 contains 332 calories, 21.9g of fat, 6.2g of carbohydrates, and 48.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Potato Chips 489?",
+    "answer": "Potato Chips 489 contains 393 calories, 19.1g of fat, 17.3g of carbohydrates, and 30.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Paneer Sandwich 490?",
+    "answer": "Paneer Sandwich 490 contains 440 calories, 22.4g of fat, 85.0g of carbohydrates, and 36.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Tamarind Rice 491?",
+    "answer": "Tamarind Rice 491 contains 456 calories, 19.5g of fat, 49.1g of carbohydrates, and 1.7g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Veg Salad 492?",
+    "answer": "Veg Salad 492 contains 668 calories, 27.4g of fat, 65.2g of carbohydrates, and 14.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Fish Curry 493?",
+    "answer": "Fish Curry 493 contains 280 calories, 9.1g of fat, 19.6g of carbohydrates, and 21.0g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada Pav 494?",
+    "answer": "Vada Pav 494 contains 120 calories, 21.6g of fat, 52.1g of carbohydrates, and 12.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chapati 495?",
+    "answer": "Chapati 495 contains 52 calories, 17.3g of fat, 43.4g of carbohydrates, and 35.8g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Cake 496?",
+    "answer": "Cake 496 contains 553 calories, 15.7g of fat, 82.6g of carbohydrates, and 24.5g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Pav Bhaji 497?",
+    "answer": "Pav Bhaji 497 contains 648 calories, 22.5g of fat, 46.5g of carbohydrates, and 48.1g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Vada 498?",
+    "answer": "Vada 498 contains 696 calories, 17.4g of fat, 52.9g of carbohydrates, and 5.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Spring Rolls 499?",
+    "answer": "Spring Rolls 499 contains 549 calories, 16.9g of fat, 51.3g of carbohydrates, and 20.9g of protein.",
+    "category": "food"
+  },
+  {
+    "question": "What is the nutrition information for Chicken Soup 500?",
+    "answer": "Chicken Soup 500 contains 659 calories, 1.6g of fat, 30.5g of carbohydrates, and 1.3g of protein.",
+    "category": "food"
+  }
+]

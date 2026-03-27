@@ -1,0 +1,365 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Workouts - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card p-4 border-0 bg-green-soft">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="font-weight-bold mb-0 text-success"><i class="fas fa-calendar-week me-2"></i> Weekly Training Plan</h5>
+                <span class="badge bg-white text-success rounded-pill px-3 py-2">Current Goal: {{ user.profile.weekly_goal|default:"Not Set" }}</span>
+            </div>
+            <div class="row g-3">
+                {% for day in schedule %}
+                <div class="col">
+                    <div class="card h-100 p-3 text-center border-0 shadow-sm cursor-pointer hover-scale {% if day.day_of_week == today.weekday %}border border-success bg-white{% else %}opacity-75{% endif %}" 
+                         style="border-radius: 16px; cursor: pointer;"
+                         onclick='openWorkoutSession("{{ day.get_day_of_week_display }}", "{{ day.template.name|default:"General" }}", {{ day.is_rest_day|lower }}, 
+                            [{% for ex in day.template.exercises.all %}{"name": "{{ ex.name|escapejs }}", "sets_reps": "{{ ex.sets_reps|escapejs }}", "weight": "{{ ex.weight|escapejs }}"}{% if not forloop.last %},{% endif %}{% endfor %}]
+                         )'>
+                        <span class="text-muted small font-weight-bold mb-1">{{ day.get_day_of_week_display|slice:":3"|upper }}</span>
+                        {% if day.is_rest_day %}
+                        <div class="stats-icon bg-light mx-auto mb-1" style="width: 32px; height: 32px;">
+                            <i class="fas fa-coffee fa-xs text-muted"></i>
+                        </div>
+                        <span class="small font-weight-bold text-muted">REST</span>
+                        {% else %}
+                        <div class="stats-icon bg-success bg-opacity-10 mx-auto mb-1" style="width: 32px; height: 32px;">
+                            <i class="fas fa-dumbbell fa-xs text-success"></i>
+                        </div>
+                        <span class="small font-weight-bold text-dark">{{ day.template.name|default:"Workout" }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row align-items-center mb-4">
+    <div class="col-md-8">
+        <h1 class="h2 font-weight-bold">Workout History</h1>
+        <p class="text-muted">Review your gym performance and stay consistent.</p>
+    </div>
+    <div class="col-md-4 text-md-end">
+        <button class="btn btn-primary rounded-pill px-4 shadow" data-bs-toggle="modal" data-bs-target="#addWorkoutModal">
+            <i class="fas fa-plus me-2"></i> Log New Workout
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Workout Progress Chart -->
+    <div class="col-lg-12 mb-4">
+        <div class="card p-4 border-0 shadow-sm">
+            <h5 class="font-weight-bold mb-4">Daily Calories Burned</h5>
+            <div style="position: relative; height: 250px; width: 100%;">
+                <canvas id="workoutChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workout Log Tables (Split View) -->
+    <div class="col-lg-7 mb-4">
+        <div class="card p-0 overflow-hidden h-100">
+            <div class="p-4 bg-white border-bottom">
+                <h5 class="mb-0 font-weight-bold">Recent History</h5>
+            </div>
+            {% if workouts %}
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="bg-light">
+                        <tr class="text-muted small">
+                            <th class="px-4 py-3">DATE</th>
+                            <th class="py-3">TYPE</th>
+                            <th class="py-3">DURATION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for workout in workouts|slice:":10" %}
+                        <tr class="align-middle">
+                            <td class="px-4 py-3 font-weight-bold">{{ workout.date|date:"M j" }}</td>
+                            <td class="py-3"><span class="badge bg-green-soft px-3 py-2 rounded-pill">{{ workout.workout_type }}</span></td>
+                            <td class="py-3">{{ workout.duration_minutes }}m</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <div class="text-center py-5">
+                <p class="text-muted">No workouts found.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- NEW: Last 10 Exercises Table -->
+    <div class="col-lg-5 mb-4">
+        <div class="card p-0 overflow-hidden h-100 border-0 shadow-sm">
+            <div class="p-4 bg-white border-bottom d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 font-weight-bold text-success">Last 10 Exercises</h5>
+                <i class="fas fa-history text-muted"></i>
+            </div>
+            {% if recent_exercises %}
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="bg-light">
+                        <tr class="text-muted small">
+                            <th class="px-4 py-3">EXERCISE</th>
+                            <th class="py-3">RESULT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for ex in recent_exercises %}
+                        <tr class="align-middle">
+                            <td class="px-4 py-3">
+                                <span class="font-weight-bold d-block">{{ ex.name }}</span>
+                                <small class="text-muted">{{ ex.workout.date|date:"M j" }}</small>
+                            </td>
+                            <td class="py-3">
+                                <span class="badge bg-light text-dark border rounded-pill">{{ ex.sets_reps }}</span>
+                                <br><small class="text-muted">{{ ex.weight }}</small>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <div class="text-center py-5">
+                <p class="text-muted small">Start a workout to see individual exercise history.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Workout Session Modal -->
+<div class="modal fade" id="workoutSessionModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="border-radius: 28px; border: none; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
+            <div class="modal-header border-0 p-4 pb-0">
+                <div>
+                    <h4 class="modal-title font-weight-bold mb-1" id="sessionTitle">Workout Title</h4>
+                    <p class="text-muted small mb-0" id="sessionDay">Monday Schedule</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div id="restDayView" class="text-center py-5 d-none">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3233/3233481.png" style="width: 120px;" class="mb-4 opacity-75">
+                    <h5 class="font-weight-bold">Rest Day</h5>
+                    <p class="text-muted mb-4">You have earned some well-deserved rest today. Enjoy your break!</p>
+                </div>
+
+                <div id="activeWorkoutView">
+                    <div class="mb-4">
+                        <div class="progress mb-2" style="height: 10px; border-radius: 20px;">
+                            <div id="sessionProgress" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                        </div>
+                        <small class="text-muted font-weight-bold" id="sessionStatus">0 of 0 exercises completed</small>
+                    </div>
+
+                    <div id="exercisesContainer" class="list-group list-group-flush mb-4 scroll-styled" style="max-height: 400px; overflow-y: auto;">
+                        <!-- JS will populate exercises here -->
+                    </div>
+
+                    <form id="sessionSubmitForm" method="post" action="{% url 'workout' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="date" value="{{ today|date:'Y-m-d' }}">
+                        <input type="hidden" name="workout_type" id="sessionWorkoutType">
+                        <input type="hidden" name="calories_burned" value="300">
+                        <input type="hidden" name="duration_minutes" value="45">
+                        <input type="hidden" name="exercises_list" id="sessionExercisesData">
+                        
+                        <div class="alert alert-light border-0 py-3 mb-4 rounded-4 small">
+                            <i class="fas fa-info-circle text-success me-2"></i> After finishing, this will be saved to your daily history.
+                        </div>
+
+                        <button type="submit" id="finishWorkoutBtn" class="btn btn-success w-100 rounded-pill py-3 font-weight-bold shadow-sm disabled">
+                            Complete Workout <i class="fas fa-check-circle ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Manual Add Workout Modal -->
+<div class="modal fade" id="addWorkoutModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 28px; border: none; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
+            <div class="modal-header border-0 p-4 pb-0">
+                <h4 class="modal-title font-weight-bold mb-0">Log Manual Workout</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form method="post" action="{% url 'workout' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label small font-weight-bold text-muted uppercase">Workout Date</label>
+                        {{ form.date }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small font-weight-bold text-muted uppercase">Workout Type</label>
+                        {{ form.workout_type }}
+                        <div class="form-text small">e.g. Strength Training, Running, Yoga</div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <label class="form-label small font-weight-bold text-muted uppercase">Duration (min)</label>
+                            {{ form.duration_minutes }}
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label small font-weight-bold text-muted uppercase">Calories</label>
+                            {{ form.calories_burned }}
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100 rounded-pill py-3 font-weight-bold shadow-sm">
+                        Save Workout <i class="fas fa-save ms-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Chart.js implementation
+    document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('workoutChart');
+        if (ctx) {
+            new Chart(ctx.getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: [{% for s in chart_data %}"{{ s.display_date|date:'M j' }}",{% endfor %}],
+                    datasets: [{
+                        label: 'Calories Burned',
+                        data: [{% for s in chart_data %}{{ s.calories_burned }},{% endfor %}],
+                        borderColor: '#22C55E',
+                        backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        fill: true,
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#22C55E',
+                        pointBorderWidth: 2,
+                        pointRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { display: false }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        }
+    });
+
+    // Workout Session Handling
+    let currentExercises = [];
+    const workoutSessionModal = new bootstrap.Modal(document.getElementById('workoutSessionModal'));
+
+    window.openWorkoutSession = function(day, title, isRestDay, exercises) {
+        document.getElementById('sessionTitle').innerText = title;
+        document.getElementById('sessionDay').innerText = day + " Schedule";
+        document.getElementById('sessionWorkoutType').value = title;
+        
+        const activeView = document.getElementById('activeWorkoutView');
+        const restView = document.getElementById('restDayView');
+        
+        if (isRestDay) {
+            activeView.classList.add('d-none');
+            restView.classList.remove('d-none');
+        } else {
+            activeView.classList.remove('d-none');
+            restView.classList.add('d-none');
+            
+            // Populate Exercises
+            currentExercises = exercises.map(ex => ({...ex, completed: false}));
+            renderExercises();
+        }
+        
+        workoutSessionModal.show();
+    };
+
+    function renderExercises() {
+        const container = document.getElementById('exercisesContainer');
+        if(!container) return;
+        container.innerHTML = '';
+        
+        currentExercises.forEach((ex, index) => {
+            const item = document.createElement('div');
+            item.className = `list-group-item px-3 py-3 border-0 mb-2 rounded-4 d-flex align-items-center justify-content-between transition-all ${ex.completed ? 'bg-green-soft opacity-75' : 'bg-light'}`;
+            item.style.cursor = 'pointer';
+            item.onclick = (e) => {
+                if(e.target.tagName !== 'INPUT') toggleExercise(index);
+            };
+
+            item.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="checkbox" ${ex.completed ? 'checked' : ''} onchange="toggleExercise(${index})">
+                    </div>
+                    <div>
+                        <h6 class="mb-0 font-weight-bold ${ex.completed ? 'text-decoration-line-through text-muted' : ''}">${ex.name}</h6>
+                        <small class="text-muted">${ex.sets_reps} • ${ex.weight}</small>
+                    </div>
+                </div>
+                ${ex.completed ? '<i class="fas fa-check-circle text-success"></i>' : ''}
+            `;
+            container.appendChild(item);
+        });
+        
+        updateProgress();
+    }
+
+    window.toggleExercise = function(index) {
+        currentExercises[index].completed = !currentExercises[index].completed;
+        renderExercises();
+    };
+
+    function updateProgress() {
+        const completed = currentExercises.filter(ex => ex.completed).length;
+        const total = currentExercises.length;
+        const percent = total > 0 ? (completed / total) * 100 : 0;
+        
+        const progressBar = document.getElementById('sessionProgress');
+        const statusText = document.getElementById('sessionStatus');
+        const finishBtn = document.getElementById('finishWorkoutBtn');
+        const hiddenData = document.getElementById('sessionExercisesData');
+
+        if(progressBar) progressBar.style.width = percent + '%';
+        if(statusText) statusText.innerText = `${completed} of ${total} exercises completed`;
+        
+        if (finishBtn) {
+            if (completed > 0) {
+                finishBtn.classList.remove('disabled');
+            } else {
+                finishBtn.classList.add('disabled');
+            }
+        }
+        
+        if(hiddenData) hiddenData.value = JSON.stringify(currentExercises);
+    }
+</script>
+{% endblock %}

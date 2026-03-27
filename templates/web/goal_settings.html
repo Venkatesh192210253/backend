@@ -1,0 +1,137 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Goal Settings - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+        <div class="d-flex align-items-center mb-4">
+            <a href="{% url 'profile' %}" class="btn btn-link text-decoration-none p-0 me-3">
+                <i class="fas fa-arrow-left text-primary fs-4"></i>
+            </a>
+            <div>
+                <h2 class="font-weight-bold mb-0">Goal Settings</h2>
+                <small class="text-muted">Define your targets</small>
+            </div>
+        </div>
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show rounded-4" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <!-- AI Adaptive Engine -->
+            <div class="card p-4 mb-4 border-0 shadow-sm rounded-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="font-weight-bold mb-1">AI Adaptive Engine</h6>
+                        <h5 class="mb-0">Adaptive Mode</h5>
+                        <small class="text-muted">Auto-adjust targets based on recovery and performance</small>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input fs-3" type="checkbox" role="switch" checked>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weight Goals -->
+            <div class="card p-4 mb-4 border-0 shadow-sm rounded-4">
+                <h5 class="font-weight-bold mb-3">Weight Goals</h5>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <label class="form-label text-muted small">Current Weight (kg)</label>
+                        <input type="number" step="0.1" name="current_weight" class="form-control bg-light border-0 py-2 rounded-3" value="{{ request.user.current_weight|default:80.0 }}">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label text-muted small">Target Weight (kg)</label>
+                        <input type="number" step="0.1" name="target_weight" class="form-control bg-light border-0 py-2 rounded-3" value="{{ goals.target_weight|default:70.0 }}">
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label class="form-label text-muted small">Weekly Goal (kg per week)</label>
+                        <div class="input-group">
+                            <input type="number" step="0.1" name="weekly_goal_weight" class="form-control bg-light border-0 py-2 rounded-start-3" value="{{ goals.weekly_goal_weight|default:0.5 }}">
+                            <span class="input-group-text bg-light border-0 text-muted small rounded-end-3">kg/week</span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-1">
+                            <small class="text-muted" style="font-size: 10px;">Lose: 0.2 - 1.0kg</small>
+                            <small class="text-muted" style="font-size: 10px;">Gain: 0.1 - 0.5kg</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Predicted Completion (Dynamic) -->
+                {% if weeks_remaining > 0 %}
+                <div class="mt-4 p-3 rounded-4" style="background-color: #F0FDF4;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div>
+                            <h6 class="font-weight-bold text-dark mb-0">Predicted Completion</h6>
+                            <small class="text-success" style="font-size: 11px;">Based on {{ goals.weekly_goal_weight }}kg per week</small>
+                        </div>
+                        <span class="text-success font-weight-bold fs-5">{{ completion_percentage }}%</span>
+                    </div>
+                    <div class="d-flex align-items-baseline mb-2 mt-3">
+                        <h2 class="mb-0 text-success font-weight-bold me-2">{{ weeks_remaining }}</h2>
+                        <span class="text-dark font-weight-bold">weeks remaining</span>
+                    </div>
+                    <div class="progress mb-2" style="height: 6px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: {{ completion_percentage }}%;"></div>
+                    </div>
+                    <small class="text-muted">Goal Estimate: ~ {{ weeks_remaining }} weeks from today</small>
+                </div>
+                {% else %}
+                <div class="mt-4 p-3 rounded-4 bg-light">
+                    <p class="mb-0 text-center text-muted">Set a target weight and weekly goal to see prediction.</p>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Activity Goals -->
+            <div class="card p-4 mb-4 border-0 shadow-sm rounded-4">
+                <h5 class="font-weight-bold mb-3">Activity Goals</h5>
+                <div class="mb-3">
+                    <label class="form-label text-muted small">Workouts per Week</label>
+                    <input type="number" name="workouts_per_week" class="form-control bg-light border-0 py-2 rounded-3" value="4">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-muted small">Daily Step Goal</label>
+                    <input type="number" name="daily_step_goal" class="form-control bg-light border-0 py-2 rounded-3" value="{{ goals.daily_step_goal|default:10000 }}">
+                </div>
+            </div>
+
+            <!-- Nutrition Goals -->
+            <div class="card p-4 mb-4 border-0 shadow-sm rounded-4">
+                <h5 class="font-weight-bold mb-3">Nutrition Goals</h5>
+                <div class="mb-3">
+                    <label class="form-label text-muted small">Daily Calorie Target</label>
+                    <input type="number" name="daily_calorie_target" class="form-control bg-light border-0 py-2 rounded-3" value="{{ goals.daily_calorie_target|default:2500 }}">
+                </div>
+                <div class="row g-3">
+                    <div class="col-4">
+                        <label class="form-label text-muted small">Protein (g)</label>
+                        <input type="number" name="protein_g" class="form-control bg-light border-0 py-2 rounded-3" value="{{ goals.protein_g|default:160 }}">
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-muted small">Carbs (g)</label>
+                        <input type="number" name="carbs_g" class="form-control bg-light border-0 py-2 rounded-3" value="{{ goals.carbs_g|default:250 }}">
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-muted small">Fats (g)</label>
+                        <input type="number" name="fats_g" class="form-control bg-light border-0 py-2 rounded-3" value="{{ goals.fats_g|default:70 }}">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100 rounded-pill py-3 font-weight-bold shadow fs-5">
+                Save Goals
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}

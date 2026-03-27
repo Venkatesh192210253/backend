@@ -1,0 +1,52 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Notifications - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="row align-items-center mb-5">
+    <div class="col-md-12">
+        <h1 class="h2 font-weight-bold">Notifications</h1>
+        <p class="text-muted">Stay updated with your fitness progress and friends.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card p-4 border-0">
+            {% if notifications %}
+            <div class="list-group list-group-flush">
+                {% for notification in notifications %}
+                <div class="list-group-item px-4 py-4 {% if not notification.is_read %}bg-light{% endif %} border-0 mb-3" style="border-radius: 20px;">
+                    <div class="d-flex align-items-start">
+                        <div class="stats-icon bg-green-soft me-4 mb-0 flex-shrink-0" style="width: 60px; height: 60px; border-radius: 16px;">
+                            <i class="fas fa-bell fa-lg"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0 font-weight-bold">{{ notification.title }}</h5>
+                                <small class="text-muted">{{ notification.created_at|timesince }} ago</small>
+                            </div>
+                            <p class="mb-0 text-muted">{{ notification.description }}</p>
+                        </div>
+                        {% if not notification.is_read %}
+                        <div class="ms-3 pt-2">
+                            <span class="badge rounded-circle p-1 bg-success" style="width: 10px; height: 10px;">&nbsp;</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="text-center py-5">
+                <div class="stats-icon bg-light mx-auto mb-3" style="width: 80px; height: 80px; border-radius: 50%;">
+                    <i class="fas fa-bell-slash fa-2x text-muted"></i>
+                </div>
+                <p class="text-muted">You have no new notifications.</p>
+                <button class="btn btn-outline-success rounded-pill px-4">Refresh Screen</button>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

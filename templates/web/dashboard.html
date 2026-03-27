@@ -1,0 +1,195 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Dashboard - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="h3 mb-0 text-gray-800">Welcome, {{ user.profile.full_name|default:user.username }}!</h1>
+        <p class="text-muted small mb-0">Track your health and fitness progress.</p>
+    </div>
+    
+    <div class="d-flex align-items-center bg-white rounded-pill shadow-sm p-1 border">
+        <a href="?date={{ prev_date|date:'Y-m-d' }}" class="btn btn-link text-success p-2"><i class="fas fa-chevron-left"></i></a>
+        <div class="px-3 text-center border-start border-end">
+            <span class="d-block font-weight-bold text-success" style="font-size: 14px;">
+                {% if is_today %}Today{% else %}{{ active_date|date:"l, M j" }}{% endif %}
+            </span>
+            <input type="date" id="dashboardDatePicker" value="{{ active_date|date:'Y-m-d' }}" class="border-0 p-0 text-muted" style="font-size: 11px; outline: none; background: transparent;">
+        </div>
+        <a href="?date={{ next_date|date:'Y-m-d' }}" class="btn btn-link text-success p-2"><i class="fas fa-chevron-right"></i></a>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Calories Consumed Card -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 p-4">
+            <div class="stats-icon bg-green-soft">
+                <i class="fas fa-fire"></i>
+            </div>
+            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Calories Consumed</div>
+            <div class="h3 mb-0 font-weight-bold text-gray-800">{{ stats.calories_consumed }} kcal</div>
+            <div class="mt-2 small text-muted">Target: {{ goals.daily_calorie_target|default:"0" }} kcal</div>
+            <div class="progress mt-3" style="height: 6px; border-radius: 10px;">
+                <div class="progress-bar bg-success" role="progressbar" 
+                     style="width: {{ calorie_progress|floatformat:0 }}%" 
+                     aria-valuenow="{{ calorie_progress|floatformat:0 }}" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calories Burned Card -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 p-4">
+            <div class="stats-icon bg-orange-soft">
+                <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Calories Burned</div>
+            <div class="h3 mb-0 font-weight-bold text-gray-800">{{ stats.calories_burned }} kcal</div>
+            <div class="mt-2 small text-muted">From workouts</div>
+        </div>
+    </div>
+
+    <!-- Water Intake Card -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 p-4">
+            <div class="stats-icon bg-purple-soft">
+                <i class="fas fa-tint"></i>
+            </div>
+            <div class="text-xs font-weight-bold text-purple text-uppercase mb-1">Water Intake</div>
+            <div class="h3 mb-0 font-weight-bold text-gray-800">{{ stats.water_ml }} ml</div>
+            <div class="mt-2 small text-muted">Stay hydrated!</div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Protein Card -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 p-4 shadow-sm border-0 border-start border-4 border-primary">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="text-xs font-weight-bold text-primary text-uppercase">Protein</div>
+                <div class="h4 mb-0 font-weight-bold text-gray-800">{{ stats.protein_consumed|floatformat:1 }}g</div>
+            </div>
+            <div class="progress" style="height: 6px; border-radius: 10px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: {{ protein_progress|floatformat:0 }}%"></div>
+            </div>
+            <div class="mt-2 small text-muted">Goal: {{ goals.protein_g|default:"0" }}g</div>
+        </div>
+    </div>
+    <!-- Carbs Card -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 p-4 shadow-sm border-0 border-start border-4 border-info">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="text-xs font-weight-bold text-info text-uppercase">Carbs</div>
+                <div class="h4 mb-0 font-weight-bold text-gray-800">{{ stats.carbs_consumed|floatformat:1 }}g</div>
+            </div>
+            <div class="progress" style="height: 6px; border-radius: 10px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: {{ carbs_progress|floatformat:0 }}%"></div>
+            </div>
+            <div class="mt-2 small text-muted">Goal: {{ goals.carbs_g|default:"0" }}g</div>
+        </div>
+    </div>
+    <!-- Fat Card -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card h-100 p-4 shadow-sm border-0 border-start border-4 border-warning">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="text-xs font-weight-bold text-warning text-uppercase">Fat</div>
+                <div class="h4 mb-0 font-weight-bold text-gray-800">{{ stats.fat_consumed|floatformat:1 }}g</div>
+            </div>
+            <div class="progress" style="height: 6px; border-radius: 10px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: {{ fat_progress|floatformat:0 }}%"></div>
+            </div>
+            <div class="mt-2 small text-muted">Goal: {{ goals.fats_g|default:"0" }}g</div>
+        </div>
+    </div>
+</div>
+
+<!-- NEW WELLNESS ROW -->
+<!-- WELLNESS & AI ANALYTICS ROW -->
+<div class="row mb-4">
+    <!-- Readiness & Recovery -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card h-100 p-4 border-0 shadow-sm text-center" style="background: linear-gradient(135deg, #EEF2FF 0%, #FFFFFF 100%); border-radius: 20px;">
+            <div class="text-xs font-weight-bold text-indigo text-uppercase mb-2">Work Readiness</div>
+            <div class="position-relative d-inline-block mx-auto mb-2">
+                <svg width="80" height="80" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="50" stroke="#E5E7EB" stroke-width="8" fill="transparent" />
+                    <circle cx="60" cy="60" r="50" stroke="#4F46E5" stroke-width="8" fill="transparent" 
+                            stroke-dasharray="314.159" stroke-dashoffset="{{ readiness_offset }}" 
+                            transform="rotate(-90 60 60)" />
+                </svg>
+                <div class="position-absolute top-50 start-50 translate-middle font-weight-bold text-indigo" style="font-size: 16px;">
+                    {{ readiness_score }}%
+                </div>
+            </div>
+            <p class="small text-muted mb-0" style="font-size: 10px; line-height: 1.2;">{% if readiness_score > 80 %}Ready to push hard!{% elif readiness_score > 50 %}Moderate readiness.{% else %}Rest advised.{% endif %}</p>
+        </div>
+    </div>
+
+    <!-- Goal Prediction Card -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card h-100 p-4 border-0 shadow-lg text-white" style="background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%); border-radius: 20px;">
+            <div class="text-xs font-weight-bold text-uppercase mb-2" style="color: rgba(255,255,255,0.7);">Goal Prediction</div>
+            {% if prediction.is_valid %}
+            <div class="h4 font-weight-bold mb-1">{{ prediction.target_date }}</div>
+            <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check me-2" style="font-size: 14px; color: #6EE7B7;"></i>
+                <span class="font-weight-bold" style="font-size: 11px; color: #D1FAE5;">{{ prediction.trend }}</span>
+            </div>
+            <div class="mt-auto pt-2">
+                <div class="progress" style="height: 6px; background: rgba(0,0,0,0.2); border: none; border-radius: 10px;">
+                    <div class="progress-bar bg-white" role="progressbar" style="width: {{ prediction.confidence }}%"></div>
+                </div>
+                <div class="text-end mt-1" style="font-size: 10px; color: rgba(255,255,255,0.8);">{{ prediction.confidence }}% Confidence Score</div>
+            </div>
+            {% else %}
+            <div class="text-center py-2 opacity-75">
+                <i class="fas fa-bullseye mb-2 h4"></i>
+                <p class="small mb-0" style="font-size: 10px;">Goal data pending set-up</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Energy Index Card -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card h-100 p-4 border-0 shadow-sm" style="background: linear-gradient(135deg, #FFF7ED 0%, #FFFFFF 100%); border-radius: 20px;">
+            <div class="text-xs font-weight-bold text-orange text-uppercase mb-2">Energy Index</div>
+            <div class="d-flex align-items-center mb-3">
+                <div class="h2 font-weight-bold text-orange mb-0 me-2">{{ energy_index }}</div>
+                <i class="fas fa-bolt text-orange"></i>
+            </div>
+            <div class="progress mb-2" style="height: 8px; border-radius: 20px; background: #FFEDD5;">
+                <div class="progress-bar bg-orange" role="progressbar" style="width: {{ energy_index }}%"></div>
+            </div>
+            <p class="small text-muted mb-0" style="font-size: 10px;">{% if energy_index > 80 %}Full Tank!{% else %}Stable Energy.{% endif %}</p>
+        </div>
+    </div>
+
+    <!-- Weight Management Card -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card h-100 p-4 border-0 shadow-sm" style="background: linear-gradient(135deg, #F0FDF4 0%, #FFFFFF 100%); border-radius: 20px;">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="text-xs font-weight-bold text-success text-uppercase">Weight</div>
+                <a href="{% url 'weight_log' %}" class="btn btn-sm btn-link p-0"><i class="fas fa-plus-circle text-success" style="font-size: 20px;"></i></a>
+            </div>
+            <div class="h3 font-weight-bold text-gray-800 mb-2">{{ current_weight|default:"--" }}<span class="small font-weight-normal text-muted ms-1">kg</span></div>
+            <div class="progress mt-auto" style="height: 4px;">
+                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style="width: {{ weight_progress|default:0 }}%"></div>
+            </div>
+            <div class="text-muted mt-1" style="font-size: 10px;">Goal: {{ goals.target_weight|default:"--" }}kg</div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% block extra_js %}
+<script>
+    document.getElementById('dashboardDatePicker').addEventListener('change', function(e) {
+        window.location.href = '?date=' + e.target.value;
+    });
+</script>
+{% endblock %}
+{% endblock %}

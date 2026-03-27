@@ -1,0 +1,125 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Profile - MyFitnessBuddy{% endblock %}
+
+{% block content %}
+<div class="row mb-5">
+    <div class="col-md-12">
+        <h1 class="h2 font-weight-bold">Profile Settings</h1>
+        <p class="text-muted">Manage your personal information and preferences.</p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- User Overview Card -->
+    <div class="col-lg-4 mb-4">
+        <div class="card p-4 text-center">
+            <div class="position-relative d-inline-block mx-auto mb-4">
+                <img src="{% if profile.profile_photo %}{{ profile.profile_photo.url }}{% else %}https://ui-avatars.com/api/?name={{ user.username }}&background=22C55E&color=fff&size=128{% endif %}" 
+                     class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; border: 5px solid #F0FDF4;">
+                <button class="btn btn-primary rounded-circle position-absolute bottom-0 end-0 p-2 shadow" style="width: 40px; height: 40px;">
+                    <i class="fas fa-camera fa-sm"></i>
+                </button>
+            </div>
+            
+            <h4 class="font-weight-bold mb-1">{{ profile.full_name|default:user.username }}</h4>
+            <p class="text-muted">{{ user.email }}</p>
+            <span class="badge bg-green-soft px-3 py-2 rounded-pill mb-4"><i class="fas fa-star me-2"></i> LEVEL {{ profile.level }}</span>
+            
+            <div class="d-flex justify-content-center gap-4 py-3 border-top border-bottom mb-4">
+                <div class="text-center">
+                    <h5 class="mb-0 font-weight-bold">{{ profile.workouts_completed }}</h5>
+                    <small class="text-muted text-uppercase" style="font-size: 10px;">WORKOUTS</small>
+                </div>
+                <div class="text-center">
+                    <h5 class="mb-0 font-weight-bold">{{ profile.streak }}</h5>
+                    <small class="text-muted text-uppercase" style="font-size: 10px;">STREAK</small>
+                </div>
+                <div class="text-center">
+                    <h5 class="mb-0 font-weight-bold">{{ profile.xp }}</h5>
+                    <small class="text-muted text-uppercase" style="font-size: 10px;">POINTS</small>
+                </div>
+            </div>
+            
+            <button class="btn btn-outline-success w-100 rounded-pill py-2 font-weight-bold">
+                EDIT BIOGRAPHY
+            </button>
+        </div>
+
+        <!-- Account Settings Card -->
+        <div class="card p-4 mt-4 border-0 shadow-sm rounded-4">
+            <h5 class="font-weight-bold mb-3">Account Settings</h5>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3 px-2 rounded-3 mb-1">
+                    <div><i class="fas fa-user text-secondary me-3" style="width: 20px;"></i> <span class="text-dark font-weight-bold">Edit Profile</span></div>
+                    <i class="fas fa-chevron-right text-muted small"></i>
+                </a>
+                <a href="{% url 'goal_settings' %}" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3 px-2 rounded-3 mb-1">
+                    <div><i class="fas fa-cog text-secondary me-3" style="width: 20px;"></i> <span class="text-dark font-weight-bold">Goal Settings</span></div>
+                    <i class="fas fa-chevron-right text-muted small"></i>
+                </a>
+                <a href="{% url 'notifications' %}" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3 px-2 rounded-3 mb-1">
+                    <div><i class="fas fa-bell text-secondary me-3" style="width: 20px;"></i> <span class="text-dark font-weight-bold">Notifications</span></div>
+                    <i class="fas fa-chevron-right text-muted small"></i>
+                </a>
+                <a href="{% url 'privacy_security' %}" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3 px-2 rounded-3 mb-1">
+                    <div><i class="fas fa-lock text-secondary me-3" style="width: 20px;"></i> <span class="text-dark font-weight-bold">Privacy & Security</span></div>
+                    <i class="fas fa-chevron-right text-muted small"></i>
+                </a>
+                <a href="{% url 'help_support' %}" class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center py-3 px-2 rounded-3">
+                    <div><i class="fas fa-question-circle text-secondary me-3" style="width: 20px;"></i> <span class="text-dark font-weight-bold">Help & Support</span></div>
+                    <i class="fas fa-chevron-right text-muted small"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personal Info Form -->
+    <div class="col-lg-8">
+        <div class="card p-5 border-0">
+            <h5 class="font-weight-bold mb-4"><i class="fas fa-user-edit me-2 text-success"></i> Personal Details</h5>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <label class="form-label font-weight-bold text-muted small">FULL NAME</label>
+                        <input type="text" name="full_name" class="form-control bg-light border-0 py-3 rounded-4" value="{{ profile.full_name|default:'' }}" placeholder="Not set">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label font-weight-bold text-muted small">USERNAME</label>
+                        <input type="text" class="form-control bg-light border-0 py-3 rounded-4" value="{{ user.username }}" readonly disabled>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="form-label font-weight-bold text-muted small">BIO</label>
+                        <textarea name="bio" class="form-control bg-light border-0 py-3 rounded-4" rows="3" placeholder="Tell us about yourself">{{ profile.bio|default:'' }}</textarea>
+                    </div>
+                    
+                    <h5 class="font-weight-bold mt-5 mb-2"><i class="fas fa-chart-bar me-2 text-success"></i> Physical Info</h5>
+                    <div class="col-md-4">
+                        <label class="form-label font-weight-bold text-muted small">AGE</label>
+                        <input type="number" name="age" class="form-control bg-light border-0 py-3 rounded-4" value="{{ user.age|default:'' }}" placeholder="Years">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label font-weight-bold text-muted small">GENDER</label>
+                        <select name="gender" class="form-select bg-light border-0 py-3 rounded-4">
+                            <option value="male" {% if user.gender == 'male' %}selected{% endif %}>Male</option>
+                            <option value="female" {% if user.gender == 'female' %}selected{% endif %}>Female</option>
+                            <option value="other" {% if user.gender == 'other' %}selected{% endif %}>Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label font-weight-bold text-muted small">WEIGHT (KG)</label>
+                        <input type="number" step="0.1" name="current_weight" class="form-control bg-light border-0 py-3 rounded-4" value="{{ user.current_weight|default:'' }}" placeholder="kg">
+                    </div>
+                </div>
+                
+                <div class="mt-5 text-end">
+                    <button type="submit" class="btn btn-primary rounded-pill px-5 py-3 shadow">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'web/base.html' %}
+
+{% block title %}Weight Log - MyFitnessBuddy{% endblock %}
+
+{% block extra_css %}
+<style>
+    .weight-card {
+        transition: transform 0.2s;
+    }
+    .weight-card:hover {
+        transform: translateY(-5px);
+    }
+    .btn-log {
+        background: linear-gradient(135deg, var(--primary-green) 0%, #16A34A 100%);
+        color: white;
+        border: none;
+    }
+    .btn-log:hover {
+        background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);
+        color: white;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <!-- Header -->
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <h1 class="h3 fw-bold text-dark mb-1">Weight Tracker</h1>
+            <p class="text-muted mb-0">Monitor your progress towards {{ goal_weight }}kg</p>
+        </div>
+        <a href="{% url 'dashboard' %}" class="btn btn-light rounded-circle shadow-sm" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-chevron-left text-muted"></i>
+        </a>
+    </div>
+
+    <!-- Prediction Alert -->
+    {% if weeks_remaining > 0 %}
+    <div class="alert border-0 shadow-sm d-flex align-items-center p-3 mb-4" style="background: #F0FDF4; border-left: 5px solid #22C55E !important; border-radius: 12px;">
+        <div class="rounded-circle bg-white d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+            <i class="fas fa-calendar-alt text-success"></i>
+        </div>
+        <div>
+            <h6 class="fw-bold text-success mb-0">Goal Prediction</h6>
+            <p class="text-success small mb-0">At your current pace of {{ weekly_goal }}kg/week, you'll reach your 
+                <span class="fw-bold">{% if is_bulking %}bulking{% else %}cutting{% endif %} goal</span> 
+                in approximately <span class="fw-bold">{{ weeks_remaining }} weeks</span>.
+            </p>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Stats Row -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm text-center bg-white weight-card">
+                <p class="text-uppercase text-muted fw-bold small mb-1">Current</p>
+                <h3 class="fw-bold mb-0 text-dark">{{ current_weight }} <span class="h6 text-muted">kg</span></h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm text-center bg-white weight-card">
+                <p class="text-uppercase text-muted fw-bold small mb-1">{% if is_bulking %}Bulking{% else %}Cutting{% endif %} Goal</p>
+                <h3 class="fw-bold mb-0 text-primary">{{ goal_weight }} <span class="h6 text-muted">kg</span></h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm text-center bg-white weight-card">
+                <p class="text-uppercase text-muted fw-bold small mb-1">Remaining</p>
+                <h3 class="fw-bold mb-0 text-success">{{ weight_remaining|floatformat:1 }} <span class="h6 text-muted">kg</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <!-- Log Weight -->
+        <div class="col-lg-6">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+                <h5 class="fw-bold mb-4">Log Daily Weight</h5>
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="log_weight">
+                    <div class="input-group input-group-lg mb-3">
+                        <input type="number" step="0.1" name="weight" class="form-control border-light bg-light" placeholder="0.0" required style="border-radius: 12px 0 0 12px;">
+                        <span class="input-group-text border-light bg-light text-muted fw-bold" style="border-radius: 0 12px 12px 0;">kg</span>
+                    </div>
+                    <button type="submit" class="btn btn-log btn-lg w-100 fw-bold shadow-sm" style="border-radius: 12px;">Update Progress</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Goal Strategy -->
+        <div class="col-lg-6">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+                <h5 class="fw-bold mb-4">Goal Strategy</h5>
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="update_goal">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <label class="small fw-bold text-muted mb-1">Target Weight</label>
+                            <div class="input-group">
+                                <input type="number" step="0.1" name="target_weight" value="{{ goal_weight }}" class="form-control border-light bg-light" style="border-radius: 10px 0 0 10px;">
+                                <span class="input-group-text border-light bg-light small" style="border-radius: 0 10px 10px 0;">kg</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="small fw-bold text-muted mb-1">Weekly Pace</label>
+                            <div class="input-group">
+                                <input type="number" step="0.01" name="weekly_goal" value="{{ weekly_display }}" class="form-control border-light bg-light" style="border-radius: 10px 0 0 10px;">
+                                <select name="weekly_unit" class="form-select border-light bg-light small" style="border-radius: 0 10px 10px 0; max-width: 70px;">
+                                    <option value="kg" {% if weekly_unit == 'kg' %}selected{% endif %}>kg</option>
+                                    <option value="gm" {% if weekly_unit == 'gm' %}selected{% endif %}>gm</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary w-100 mt-3 fw-bold" style="border-radius: 12px; height: 48px;">Save Settings</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- History -->
+    <div class="card border-0 shadow-sm overflow-hidden">
+        <div class="card-header bg-white py-3 border-bottom border-light">
+            <h5 class="fw-bold mb-0">Weight History</h5>
+        </div>
+        <div class="list-group list-group-flush">
+            {% for log in weight_history %}
+            <div class="list-group-item p-4 d-flex justify-content-between align-items-center bg-white">
+                <div>
+                    <h5 class="fw-bold mb-1">{{ log.weight }} kg</h5>
+                    <p class="text-muted small mb-0">{{ log.date|date:"F j, Y" }}</p>
+                </div>
+                <a href="{% url 'weight_delete' log.id %}" class="btn btn-outline-danger btn-sm rounded-pill px-3">
+                    <i class="fas fa-trash-alt me-1"></i> Delete
+                </a>
+            </div>
+            {% empty %}
+            <div class="p-5 text-center">
+                <div class="mb-3">
+                    <i class="fas fa-weight scale-3x text-light" style="font-size: 3rem;"></i>
+                </div>
+                <p class="text-muted mb-0">No weight logs yet. Start tracking today!</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
